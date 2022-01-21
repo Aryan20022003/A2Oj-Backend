@@ -1,10 +1,12 @@
 import "./App.css";
-import SectionTitle from "./Components/SectionTitle";
+import Roadmap from "./Components/Roadmap/Roadmap";
+import Speakers from "./Components/Speakers/Speakers";
 
 function App() {
   return (
-    <div className="App bg-black min-h-screen">
-      <SectionTitle title="Roadmaps" />
+    <div className="App">
+      <Roadmap />
+      <Speakers />
     </div>
   );
 }
