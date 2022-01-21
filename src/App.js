@@ -3,6 +3,8 @@ import Contact from './Components/Contact'
 import Sponsors from './Components/Sponsors'
 import Container from './Components/common/Container'
 import 'particles.js/particles'
+import SectionTitle from "./Components/SectionTitle";
+
 
 function App() {
   window.particlesJS.load('particles', '/particlesjs-config.json', function() {
@@ -10,11 +12,13 @@ function App() {
   })
 
   return (
-    <div className="relative bg-black">
+ <div className="relative bg-black">
       <div className="fixed top-0 left-0">
         <div id="particles" className="w-screen h-screen" />
       </div>
-
+      <div className="App bg-black min-h-screen">
+        <SectionTitle title="Roadmaps" />
+      </div>
       <section id="sponsors">
         <Container>
           <Sponsors />
@@ -27,6 +31,7 @@ function App() {
         </Container>
       </section>
     </div>
+    
   );
 }
 
