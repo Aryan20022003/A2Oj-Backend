@@ -1,7 +1,7 @@
 export default function Field({ label, type = 'text', children }) {
   return (
     <div className="sm:grid sm:grid-cols-5 sm:gap-4">
-      <label htmlFor={ label } className="sm:col-span-2 block text-sm sm:text-3xl font-medium sm:font-semibold"> { children } </label>
+      <label htmlFor={ label } className="sm:col-span-2 block text-sm sm:text-xl md:text-2xl xl:text-3xl font-medium sm:font-semibold"> { children } </label>
       <input
         type={ type }
         id={ label }
