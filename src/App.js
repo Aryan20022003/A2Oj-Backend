@@ -9,9 +9,9 @@ function App() {
   })
 
   return (
-    <div className="relative bg-black z-10">
-      <div className="fixed w-screen h-screen top-0 left-0">
-        <div id="particles" />
+    <div className="px-2 sm:px-0 relative bg-black">
+      <div className="fixed top-0 left-0">
+        <div id="particles" className="w-screen h-screen" />
       </div>
 
       <section className="max-w-7xl mx-auto py-12" id="sponsors">
