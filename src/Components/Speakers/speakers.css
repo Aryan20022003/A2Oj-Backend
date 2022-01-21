@@ -11,13 +11,14 @@
     font-size: 12px;
 }
 .speakers_card_box {
+    max-width: 1200px;
     display: grid;
     place-items: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     grid-auto-columns: 1fr;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 3rem 0;
+    gap: 2.75rem 0;
     grid-template-areas:
         ". . . . img3 img3"
         ". . img2 img2 img3 img3"
@@ -111,6 +112,6 @@
     }
 
     .speakers_card {
-        width: 320px;
+        width: 300px;
     }
 }

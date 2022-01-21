@@ -2,8 +2,6 @@ import './speakers.css'
 import SectionTitle from '../SectionTitle';
 import SpeakersData from './SpeakersData';
 
-
-
 const Speakers = () => {
     return (
         <section className='bg-black'>
@@ -18,7 +16,7 @@ const Speakers = () => {
                 {
                     SpeakersData.map((speaker, index) => {
                         return <div key={index} className={`speakers_card img${index + 1} relative`}>
-                            <img src={speaker.img} className='speaker_speakers_card_img' alt="speaker's" />
+                            <img src={speaker.img} className='speaker_card_img' alt="speaker's" />
                             <div className='absolute bottom-2 right-4'>
                                 <span className='speakers_small_text block text-right text-white'>
                                     {speaker.date}
