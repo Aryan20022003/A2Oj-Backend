@@ -19,7 +19,7 @@ function App() {
         <div id="particles" className="w-screen h-screen" />
       </div>
       <div className="App bg-black min-h-screen">
-        <SectionTitle title="About" />
+        <SectionTitle title="About The Hackathon" />
         <About />
       </div>
       <div className="App bg-black min-h-screen">
