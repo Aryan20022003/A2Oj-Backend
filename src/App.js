@@ -1,6 +1,8 @@
 import "./App.css";
 import Contact from './Components/Contact'
 import Sponsors from './Components/Sponsors'
+import About from "./Components/About"
+import SupportedBy from "./Components/SupportedBy"
 import Container from './Components/common/Container'
 import 'particles.js/particles'
 import SectionTitle from "./Components/SectionTitle";
@@ -15,6 +17,14 @@ function App() {
         <div id="particles" className="w-screen h-screen" />
       </div>
 
+      <div className="App bg-black min-h-screen">
+        <SectionTitle title="About The Hackathon" />
+        <About />
+      </div>
+      <div className="App bg-black min-h-screen">
+        <SectionTitle title="Supported By" />
+        <SupportedBy />
+      </div>
       <div className="App bg-black min-h-screen">
         <SectionTitle title="Roadmaps" />
       </div>
