@@ -1,0 +1,5 @@
+.hero_line{
+    letter-spacing: -5px;
+    transform: translateY(-1px);
+    font-size: 1rem;
+}
