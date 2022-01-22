@@ -1,0 +1,117 @@
+.speaker_card_img {
+    filter: brightness(110%);
+}
+
+.speakers_small_text {
+    font-size: 12px;
+    color: white;
+}
+
+.speakers_content {
+    padding: 5px 8px;
+    background-color: rgba(255, 249, 249, 0.03);
+}
+
+.speakers_card_box {
+    max-width: 1200px;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem 0;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 2.75rem 0;
+    grid-template-areas:
+        ". . . . img3 img3"
+        ". . img2 img2 img3 img3"
+        "img1 img1 img2 img2 img3 img3"
+        "img1 img1 img2 img2 img6 img6"
+        "img1 img1 img5 img5 img6 img6"
+        "img4 img4 img5 img5 img6 img6"
+        "img4 img4 img5 img5 . ."
+        "img4 img4 . . . .";
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.speakers_card {
+    display: grid;
+    place-items: center;
+    width: 270px;
+}
+
+@media (max-width:1000px) {
+    .speakers_card_box {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 2rem 0;
+        grid-template-areas:
+            ". . img2 img2"
+            "img1 img1 img2 img2"
+            "img1 img1 img2 img2"
+            "img1 img1 img4 img4"
+            "img3 img3 img4 img4"
+            "img3 img3 img4 img4"
+            "img3 img3 img6 img6"
+            "img5 img5 img6 img6"
+            "img5 img5 img6 img6"
+            "img5 img5 . .";
+    }
+}
+
+@media (max-width:600px) {
+    .speakers_card_box {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+        gap: 2rem 0px;
+        grid-template-areas:
+            "img1 img1"
+            "img1 img1"
+            "img1 img1"
+            "img2 img2"
+            "img2 img2"
+            "img2 img2"
+            "img3 img3"
+            "img3 img3"
+            "img3 img3"
+            "img4 img4"
+            "img4 img4"
+            "img4 img4"
+            "img5 img5"
+            "img5 img5"
+            "img5 img5"
+            "img6 img6"
+            "img6 img6"
+            "img6 img6";
+    }
+
+    .speakers_card {
+        width: 300px;
+    }
+}
