@@ -24,10 +24,12 @@ function App() {
         <SectionTitle title="About The Hackathon" />
         <About />
       </div>
+      
       <div className="App bg-black min-h-screen">
         <SectionTitle title="Supported By" />
         <SupportedBy />
       </div>
+
       <div className="App bg-black min-h-screen">
         <Roadmap />
         <Speakers />
