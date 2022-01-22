@@ -7,9 +7,13 @@
     filter: grayscale(0) brightness(110%);
     transition: all 0.5s;
 }
-.speakers_small_text{
+
+.speakers_small_text {
     font-size: 12px;
+    text-shadow: 1px 0px 15px rgba(150, 150, 150, 0.8);
+    color: white;
 }
+
 .speakers_card_box {
     max-width: 1200px;
     display: grid;

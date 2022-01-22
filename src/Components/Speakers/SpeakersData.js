@@ -1,38 +1,37 @@
-import speaker from './speaker.png';
 
 const SpeakersData = [
     {
-        img: speaker,
+        img: '/Images/Speakers/speaker.png',
         date: "Jan 05, 2022",
         name: "Aman Priyadarshi",
         post: "Web Dev, abc",
     },
     {
-        img: speaker,
+        img: '/Images/Speakers/speaker.png',
         date: "Jan 05, 2022",
         name: "Aman Priyadarshi",
         post: "Web Dev, abc",
     },
     {
-        img: speaker,
+        img: '/Images/Speakers/speaker.png',
         date: "Jan 05, 2022",
         name: "Aman Priyadarshi",
         post: "Web Dev, abc",
     },
     {
-        img: speaker,
+        img: '/Images/Speakers/speaker.png',
         date: "Jan 05, 2022",
         name: "Aman Priyadarshi",
         post: "Web Dev, abc",
     },
     {
-        img: speaker,
+        img: '/Images/Speakers/speaker.png',
         date: "Jan 05, 2022",
         name: "Aman Priyadarshi",
         post: "Web Dev, abc",
     },
     {
-        img: speaker,
+        img: '/Images/Speakers/speaker.png',
         date: "Jan 05, 2022",
         name: "Aman Priyadarshi",
         post: "Web Dev, abc",

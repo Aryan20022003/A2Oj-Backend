@@ -1,11 +1,6 @@
-.roadmap_timeline {
-    width: 56%;
-}
-
 .roadmap_items {
     position: relative;
 }
-
 
 .roadmap_items::after {
     content: '';
@@ -14,12 +9,13 @@
     height: 100%;
     left: calc(50% - 2px);
     top: 0%;
-    background: snow;
+    background: rgba(187, 185, 185, 0.6);
     z-index: 1;
 }
 
 .roadmap_item {
     margin: 2rem 0;
+    width: 100%;
     position: relative;
 }
 
@@ -35,7 +31,7 @@
     height: 20px;
     background-color: snow;
     border-radius: 2px;
-    top: calc(31%);
+    top: calc(36%);
     transform: rotate(45deg);
 }
 
@@ -47,7 +43,6 @@
     right: calc(50% - 46px);
 }
 
-
 .roadmap_item_dot {
     height: 26px;
     width: 26px;
@@ -55,12 +50,12 @@
     position: absolute;
     border-radius: 50%;
     left: calc(50% - 13px);
-    top: 30%;
+    top: 35%;
     z-index: 2;
 }
 
 .roadmap_item_date {
-    padding: 7px;
+    padding: 8px;
 }
 
 .roadmap_item:nth-child(odd) {
@@ -72,15 +67,9 @@
     padding-left: calc(50% + 2rem);
 }
 
-@media (max-width:1100px) {
+@media (max-width: 800px) {
     .roadmap_timeline {
-        width: 66%;
-    }
-}
-
-@media (max-width: 850px) {
-    .roadmap_timeline {
-        width: 75%;
+        width: 85%;
     }
 
     .roadmap_item:nth-child(odd) {
@@ -98,7 +87,7 @@
     }
 
     .roadmap_item_dot {
-        left: -29px;
+        left: -30px;
     }
 
     .roadmap_item:nth-child(odd)::after,
