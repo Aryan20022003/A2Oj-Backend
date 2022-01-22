@@ -6,6 +6,8 @@ import SupportedBy from "./Components/SupportedBy"
 import Container from './Components/common/Container'
 import 'particles.js/particles'
 import SectionTitle from "./Components/SectionTitle";
+import Navbar from "./Components/Navbar//Navbar";
+import { Hero } from "./Components/Hero//Hero";
 
 
 function App() {
@@ -13,10 +15,14 @@ function App() {
 
   return (
     <div className="relative bg-black">
+      
       <div className="fixed top-0 left-0">
         <div id="particles" className="w-screen h-screen" />
       </div>
-
+      <div className="App bg-gradient-to-b min-h-screen">
+        <Navbar />
+        <Hero />
+      </div>
       <div className="App bg-black min-h-screen">
         <SectionTitle title="About The Hackathon" />
         <About />
