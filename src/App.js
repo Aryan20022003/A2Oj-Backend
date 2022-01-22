@@ -9,15 +9,14 @@ import SectionTitle from "./Components/SectionTitle";
 
 
 function App() {
-  window.particlesJS.load('particles', '/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded')
-  })
+  window.particlesJS.load('particles', '/particlesjs-config.json')
 
   return (
- <div className="relative bg-black">
+    <div className="relative bg-black">
       <div className="fixed top-0 left-0">
         <div id="particles" className="w-screen h-screen" />
       </div>
+
       <div className="App bg-black min-h-screen">
         <SectionTitle title="About The Hackathon" />
         <About />
@@ -29,6 +28,7 @@ function App() {
       <div className="App bg-black min-h-screen">
         <SectionTitle title="Roadmaps" />
       </div>
+
       <section id="sponsors">
         <Container>
           <Sponsors />
@@ -41,7 +41,7 @@ function App() {
         </Container>
       </section>
     </div>
-    
+
   );
 }
 

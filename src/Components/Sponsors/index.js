@@ -8,7 +8,7 @@ export default function Sponsors() {
         <img src="/Images/sponsors/mcdonalds-logo.png" alt="" className="relative z-10 py-5" />
         <div className="absolute flex w-full h-full flex-col">
           <div className="flex-grow bg-gradient-to-b from-white to-gray-100" />
-          <div className="-mt-px sm:mt-0 w-full h-32 bg-gradient-to-b from-gray-100" />
+          <div className="-mt-px w-full h-32 bg-gradient-to-b from-gray-100" />
         </div>
       </div>
     </div>
