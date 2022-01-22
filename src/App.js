@@ -7,6 +7,8 @@ import SupportedBy from "./Components/SupportedBy"
 import Container from './Components/common/Container'
 import 'particles.js/particles'
 import SectionTitle from "./Components/SectionTitle";
+import Roadmap from "./Components/Roadmap/Roadmap";
+import Speakers from "./Components/Speakers/Speakers";
 
 
 function App() {
@@ -27,7 +29,8 @@ function App() {
         <SupportedBy />
       </div>
       <div className="App bg-black min-h-screen">
-        <SectionTitle title="Roadmaps" />
+        <Roadmap />
+        <Speakers />
       </div>
 
       <section id="sponsors">
