@@ -1,0 +1,51 @@
+import React, { useState } from 'react';
+import logo from './../../../src/assets/logo/logo-light.png'
+
+
+const Navbar = () => {
+
+    const [menu,setMenu] = useState(false);
+
+
+    return ( 
+        <>
+            <nav className="hidden lg:flex items-center z-10 justify-between mx-9 font-mono">
+                <img className='md:h-28 lg:h-32' src={logo} alt="DCC Logo" />
+
+                <ul className='text-white flex md:text-base lg:text-lg justify-around '>
+                        <li className='cursor-pointer mx-3'>About</li>
+                        <li className='cursor-pointer mx-3'>Prizes</li>
+                        <li className='cursor-pointer mx-3'>Schedule</li>
+                        <li className='cursor-pointer mx-3'>Sessions</li>
+                        <li className='cursor-pointer mx-3'>Mentors</li>
+                        <li className='cursor-pointer mx-3'>Sponsors</li>
+                        <li className='cursor-pointer mx-3'>FAQs</li>
+                        <li className='cursor-pointer mx-3'>Contact-Us</li>
+                    </ul>
+            </nav>
+            
+            <nav className='lg:hidden flex justify-between mx-3 text-white items-center'>
+                <img className='h-20 sm:h-28' src={logo} alt="DCC Logo" />
+
+                <div className=' m-0' onClick= { () => setMenu(!menu) }>
+                    <i className={ !menu ? 'fas fa-bars text-2xl' : 'far fa-times-circle text-2xl'} />
+                </div>
+            </nav>
+
+            <div className={!menu ? 'hidden' : 'block'}>
+                <ul className='text-white text-center font-mono text-sm'>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white border-t'>About</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>Prizes</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>Schedule</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>Sessions</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>Mentors</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>Sponsors</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>FAQs</li>
+                    <li className=' py-px mx-4 rounded shadow-sm shadow-white '>Contact Us</li>
+                </ul>
+            </div>
+        </>
+     );
+}
+ 
+export default Navbar;
