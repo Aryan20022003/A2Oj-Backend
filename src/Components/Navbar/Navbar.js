@@ -27,7 +27,7 @@ const Navbar = () => {
             <nav className='lg:hidden flex justify-between mx-3 text-white items-center'>
                 <img className='h-20 sm:h-28' src={logo} alt="DCC Logo" />
 
-                <div className=' m-0' onClick= { () => setMenu(!menu) }>
+                <div className=' m-0 z-10' onClick= { () => setMenu(!menu) }>
                     <i className={ !menu ? 'fas fa-bars text-2xl' : 'far fa-times-circle text-2xl'} />
                 </div>
             </nav>

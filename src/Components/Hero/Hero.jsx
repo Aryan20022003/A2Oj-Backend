@@ -1,7 +1,5 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import hackathon from './../../assets/Hackathon/Hackathon.png'
-import SectionTitle from "./../SectionTitle";
 import './Hero.css'
 
 export const Hero = () => {

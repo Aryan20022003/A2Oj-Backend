@@ -20,7 +20,7 @@ function App() {
       <div className="fixed top-0 left-0">
         <div id="particles" className="w-screen h-screen" />
       </div>
-      <div className="App bg-gradient-to-b min-h-screen">
+      <div className="App bg-gradient-to-b min-h-screen z-10">
         <Navbar />
         <Hero />
       </div>
