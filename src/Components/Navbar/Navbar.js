@@ -13,14 +13,14 @@ const Navbar = () => {
                 <img className='md:h-28 lg:h-32' src={logo} alt="DCC Logo" />
 
                 <ul className='text-white z-10 flex md:text-base lg:text-lg justify-around '>
-                        <li className='cursor-pointer mx-3'>About</li>
-                        <li className='cursor-pointer mx-3'>Prizes</li>
-                        <li className='cursor-pointer mx-3'>Schedule</li>
-                        <li className='cursor-pointer mx-3'>Sessions</li>
-                        <li className='cursor-pointer mx-3'>Mentors</li>
-                        <li className='cursor-pointer mx-3'>Sponsors</li>
-                        <li className='cursor-pointer mx-3'>FAQs</li>
-                        <li className='cursor-pointer mx-3'>Contact-Us</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>About</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>Prizes</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>Schedule</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>Sessions</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>Mentors</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>Sponsors</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>FAQs</li>
+                        <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110'>Contact Us</li>
                     </ul>
             </nav>
             
