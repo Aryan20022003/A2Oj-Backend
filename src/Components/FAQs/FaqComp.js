@@ -6,7 +6,7 @@ function FaqComp(props) {
 
   return (
     <div
-      className="m-4 p-2 cursor-pointer ease-in rounded-2xl shadow-2xl hover:scale-110  duration-200 "
+      className="m-4 p-2 cursor-pointer ease-in rounded-2xl shadow-2xl hover:scale-110  duration-200 bg-white"
       onClick={() => {
         setActive(!active);
         console.log(active);
