@@ -14,9 +14,9 @@ export const Hero = () => {
             <span className='hidden hero_line lg:block'>========================================================================================</span>
             <span className='h-1 w-1 bg-white rotate-45 translate-x-0.5 md:h-3 md:w-3'></span>
             <span className='sm:text-lg' >&nbsp;Lets Hack the Future</span>
-            <span className='h-1 w-1 bg-white rotate-45 translate-x-1.5 md:h-3 md:w-3'></span>
+            <span className='h-1 w-1 bg-white rotate-45 translate-x-1 md:h-3 md:w-3'></span>
             <span className='hidden hero_line lg:block'>========================================================================================</span>
-            <span className='hero_line lg:hidden'>-------</span>
+            <span className='hero_line lg:hidden'>------</span>
         </div>
         
         <div className=' bg-gray-100 pb-0 text-center my-14 grid md:flex items-center md:max-h-14 overflow-hidden box-border rounded-xl max-w-fit font-medium md:text-lg mx-auto'>
