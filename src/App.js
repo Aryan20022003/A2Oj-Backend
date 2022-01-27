@@ -36,31 +36,38 @@ function App() {
 
         <div className="App bg-black min-h-screen">
           <SectionTitle title="Supported By" />
-          <SupportedBy />
+          <section id="supported-by">
+            <container>
+              <SupportedBy />
+            </container>
+          </section>
+          <section id="roadmap">
+            <container>
+              <Roadmap />
+            </container>
+          </section>
+          <section id="speaker">
+            <container>
+              <Speakers />
+            </container>
+          </section>
+
+          <section id="sponsors">
+            <Container>
+              <Sponsors />
+            </Container>
+          </section>
+          <section id="Faq">
+            <Container>
+              <Faq />
+            </Container>
+          </section>
+          <section id="contact">
+            <Container>
+              <Contact />
+            </Container>
+          </section>
         </div>
-
-        <div className="App bg-black min-h-screen">
-          <Roadmap />
-          <Speakers />
-        </div>
-
-        <section id="sponsors">
-          <Container>
-            <Sponsors />
-          </Container>
-        </section>
-        
-        <section id="Faq">
-          <Container>
-            <Faq />
-          </Container>
-        </section>
-
-        <section id="contact">
-          <Container>
-            <Contact />
-          </Container>
-        </section>
       </div>
     </div>
   );
