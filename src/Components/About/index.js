@@ -2,7 +2,7 @@ export default function About() {
     return (
       <>
       <div class="relative">
-      <div class="container max-w-7xl mx-auto m-12">
+      <div class=" max-w-7xl mx-auto m-12">
         <div class="flex flex-wrap">
           <div class="w-2/3 p-6">
           <p className="mt-6 text-base text-center sm:text-xl lg:text-left text-white tracking-wider font-semibold break-all">
