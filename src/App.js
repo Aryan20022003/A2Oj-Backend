@@ -21,53 +21,21 @@ function App() {
 
   return (
     <div className="App">
-      <div className="relative bg-black">
-        <div className="fixed top-0 left-0">
+      <div className="relative">
+        <div className="fixed top-0 left-0 -z-50">
           <div id="particles" className="w-screen h-screen" />
         </div>
-        <div className="App bg-gradient-to-b min-h-screen z-20">
-          <Navbar />
-          <Hero />
-        </div>
-        <div className="App bg-black min-h-screen">
-          <SectionTitle title="About The Hackathon" />
-          <About />
-        </div>
 
-        <div className="App bg-black min-h-screen">
-          <SectionTitle title="Supported By" />
-          <section id="supported-by">
-            <container>
-              <SupportedBy />
-            </container>
-          </section>
-          <section id="roadmap">
-            <container>
-              <Roadmap />
-            </container>
-          </section>
-          <section id="speaker">
-            <container>
-              <Speakers />
-            </container>
-          </section>
-
-          <section id="sponsors">
-            <Container>
-              <Sponsors />
-            </Container>
-          </section>
-          <section id="Faq">
-            <Container>
-              <Faq />
-            </Container>
-          </section>
-          <section id="contact">
-            <Container>
-              <Contact />
-            </Container>
-          </section>
-        </div>
+        <Navbar />
+        <Hero />
+        <About />
+        <SupportedBy />
+        <Roadmap />
+        <Speakers />
+        <Sponsors />
+        <Faq />
+        <Contact />
+        
       </div>
     </div>
   );

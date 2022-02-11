@@ -1,6 +1,9 @@
+import SectionTitle from "../SectionTitle";
+
 export default function SupportedBy() {
   return (
     <div>
+      <SectionTitle title="Supported By" />
       <div class="container max-w-7xl mx-auto p-3">
         <div class="flex flex-wrap">
           <div class="w-full sm:w-1/4 p-6">
