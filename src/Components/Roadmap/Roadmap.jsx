@@ -4,7 +4,7 @@ import Data from "./RoadmapData";
 
 const Roadmap = () => {
   return (
-    <section className="bg-black min-h-screen mt-12">
+    <section className="min-h-screen mt-12">
       <SectionTitle title="Roadmaps" />
       <p className="text-white text-center mx-auto my-6 px-4 text-xl max-w-screen-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
@@ -18,8 +18,8 @@ const Roadmap = () => {
           <div className="roadmap_items mx-auto">
             {Data.map((item, index) => {
               return (
-                <div key={index} className="roadmap_item">
-                  <div className="roadmap_item_date font-semibold text-white">
+                <div key={index} style={{color:"#000"}} className="roadmap_item font-secondar">
+                  <div className="roadmap_item_date text-white">
                     {item.date}
                   </div>
                   <div className="roadmap_item_dot" />

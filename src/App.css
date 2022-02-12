@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto&display=swap');
-
+*{
+  box-sizing: border-box;
+}
 .App {
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding: 0.5rem;
 }
 
 .font-primary {
@@ -15,7 +16,17 @@
 .font-secondary {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 1.15rem;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .font-secondary {
+    font-size: 0.95rem;
+  }
 }
 
 /* .App {
