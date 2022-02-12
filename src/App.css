@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto&display=swap');
-*{
-  box-sizing: border-box;
-}
+
 .App {
   max-width: 1350px;
   margin: 0 auto;
@@ -25,7 +23,7 @@ img {
 
 @media (max-width: 768px) {
   .font-secondary {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 

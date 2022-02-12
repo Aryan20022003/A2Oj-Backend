@@ -5,7 +5,7 @@ export default function SupportedBy() {
   return (
     <div>
       <SectionTitle title="Supported By" />
-      <div className="">
+      <div className="mt-12">
         <div className="flex flex-col justify-between gap-4 items-center px-4 pb-20 md:flex-row">
           <div style={{ width: "230px", borderRadius: "10px", overflow: "hidden" }}>
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
