@@ -1,43 +1,83 @@
-import Field from './Field'
+
 
 export default function Contact() {
-  return (
-    <div className="flex items-center justify-center relative overflow-hidden">
-      <div className="absolute w-full h-full">
-        <img src="/Images/contact/background.png" alt="" className="w-full h-full" />
-      </div>
-      <div className="max-w-xs px-4 xl:px-0 sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-4xl py-24 text-white relative z-10 capitalize">
-        <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center font-bold xl:tracking-tight">
-          Want to <span className="text-red-500">become a Sponsor?</span>
-        </h1>
-        <div className="mt-6 grid grid-cols-4">
-          <div className="col-span-full md:col-span-3 sm:relative sm:z-10 space-y-6 sm:space-y-8 md:space-y-14">
-            <p className="text-lg sm:text-xl text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac euismod neque. Mauris arcu arcu, lobortis</p>
-
-            <div className='text-lg sm:text-xl xl:text-3xl text-center md:text-left space-y-2 sm:space-y-3.5'>
-              <p>Contact us at <span className="text-red-600 font-semibold">dccnita@gmail.com</span></p>
-              <p className="font-semibold text-center"> Or </p>
-              <p>Register below and our team will get in touch with you.</p>
-            </div>
-
-            <form className="space-y-4" onSubmit={(e) => { e.preventDefault() }}>
-              <Field label="company-name"> Company name: </Field>
-              <Field label="email"> Email: </Field>
-              <Field label="contact-us"> Contact us: </Field>
-
-              <div className="sm:ml-24">
-                <button type="submit" className="mt-2 w-full sm:w-max px-4 py-2 bg-gray-50 rounded-md border-none text-xl sm:text-2xl text-gray-900 font-bold focus:ring-1 focus:ring-offset-2 focus:ring-offset-gray-300 focus:ring-red-500 shadow-lg">
-                  Click here to register
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <div className='hidden md:flex md:items-center'>
-            <img src="/Images/contact/person.png" alt="" className="md:-translate-x-1/2 xl:-translate-x-12 scale-[2.8]" />
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+	return (
+		<div className="my-20">
+			<form className="mx-auto w-full max-w-lg">
+				<div className="flex flex-wrap -mx-3 mb-6">
+					<div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+						<label
+							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+							htmlFor="grid-first-name"
+						>
+							First Name
+						</label>
+						<input
+							className="appearance-none block w-full bg-gray-200 text-black border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+							id="grid-first-name"
+							type="text"
+							placeholder="Jane"
+						/>
+						
+					</div>
+					<div className="w-full md:w-1/2 px-3">
+						<label
+							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+							htmlFor="grid-last-name"
+						>
+							Last Name
+						</label>
+						<input
+							className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+							id="grid-last-name"
+							type="text"
+							placeholder="Doe"
+						/>
+					</div>
+				</div>
+				<div className="flex flex-wrap -mx-3 mb-6">
+					<div className="w-full px-3">
+						<label
+							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+							htmlFor="grid-password"
+						>
+							E-mail
+						</label>
+						<input
+							className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+							id="email"
+							type="email"
+						/>
+						
+					</div>
+				</div>
+				<div className="flex flex-wrap -mx-3 mb-6">
+					<div className="w-full px-3">
+						<label
+							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+							htmlFor="grid-password"
+						>
+							Message
+						</label>
+						<textarea
+							className=" no-resize appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+							id="message"
+							defaultValue={""}
+						/>
+						
+					</div>
+				</div>
+				<div className="flex items-center justify-center ">
+					<div className="mx-auto ">
+						<button
+							className="shadow bg-red-600 hover:bg-red-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+							type="button"
+						>
+							Send
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	);
 }
