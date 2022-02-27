@@ -1,7 +1,9 @@
 .speaker_card_img {
     filter: brightness(110%);
 }
-
+.text-red-500{
+    color: #23c186;
+}
 .speakers_small_post {
     font-size: 14px;
 }
@@ -50,3 +52,4 @@
         width: 300px;
     }
 }
+
