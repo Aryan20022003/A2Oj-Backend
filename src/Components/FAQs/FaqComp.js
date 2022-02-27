@@ -8,7 +8,6 @@ function FaqComp(props) {
 			className="m-4 p-2 cursor-pointer ease-in rounded-2xl shadow-2xl hover:scale-110 w-4/5  duration-200 bg-white"
 			onClick={() => {
 				setActive(!active);
-				console.log(active);
 			}}
 		>
 			<div>
@@ -22,11 +21,10 @@ function FaqComp(props) {
 					</div>
 					<div className="ml-auto">
 						<svg
-							className={`h-6 w-6 ${
-								active
+							className={`h-6 w-6 ${!active
 									? ""
 									: "transform rotate-180"
-							}  ease-in-out duration-100`}
+								}  ease-in-out duration-100`}
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -42,9 +40,8 @@ function FaqComp(props) {
 				</span>
 			</div>
 			<div
-				className={`${
-					active ? "hidden" : null
-				} ease-in duration-300 `}
+				className={`${!active ? "hidden" : null
+					} ease-in duration-300 `}
 			>
 				<div className="">{props.ans}</div>
 			</div>
