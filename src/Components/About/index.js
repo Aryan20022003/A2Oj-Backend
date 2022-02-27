@@ -1,5 +1,5 @@
 import '../../App.css';
-import about_img from './about.svg';
+// import about_img from './about.svg';
 import SectionTitle from '../SectionTitle';
 
 export default function About() {

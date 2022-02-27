@@ -12,9 +12,9 @@ function FaqComp(props) {
 			}}
 		>
 			<div>
-				<span class="flex  px-4 lg:px-8 my-2 items-center w-full">
-					<span class=" animate-ping absolute inline-flex w-6 h-6 sm:w-8 sm:h-8   rounded-full bg-sky-400 opacity-75"></span>
-					<span class="flex-shrink-0 relative flex justify-center h-6 w-6 sm:w-8 sm:h-8  rounded-full items-center bg-sky-500 ">
+				<span className="flex  px-4 lg:px-8 my-2 items-center w-full">
+					<span className=" animate-ping absolute inline-flex w-6 h-6 sm:w-8 sm:h-8   rounded-full bg-sky-400 opacity-75"></span>
+					<span className="flex-shrink-0 relative flex justify-center h-6 w-6 sm:w-8 sm:h-8  rounded-full items-center bg-sky-500 ">
 						{props.sno}
 					</span>
 					<div className="ml-4 text-sm lg:text-xl font-semibold">
