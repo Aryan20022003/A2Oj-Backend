@@ -1,16 +1,20 @@
 import React from 'react';
+import SectionTitle from '../SectionTitle';
 import FaqComp from './FaqComp'
 
 
 function Faq() {
   return (
-    <div className="flex flex-col justify-center items-center my-14">
-      <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
-      <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
-      <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
-      <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
-      <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" /> 
-    </div>
+    <>
+      <SectionTitle title={'FAQs'} />
+      <div className="flex flex-col justify-center items-center my-14">
+        <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
+        <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
+        <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
+        <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
+        <FaqComp sno="1" ques="Why this kolaveri di?" ans="Jai shree Ram" />
+      </div>
+    </>
   );
 }
 

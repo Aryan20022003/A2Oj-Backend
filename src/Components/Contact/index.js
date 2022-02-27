@@ -1,83 +1,68 @@
+import React, { useState } from 'react'
+import SectionTitle from '../SectionTitle'
+import './contact.css'
 
+const ContactForm = () => {
 
-export default function Contact() {
+	const [details, setDetails] = useState({
+		firstName: '',
+		lastName: '',
+		email: '',
+		msg: ''
+	});
+
+	const handleForm = (e) => {
+		const { name, value } = e.target;
+		setDetails({
+			...details,
+			[name]: value,
+		});
+	};
+
 	return (
-		<div className="my-20">
-			<form className="mx-auto w-full max-w-lg">
-				<div className="flex flex-wrap -mx-3 mb-6">
-					<div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-						<label
-							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-							htmlFor="grid-first-name"
-						>
-							First Name
-						</label>
+		<>
+			<SectionTitle title='Contact Us' />
+			<section className='contact_form'>
+				<div className='contact_wrapper'>
+					<div className="contact_left">
 						<input
-							className="appearance-none block w-full bg-gray-200 text-black border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-							id="grid-first-name"
+							className='contact_input'
+							name='firstName'
+							onChange={handleForm}
+							value={details.firstName}
 							type="text"
-							placeholder="Jane"
-						/>
-						
-					</div>
-					<div className="w-full md:w-1/2 px-3">
-						<label
-							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-							htmlFor="grid-last-name"
-						>
-							Last Name
-						</label>
+							placeholder='First Name' />
 						<input
-							className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-							id="grid-last-name"
+							className='contact_input'
+							name='lastName'
+							onChange={handleForm}
+							value={details.lastName}
 							type="text"
-							placeholder="Doe"
-						/>
-					</div>
-				</div>
-				<div className="flex flex-wrap -mx-3 mb-6">
-					<div className="w-full px-3">
-						<label
-							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-							htmlFor="grid-password"
-						>
-							E-mail
-						</label>
+							placeholder='Last Name' />
 						<input
-							className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-							id="email"
+							className='contact_input'
+							name='email'
+							onChange={handleForm}
+							value={details.email}
 							type="email"
-						/>
-						
+							placeholder='Email' />
 					</div>
-				</div>
-				<div className="flex flex-wrap -mx-3 mb-6">
-					<div className="w-full px-3">
-						<label
-							className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-							htmlFor="grid-password"
-						>
-							Message
-						</label>
+					<div className="contact_right">
 						<textarea
-							className=" no-resize appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-							id="message"
-							defaultValue={""}
-						/>
-						
+							rows='6'
+							name='msg'
+							value={details.msg}
+							onChange={handleForm}
+							className='contact_textarea'
+							placeholder='Message' />
 					</div>
 				</div>
-				<div className="flex items-center justify-center ">
-					<div className="mx-auto ">
-						<button
-							className="shadow bg-red-600 hover:bg-red-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-							type="button"
-						>
-							Send
-						</button>
-					</div>
+				<div className='contact_btn_box'>
+					<button className='contact_btn'>Submit</button>
 				</div>
-			</form>
-		</div>
-	);
+			</section>
+		</>
+	)
 }
+
+export default ContactForm

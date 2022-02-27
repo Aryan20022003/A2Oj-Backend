@@ -1,6 +1,5 @@
 import "./App.css";
 import "particles.js/particles";
-import Contact from "./Components/Contact";
 import Sponsors from "./Components/Sponsors";
 import About from "./Components/About";
 import SupportedBy from "./Components/SupportedBy";
@@ -10,6 +9,7 @@ import { Hero } from "./Components/Hero//Hero";
 import Roadmap from "./Components/Roadmap/Roadmap";
 import Speakers from "./Components/Speakers/Speakers";
 import Faq from "./Components/FAQs/Faq";
+import ContactForm from "./Components/Contact";
 
 function App() {
   window.particlesJS.load("particles", "/particlesjs-config.json");
@@ -29,7 +29,7 @@ function App() {
         <Speakers />
         <Sponsors />
         <Faq />
-        <Contact />
+        <ContactForm/>
 
       </div>
     </div>
