@@ -8,6 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+::placeholder {
+    color: #f2f2f2;
+}
+
 .contact_wrapper {
     display: flex;
     justify-content: space-around;

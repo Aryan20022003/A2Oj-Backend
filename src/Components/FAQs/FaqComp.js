@@ -1,10 +1,12 @@
 import React from "react";
-import "./FaqComp.css";
+
 function FaqComp(props) {
+
 	const [active, setActive] = React.useState(false);
 
 	return (
 		<div
+			style={{ fontFamily: '"Montserrat", sans-serif', fontWeight: '400' }}
 			className="m-4 p-2 cursor-pointer ease-in rounded-2xl shadow-2xl hover:scale-110 w-4/5  duration-200 bg-white"
 			onClick={() => {
 				setActive(!active);
@@ -12,7 +14,7 @@ function FaqComp(props) {
 		>
 			<div>
 				<span className="flex  px-4 lg:px-8 my-2 items-center w-full">
-					<span className=" animate-ping absolute inline-flex w-6 h-6 sm:w-8 sm:h-8   rounded-full bg-sky-400 opacity-75"></span>
+					<span className=" animate-ping absolute inline-flex w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-sky-400 opacity-75" />
 					<span className="flex-shrink-0 relative flex justify-center h-6 w-6 sm:w-8 sm:h-8  rounded-full items-center bg-sky-500 ">
 						{props.sno}
 					</span>
@@ -22,8 +24,8 @@ function FaqComp(props) {
 					<div className="ml-auto">
 						<svg
 							className={`h-6 w-6 ${!active
-									? ""
-									: "transform rotate-180"
+								? ""
+								: "transform rotate-180"
 								}  ease-in-out duration-100`}
 							fill="none"
 							viewBox="0 0 24 24"
