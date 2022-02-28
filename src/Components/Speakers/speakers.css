@@ -1,10 +1,11 @@
-<<<<<<< HEAD
 .speaker_card_img {
     filter: brightness(110%);
 }
-.text-red-500{
+
+.text-red-500 {
     color: #23c186;
 }
+
 .speakers_small_post {
     font-size: 14px;
 }
@@ -21,11 +22,7 @@
     background-color: rgba(255, 249, 249, 0.03);
 }
 
-.speakers_card_box {
-    max-width: 1350px;
-=======
 .speaker_card_box {
->>>>>>> 91b2a59fb29a513ea8348517f400d3d1bcf8ee8e
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -100,14 +97,14 @@ figcaption {
     .speaker_card_box {
         grid-template-columns: 1fr 1fr;
     }
+
     .speaker_card {
         max-width: 280px;
     }
 }
 
 @media (max-width:600px) {
-    .speaker_card_box{
+    .speaker_card_box {
         grid-template-columns: 1fr;
     }
 }
-

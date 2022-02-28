@@ -23,12 +23,9 @@ function App() {
           <div id="particles" className="w-screen h-screen bg-black" />
         </div> */}
 
-<<<<<<< HEAD
-        <Navbar/>
-=======
         <ProgressBar />
         <Navbar />
->>>>>>> 91b2a59fb29a513ea8348517f400d3d1bcf8ee8e
+        <Navbar />
         <Hero />
         <About />
         <SupportedBy />

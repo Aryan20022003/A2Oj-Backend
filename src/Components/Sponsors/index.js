@@ -1,22 +1,11 @@
 import SectionTitle from "../SectionTitle"
 import "./sponsors.css";
-import logo from "./../../assets/logo/logo-light.png";
 import { SponsorsData } from "./../SponsorsData";
 const Sponsors = () => {
   return (
     <div className="sponsors-page">
       <SectionTitle title="Sponsors" />
       <div class="container">
-
-        {/* <div class="card">
-          <div class="box">
-            <div class="content">
-              <img src={logo} alt="" />
-              <h3>Google</h3>
-            </div>
-          </div>
-        </div> */}
-        
         {
         SponsorsData.map((Sponsor) => {
           return(
