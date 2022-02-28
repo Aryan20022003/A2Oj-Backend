@@ -1,3 +1,27 @@
+.speaker_card_img {
+    filter: brightness(110%);
+}
+
+.text-red-500 {
+    color: #23c186;
+}
+
+.speakers_small_post {
+    font-size: 14px;
+}
+
+.speakers_small_date {
+    font-size: 11px;
+}
+
+.speakers_content {
+    padding: 5px 8px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    background-color: rgba(255, 249, 249, 0.03);
+}
+
 .speaker_card_box {
     display: grid;
     place-items: center;
