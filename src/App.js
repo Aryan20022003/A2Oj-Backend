@@ -19,9 +19,9 @@ function App() {
   return (
     <div className="App">
       <div className="relative">
-        {/* <div className="fixed top-0 left-0 -z-50">
+        <div className="fixed top-0 left-0 -z-50">
           <div id="particles" className="w-screen h-screen bg-black" />
-        </div> */}
+        </div>
 
         <ProgressBar />
         <Navbar />

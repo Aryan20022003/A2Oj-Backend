@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './../../../src/assets/logo/logo-light.png'
 import "./../../App.css"
 import "./navbar.css"
+
 const Navbar = () => {
 
     const [menu, setMenu] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div className='nav-wrapper'>
-            <nav className="hidden lg:flex items-center z-10 justify-between">
+            <nav className="hidden lg:flex items-center justify-between">
                 <img className='md:h-28 lg:h-28' src={logo} alt="DCC Logo" />
                 <ul className='text-white z-10 flex md:text-base lg:text-lg justify-around '>
                     <li className='cursor-pointer mx-3 hover:bg-gray-800 hover:text-red-200 border-b px-2 rounded-md hover:scale-110 font-primary'>About</li>
