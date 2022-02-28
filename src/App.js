@@ -24,7 +24,7 @@ function App() {
         </div>
 
         <ProgressBar />
-        <Navbar />
+        {/* <Navbar /> */}
         <Navbar />
         <Hero />
         <About />
