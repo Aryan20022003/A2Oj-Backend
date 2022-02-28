@@ -8,7 +8,7 @@ import Navbar from "./Components/Navbar//Navbar";
 import { Hero } from "./Components/Hero//Hero";
 import Roadmap from "./Components/Roadmap/Roadmap";
 import Speakers from "./Components/Speakers/Speakers";
-import Faq from "./Components/FAQs/Faq";
+import { FAQs } from "./Components/FAQs/Faq";
 import ContactForm from "./Components/Contact";
 import ProgressBar from "./Components/ProgressBar";
 
@@ -24,7 +24,6 @@ function App() {
         </div>
 
         <ProgressBar />
-        {/* <Navbar /> */}
         <Navbar />
         <Hero />
         <About />
@@ -32,7 +31,7 @@ function App() {
         <Roadmap />
         <Speakers />
         <Sponsors />
-        <Faq />
+        <FAQs />
         <ContactForm />
 
       </div>

@@ -13,26 +13,28 @@ const Speakers = () => {
             </p>
 
             <div className="speaker_card_box">
-                {SpeakersData.map((speaker, index) => {
-                    return (
-                        <figure key={index} className='speaker_card'>
-                            <div className="speaker_img">
-                                <img src={speaker.img} alt="" />
-                            </div>
-                            <figcaption>
-                                <div className="speaker_basic">
-                                    <h3 className='speaker_name'>{speaker.name}</h3>
-                                    <div className='speaker_date'>
-                                        <div className="speaker_day">{speaker.day}</div>
-                                        <div className="speaker_month">{speaker.month}</div>
-                                    </div>
+                {
+                    SpeakersData.map((speaker, index) => {
+                        return (
+                            <figure key={index} className='speaker_card'>
+                                <div className="speaker_img">
+                                    <img src={speaker.img} alt="" />
                                 </div>
-                                <h4 className='speaker_post'>{speaker.post}</h4>
-                                <div className='speaker_line' />
-                            </figcaption>
-                        </figure>
-                    )
-                })}
+                                <figcaption>
+                                    <div className="speaker_basic">
+                                        <h3 className='speaker_name'>{speaker.name}</h3>
+                                        <div className='speaker_date'>
+                                            <div className="speaker_day">{speaker.day}</div>
+                                            <div className="speaker_month">{speaker.month}</div>
+                                        </div>
+                                    </div>
+                                    <h4 className='speaker_post'>{speaker.post}</h4>
+                                    <div className='speaker_line' />
+                                </figcaption>
+                            </figure>
+                        )
+                    })
+                }
 
             </div>
 

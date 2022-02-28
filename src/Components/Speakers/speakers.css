@@ -27,6 +27,7 @@
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .speaker_card {

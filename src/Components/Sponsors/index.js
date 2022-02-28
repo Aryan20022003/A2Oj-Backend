@@ -6,11 +6,11 @@ const Sponsors = () => {
   return (
     <div className="sponsors-page">
       <SectionTitle title="Sponsors" />
-      <div class="container">
+      <div className="container">
         {
-        SponsorsData.map((Sponsor) => {
+        SponsorsData.map((Sponsor,index) => {
           return(
-            <div className= "card" key={Sponsor.index} >
+            <div className= "card" key={index} >
               <div className="box">
                 <div className="content">
                   <img src={Sponsor.img} alt="" />
