@@ -11,7 +11,7 @@ export default function SupportedBy() {
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
           <p className="font-secondary text-lg leading-7  text-justify md:text-right md:w-9/12">
-            <h4 style={{ color: "#ef4444", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
+            <h4 style={{ color: "#23c186", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
               National Institute of Technology, Agartala
             </h4>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!
@@ -22,7 +22,7 @@ export default function SupportedBy() {
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
           <p className="font-secondary text-lg leading-7 text-justify md:text-left md:w-9/12">
-            <h4 style={{ color: "#ef4444", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
+            <h4 style={{ color: "#23c186", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
               National Institute of Technology, Agartala
             </h4>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!
@@ -33,7 +33,7 @@ export default function SupportedBy() {
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
           <p className="font-secondary text-lg leading-7 text-justify md:w-9/12 md:text-right">
-            <h4 style={{ color: "#ef4444", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
+            <h4 style={{ color: "#23c186", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
               National Institute of Technology, Agartala
             </h4>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!

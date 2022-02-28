@@ -21,7 +21,7 @@ function App() {
           <div id="particles" className="w-screen h-screen bg-black" />
         </div> */}
 
-        <Navbar />
+        <Navbar/>
         <Hero />
         <About />
         <SupportedBy />
