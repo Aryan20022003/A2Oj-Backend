@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .speaker_card_img {
     filter: brightness(110%);
 }
@@ -22,34 +23,91 @@
 
 .speakers_card_box {
     max-width: 1350px;
+=======
+.speaker_card_box {
+>>>>>>> 91b2a59fb29a513ea8348517f400d3d1bcf8ee8e
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1.25rem 0;
-    gap: 2.5rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 0;
 }
 
-.speakers_card {
-    display: grid;
-    place-items: center;
-    width: 270px;
+.speaker_card {
+    max-width: 300px;
+    color: #fff;
+    position: relative;
+}
+
+.speaker_basic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.speaker_card img {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+
+figcaption {
+    background-color: #0f0e0ec2;
+    padding: 20px 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.speaker_name {
+    font-size: 1.15rem;
+    line-height: 1.35rem;
+    font-weight: 500;
+}
+
+.speaker_date {
+    background-color: rgb(255, 255, 255);
+    color: rgb(99, 2, 99);
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 25px;
+    top: -20px;
+}
+
+.speaker_day {
+    font-size: 1.35rem;
+    line-height: 1.4rem;
+}
+
+.speaker_month {
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.speaker_post {
+    font-size: 0.8em;
+    line-height: 1.6em;
 }
 
 @media (max-width:1000px) {
-    .speakers_card_box {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 0;
+    .speaker_card_box {
+        grid-template-columns: 1fr 1fr;
+    }
+    .speaker_card {
+        max-width: 280px;
     }
 }
 
-@media (max-width:630px) {
-    .speakers_card_box {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem 0px;
-    }
-
-    .speakers_card {
-        width: 300px;
+@media (max-width:600px) {
+    .speaker_card_box{
+        grid-template-columns: 1fr;
     }
 }
 
