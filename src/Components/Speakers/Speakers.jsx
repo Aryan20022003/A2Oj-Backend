@@ -28,6 +28,7 @@ const Speakers = () => {
                                     </div>
                                 </div>
                                 <h4 className='speaker_post'>{speaker.post}</h4>
+                                <div className='speaker_line' />
                             </figcaption>
                         </figure>
                     )

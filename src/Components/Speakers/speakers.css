@@ -9,6 +9,13 @@
     max-width: 300px;
     color: #fff;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.speaker_card:hover .speaker_img img {
+    transform: scale(1.1);
+    transition: all 0.25s ease-in-out;
 }
 
 .speaker_basic {
@@ -25,7 +32,7 @@
 
 figcaption {
     background-color: #0f0e0ec2;
-    padding: 20px 15px;
+    padding: 20px 15px 15px 15px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -34,8 +41,8 @@ figcaption {
 
 .speaker_name {
     font-size: 1.15rem;
-    line-height: 1.35rem;
     font-weight: 500;
+    margin-bottom: 3px;
 }
 
 .speaker_date {
@@ -69,17 +76,28 @@ figcaption {
     line-height: 1.6em;
 }
 
+.speaker_line {
+    width: 0%;
+    height: 2px;
+    background-color: #23c186;
+    margin: 7px 0 0 0;
+}
+.speaker_card:hover .speaker_line {
+    width: 40%;
+    transition: width 0.25s ease-in-out;
+}
 @media (max-width:1000px) {
     .speaker_card_box {
         grid-template-columns: 1fr 1fr;
     }
+
     .speaker_card {
         max-width: 280px;
     }
 }
 
 @media (max-width:600px) {
-    .speaker_card_box{
+    .speaker_card_box {
         grid-template-columns: 1fr;
     }
 }

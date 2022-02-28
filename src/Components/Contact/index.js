@@ -58,7 +58,12 @@ const ContactForm = () => {
 					</div>
 				</div>
 				<div className='contact_btn_box'>
-					<button className='contact_btn'>Submit</button>
+					<button
+						className='contact_btn'
+						onClick={() => {console.log(details)}}
+					>
+						Submit
+					</button>
 				</div>
 			</section>
 		</>

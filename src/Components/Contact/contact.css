@@ -35,6 +35,10 @@
     color: white;
 }
 
+input[type='text'], input[type='email'] {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .contact_input:focus, .contact_textarea:focus {
     border-bottom: 3px solid #23c186;
 }
