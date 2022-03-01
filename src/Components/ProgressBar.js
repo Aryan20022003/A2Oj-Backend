@@ -23,9 +23,10 @@ const ProgressBar = () => {
                 width: `${scroll}`,
                 top: '0',
                 left: '0',
+                right: '0',
                 height: '3px',
                 background: "#23c186",
-                zIndex: '1000'
+                zIndex: '10000'
             }}
         />
     );
