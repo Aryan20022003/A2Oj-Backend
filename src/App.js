@@ -11,6 +11,7 @@ import Speakers from "./Components/Speakers/Speakers";
 import { FAQs } from "./Components/FAQs/Faq";
 import ContactForm from "./Components/Contact";
 import ProgressBar from "./Components/ProgressBar";
+import Prizes from "./Components/Prizes/Prizes";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <SupportedBy />
         <Roadmap />
         <Speakers />
+        <Prizes />
         <Sponsors />
         <FAQs />
         <ContactForm />
