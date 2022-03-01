@@ -3,7 +3,8 @@
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.95);
+    background: #06060f;
+    /* background: rgba(0, 0, 0, 0.95); */
 }
 
 .nav_wrapper {
@@ -25,9 +26,11 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
-.nav_menu_item{
+
+.nav_menu_item {
     cursor: pointer;
 }
+
 .nav_menu_item+.nav_menu_item {
     margin-left: 20px;
 }
@@ -87,7 +90,7 @@
 }
 
 .mobile_menu_item:hover {
-    color: #23c186;
+    color: #22A7F0;
 }
 
 .mobile_menu_item::selection {

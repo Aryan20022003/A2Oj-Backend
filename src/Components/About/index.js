@@ -3,7 +3,7 @@ import SectionTitle from '../SectionTitle';
 
 export default function About() {
   return (
-    <div style={{ background: "#0f0e0ee1",padding:"1.5rem 0 2rem 0", borderRadius: "0.5rem", margin: "0 1rem 2rem 1rem" }}>
+    <div style={{ background: "rgba(9, 9, 26, 0.75)", padding: "1.5rem 0 2rem 0", borderRadius: "0.5rem", margin: "0 1rem 2rem 1rem" }}>
       <SectionTitle title="About The Hackathon" />
       <div className="flex flex-col-reverse px-6 py-4 items-center md:justify-evenly md:flex-row">
         <div className="flex text-lg leading-7 items-start text-justify font-secondary text-white w-full md:w-8/12 md:text-left">

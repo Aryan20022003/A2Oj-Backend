@@ -25,7 +25,7 @@ const ProgressBar = () => {
                 left: '0',
                 right: '0',
                 height: '3px',
-                background: "#23c186",
+                background: "#22A7F0",
                 zIndex: '10000'
             }}
         />

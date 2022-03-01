@@ -7,7 +7,7 @@
     margin: 0 auto;
     width: 85%;
     font-family: 'Montserrat', sans-serif;
-    background: #f2f2f2fa;
+    background: #f2f2f2e1;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
@@ -33,7 +33,7 @@
     font-size: 1.5rem;
     text-align: right;
     transform: rotate(-90deg);
-    color: #23c186;
+    color: #22A7F0;
     line-height: 1.5rem;
 }
 
@@ -51,7 +51,7 @@
 
 .faq_ans {
     font-weight: 500;
-    border-left: 3px solid #23c186;
+    border-left: 3px solid #22A7F0;
     padding-left: 0.5rem;
 }
 

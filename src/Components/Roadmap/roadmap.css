@@ -20,7 +20,7 @@
 }
 
 .roadmap_item:hover>.roadmap_item_dot {
-    border: 6px solid #23c186;
+    border: 6px solid #22A7F0;
     background: snow;
 }
 
@@ -46,7 +46,7 @@
 .roadmap_item_dot {
     height: 26px;
     width: 26px;
-    background-color: #23c186;
+    background-color: #22A7F0;
     position: absolute;
     border-radius: 50%;
     left: calc(50% - 13px);
