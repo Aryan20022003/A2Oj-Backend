@@ -101,11 +101,19 @@
 }
 
 @media (max-width: 1000px) {
+    .nav_wrapper {
+        padding: 0 1rem;
+    }
+
     .nav_menu_list {
         display: none;
     }
 
     .nav_menu_icon {
         display: block;
+    }
+
+    .nav_mobile {
+        top: 80px;
     }
 }

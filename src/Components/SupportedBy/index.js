@@ -28,7 +28,7 @@ export default function SupportedBy() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!
           </div>
         </div>
-        <div className="flex justify-between gap-4 flex-col items-center px-4 pb-20 md:flex-row">
+        <div className="flex justify-between gap-4 flex-col items-center px-4 pb-10 md:flex-row">
           <div style={{ width: "230px", borderRadius: "10px", overflow: "hidden" }}>
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
