@@ -23,15 +23,16 @@
 }
 
 .speaker_card_box {
+    max-width: 90%;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem 0;
-    margin: 5rem 0 2rem 0;
+    gap: 3rem 0;
+    margin: 5rem auto 2rem auto;
 }
 
 .speaker_card {
-    max-width: 300px;
+    max-width: 280px;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -57,7 +58,7 @@
 
 
 figcaption {
-    background-color: #0f0e0ec2;
+    background-color: #0f0e0ead;
     padding: 20px 15px 15px 15px;
     position: absolute;
     bottom: 0;
@@ -73,7 +74,7 @@ figcaption {
 
 .speaker_date {
     background-color: rgb(255, 255, 255);
-    color: rgb(99, 2, 99);
+    color: #08081b;
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 50%;
@@ -125,7 +126,8 @@ figcaption {
 }
 
 @media (max-width:600px) {
-    .speaker_card_box {
+    .speaker_card_box{
+        max-width: 100%;
         grid-template-columns: 1fr;
     }
 }

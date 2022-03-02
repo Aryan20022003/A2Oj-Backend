@@ -1,4 +1,4 @@
-import img1 from "./../assets/logo/logo-light.png";
+import img1 from "./../../assets/logo/crop-light.png";
 
 export const SponsorsData = [
     {

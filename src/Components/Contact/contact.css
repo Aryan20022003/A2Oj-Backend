@@ -4,7 +4,7 @@
 
 .contact_form {
     max-width: 650px;
-    background: rgba(9, 9, 26, 0.75);
+    background: rgba(13, 13, 46, 0.4);
     margin: 1rem auto;
     padding: 3rem;
     border-radius: 5px;
@@ -104,5 +104,8 @@ input[type='text'], input[type='email'] {
 
     .contact_right {
         width: 90%;
+    }
+    .foot_text span {
+        display: block;
     }
 }

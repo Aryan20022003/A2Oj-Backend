@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <div className="relative">
         <div className="fixed top-0 left-0 -z-50">
-          <div id="particles" style={{ background: "#06060f" }} className="w-screen h-screen" />
+          <div id="particles" style={{ background: "#08081b" }} className="w-screen h-screen" />
         </div>
 
         <ProgressBar />

@@ -20,7 +20,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<>
+		<section id='contact'>
 			<SectionTitle title='Contact Us' />
 			<section className='contact_form_wrap'>
 				<div className="contact_form">
@@ -69,7 +69,7 @@ const ContactForm = () => {
 				</div>
 			</section>
 			<h2 className='foot_text'>Designed and Developed by <span>Developers and Coders Club, NITA</span></h2>
-		</>
+		</section>
 	)
 }
 

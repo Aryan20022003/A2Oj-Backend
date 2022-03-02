@@ -9,7 +9,7 @@
     height: 100%;
     left: calc(50% - 2px);
     top: 0%;
-    background: rgba(187, 185, 185, 0.6);
+    background: rgba(187, 185, 185, 0.322);
     z-index: 1;
 }
 
@@ -17,6 +17,12 @@
     margin: 2rem 0;
     width: 100%;
     position: relative;
+}
+
+.roadmap_item_content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .roadmap_item:hover>.roadmap_item_dot {

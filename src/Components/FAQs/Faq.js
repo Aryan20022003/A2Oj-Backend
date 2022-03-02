@@ -23,7 +23,7 @@ function Faq({ faq }) {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<>
+		<section id="faqs" >
 			<div className="faq_wrap">
 				<div className="faq_title" onClick={() => { setOpen(!open); }}>
 					<div>
@@ -42,7 +42,7 @@ function Faq({ faq }) {
 					</div>
 				}
 			</div>
-		</>
+		</section>
 	);
 }
 

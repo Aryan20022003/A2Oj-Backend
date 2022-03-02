@@ -10,8 +10,8 @@ export default function SupportedBy() {
           <div style={{ width: "230px", borderRadius: "10px", overflow: "hidden" }}>
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
-          <div className="font-secondary text-lg leading-7  text-justify md:text-right md:w-9/12">
-            <h4 style={{ color: "#22A7F0", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
+          <div style={{ fontWeight: "400" }} className="font-secondary text-lg leading-7 text-center md:text-left md:w-9/12">
+            <h4 style={{ fontWeight: "500", color:"#22A7F0"}} className="font-secondary text-2xl mb-4 md:text-xl">
               National Institute of Technology, Agartala
             </h4>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!
@@ -21,8 +21,8 @@ export default function SupportedBy() {
           <div style={{ width: "230px", borderRadius: "10px", overflow: "hidden" }}>
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
-          <div className="font-secondary text-lg leading-7 text-justify md:text-left md:w-9/12">
-            <h4 style={{ color: "#22A7F0", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
+          <div style={{ fontWeight: "400" }} className="font-secondary text-lg leading-7 text-center md:text-left md:w-9/12">
+            <h4 style={{ fontWeight: "500", color:"#22A7F0"}} className="font-secondary text-2xl mb-4 md:text-xl">
               National Institute of Technology, Agartala
             </h4>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!
@@ -32,8 +32,8 @@ export default function SupportedBy() {
           <div style={{ width: "230px", borderRadius: "10px", overflow: "hidden" }}>
             <img src="/Images/about/dsc-placeholder.jpg" className="" alt="" />
           </div>
-          <div className="font-secondary text-lg leading-7 text-justify md:w-9/12 md:text-right">
-            <h4 style={{ color: "#22A7F0", fontWeight: "600" }} className="font-secondary text-lg pb-5 md:text-xl">
+          <div style={{ fontWeight: "400" }} className="font-secondary text-lg leading-7 text-center md:w-9/12 md:text-left">
+            <h4 style={{ fontWeight: "500", color:"#22A7F0"}} className="font-secondary text-2xl mb-4 md:text-xl">
               National Institute of Technology, Agartala
             </h4>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tempore temporibus amet numquam obcaecati ut, deserunt laudantium veniam expedita velit id atque beatae tenetur in magni est nam. Ea, ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam consequuntur blanditiis fugit non, fuga repellendus! Culpa totam repellendus ipsum ducimus qui recusandae quidem, nihil sed neque voluptas quo earum!
