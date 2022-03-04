@@ -12,11 +12,14 @@ import { FAQs } from "./Components/FAQs/Faq";
 import ContactForm from "./Components/Contact";
 import ProgressBar from "./Components/ProgressBar";
 import Prizes from "./Components/Prizes/Prizes";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Aos from "aos";
 
 function App() {
 
   window.particlesJS.load("particles", "/particlesjs-config.json");
-
+  Aos.init();
   return (
     <div className="App">
       <div className="relative">

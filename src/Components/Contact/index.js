@@ -20,7 +20,12 @@ const ContactForm = () => {
 	};
 
 	return (
-		<section id='contact'>
+		<section id='contact' data-aos="fade"
+			data-aos-delay="100"
+			data-aos-duration="500"
+			data-aos-easing="ease-out"
+			data-aos-mirror="true"
+			data-aos-once="false">
 			<SectionTitle title='Contact Us' />
 			<section className='contact_form_wrap'>
 				<div className="contact_form">

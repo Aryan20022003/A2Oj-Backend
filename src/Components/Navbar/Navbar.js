@@ -13,7 +13,12 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className='navbar' data-aos="fade-down"
+                data-aos-delay="100"
+                data-aos-duration="500"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="false">
                 <div className="nav_wrapper">
                     <div className="logo">
                         <img src={logo} alt="" />

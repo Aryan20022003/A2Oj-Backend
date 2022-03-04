@@ -24,7 +24,12 @@ function Faq({ faq }) {
 
 	return (
 		<section id="faqs" >
-			<div className="faq_wrap">
+			<div className="faq_wrap" data-aos="fade-up"
+				data-aos-delay="1000"
+				data-aos-duration="500"
+				data-aos-easing="ease-out"
+				data-aos-mirror="true"
+				data-aos-once="false">
 				<div className="faq_title" onClick={() => { setOpen(!open); }}>
 					<div>
 						<span className="faq_sno">{faq.sno}.</span>
@@ -34,7 +39,12 @@ function Faq({ faq }) {
 				</div>
 				{
 					open &&
-					<div className="faq_details">
+					<div className="faq_details" data-aos="zoom-in"
+						data-aos-delay="100"
+						data-aos-duration="500"
+						data-aos-easing="ease-out"
+						data-aos-mirror="true"
+						data-aos-once="false">
 						<div className="faq_divider" />
 						<div className="faq_ans">
 							{faq.ans}

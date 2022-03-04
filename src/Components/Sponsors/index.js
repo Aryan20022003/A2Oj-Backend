@@ -9,13 +9,28 @@ const Sponsors = () => {
       <section className="sponsors">
 
         <div className="sponsors_slider">
-          <div className="sponsors_slide">
+          <div className="sponsors_slide" data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
             <img src={SponsorsData[0].img} alt="" />
           </div>
-          <div className="sponsors_slide">
+          <div className="sponsors_slide" data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
             <img src={SponsorsData[0].img} alt="" />
           </div>
-          <div className="sponsors_slide">
+          <div className="sponsors_slide" data-aos="zoom-in"
+            data-aos-delay="1000"
+            data-aos-duration="500"
+            data-aos-easing="ease-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
             <img src={SponsorsData[0].img} alt="" />
           </div>
         </div>

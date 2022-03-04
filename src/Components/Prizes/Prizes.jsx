@@ -10,7 +10,15 @@ export default function Prizes() {
   return (
     <section id="prize">
       <SectionTitle title={"Prizes"} />
-      <div className="prizes-wrapper">
+      <div
+        className="prizes-wrapper"
+        data-aos="fade"
+        data-aos-delay="1000"
+        data-aos-duration="500"
+        data-aos-easing="ease-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <div className="prize-scene-outer">
           <div className="prize-card prize-first prize-small">
             <div className="prize-card__face prize-card__face--front">
