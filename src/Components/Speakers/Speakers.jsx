@@ -9,7 +9,7 @@ const Speakers = () => {
             <SectionTitle title="Speakers Sessions" />
 
             <p className='font-secondary text-white mx-auto px-4 my-8 text-xl max-w-screen-xl'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac euismod neque. Mauris arcu arcu, lobortis <span className='text-red-500'>nec maximus egestas, maximus eget lacus</span> Fusce mollis et elit sed finibus. Quisque sed nunc vitae eros fermentum volutpat. In in laoreet purus. In tempus commodo lacus at elementum. Sed in turpis sed neque cursus posuere at et erat. Ut dignissim lorem eget mauris elementum, sed elementum lorem tempor. Aenean rhoncus vel lacus sit amet iaculis. Nulla facilisi.
+                We are honoured to have an esteemed panel of Speakers, who will also be a part of our Hackathon Judging committee. Each Speaker has been selected due to their integrity, experience, and in-depth knowledge of this industry, and we're proud to have the individuals below as our judging panel for this year. Here's an introduction to each of the judges, while you can find out more about our Speaker / Judges below:
             </p>
 
             <div className="speaker_card_box">

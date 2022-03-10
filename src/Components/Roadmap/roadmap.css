@@ -19,10 +19,19 @@
     position: relative;
 }
 
+.roadmap_header {
+    font-weight: 600;
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
 .roadmap_item_content {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.9);
+    color: #222;
+    font-size: 0.95rem;
+    background-color: snow;
 }
 
 .roadmap_item:hover>.roadmap_item_dot {
@@ -62,11 +71,12 @@
 
 .roadmap_item_date {
     padding: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .roadmap_item:nth-child(odd) {
     padding-right: calc(50% + 2rem);
-    text-align: right;
 }
 
 .roadmap_item:nth-child(even) {
