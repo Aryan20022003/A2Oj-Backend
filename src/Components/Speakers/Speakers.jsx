@@ -4,7 +4,7 @@ import SpeakersData from './SpeakersData';
 
 const Speakers = () => {
     return (
-        <section>
+        <section id='mentors'>
 
             <SectionTitle title="Speakers Sessions" />
 

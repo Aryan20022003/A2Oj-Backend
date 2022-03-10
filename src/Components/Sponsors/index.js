@@ -6,7 +6,7 @@ const Sponsors = () => {
   return (
     <>
       <SectionTitle title="Sponsors" />
-      <section className="sponsors">
+      <section id="sponsors" className="sponsors">
 
         <div className="sponsors_slider">
           <div className="sponsors_slide">
