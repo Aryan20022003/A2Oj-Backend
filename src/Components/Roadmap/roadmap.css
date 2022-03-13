@@ -22,32 +22,26 @@
 .roadmap_header {
     font-weight: 600;
     color: #000;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     margin-bottom: 1rem;
+    font-family: 'Archivo', sans-serif;
+
 }
 
 .roadmap_item_content {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #222;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     background-color: snow;
+    min-height: 175px;
+    border-radius: 7px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .roadmap_item:hover>.roadmap_item_dot {
     border: 6px solid #22A7F0;
     background: snow;
-}
-
-.roadmap_item::after {
-    position: absolute;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-color: snow;
-    border-radius: 2px;
-    top: calc(36%);
-    transform: rotate(45deg);
 }
 
 .roadmap_item:nth-child(odd)::after {
@@ -65,22 +59,22 @@
     position: absolute;
     border-radius: 50%;
     left: calc(50% - 13px);
-    top: 35%;
+    top: 10%;
     z-index: 2;
 }
 
 .roadmap_item_date {
-    padding: 8px;
+    padding: 12px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .roadmap_item:nth-child(odd) {
-    padding-right: calc(50% + 2rem);
+    padding-right: calc(50% + 1.5rem);
 }
 
 .roadmap_item:nth-child(even) {
-    padding-left: calc(50% + 2rem);
+    padding-left: calc(50% + 1.5rem);
 }
 
 @media (max-width: 800px) {
