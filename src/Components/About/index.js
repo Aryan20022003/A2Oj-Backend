@@ -9,8 +9,7 @@ export default function About() {
         <SectionTitle title="About the Hackathon" />
         <div className="flex flex-col-reverse px-6 py-4 items-center md:justify-evenly md:flex-row">
           <div className="flex text-lg leading-7 items-start text-center font-secondary text-white w-full md:w-8/12 md:text-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat necessitatibus, aspernatur autem in, consequuntur deserunt, praesentium molestiae cumque explicabo dolorem ad doloremque eius officia. Neque animi, esse nostrum perferendis asperiores sint illo voluptatum at, minus nesciunt quidem aliquam, sequi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, repellendus!  praesentium molestiae cumque explicabo dolorem ad doloremque eius officia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, maxime?
+            *Event Name*, a student run hackathon organized by Developers & Code Club of NIT Agartala brings and adventurous journey of ** days, from April 15th to April 17th, 2022 through its speaker sessions + 72 hours long hackathon where the beginners as well as experienced developers collaborate in a team of ** members to go beyond the possible to solve real life statements and develop solutions and their prototypes. Take this as an opportunity to apply the software and hardware technologies you've learned and push your limits with creativity and proficiency.
           </div>
           <img className='pb-4' src="/Images/about/hackathons-logo.png" alt="" />
         </div>
