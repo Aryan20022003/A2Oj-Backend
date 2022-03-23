@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Zoom } from 'react-reveal';
 import SectionTitle from '../SectionTitle'
 import './contact.css'
 import emailjs from "emailjs-com";
@@ -33,7 +32,7 @@ const ContactForm = () => {
 			data-aos-mirror="true"
 			data-aos-once="false">
 			<SectionTitle title='Contact Us' />
-			<Zoom>
+			<form onSubmit={handleSubmit}>
 				<section className='contact_form_wrap'>
 					<div className="contact_form">
 						<div className='contact_wrapper'>
@@ -73,14 +72,14 @@ const ContactForm = () => {
 						<div className='contact_btn_box'>
 							<button
 								className='contact_btn'
-								onClick={() => { console.log(details) }}
+	
 							>
 								Submit
 							</button>
 						</div>
 					</div>
 				</section>
-			</Zoom>
+			</form>
 			<h2 className='foot_text'>Designed and Developed by <span>Developers and Coders Club, NITA</span></h2>
 		</section>
 	)
