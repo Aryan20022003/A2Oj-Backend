@@ -26,7 +26,7 @@ const Navbar = () => {
                     <div className="nav_menu">
                         <ul className='nav_menu_list'>
                             <li className='nav_menu_item'><a href="#about">About</a></li>
-                            <li className='nav_menu_item'><a href="#about">Problems</a></li>
+                            <li className='nav_menu_item'><a href="#problems">Problems</a></li>
                             <li className='nav_menu_item'><a href="#timeline">Timeline</a></li>
                             <li className='nav_menu_item'><a href="#sponsors">Sponsors</a></li>
                             <li className='nav_menu_item'><a href="#faqs">FAQs</a></li>
@@ -37,11 +37,11 @@ const Navbar = () => {
             </nav>
 
             <ul className={menu ? 'nav_mobile' : 'nav_mobile mobile_active'}>
-                <li className='mobile_menu_item'><a href="#about">About</a></li>
-                <li className='mobile_menu_item'><a href="#prize">Problems</a></li>
-                <li className='mobile_menu_item'><a href="#timeline">Timeline</a></li>
-                <li className='mobile_menu_item'><a href="#sponsors">Sponsors</a></li>
-                <li className='mobile_menu_item'>F<a href="#faqs">AQs</a></li>
+                <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#about">About</a></li>
+                <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#problems">Problems</a></li>
+                <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#timeline">Timeline</a></li>
+                <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#sponsors">Sponsors</a></li>
+                <li onClick={() => setMenu(!menu)} className='mobile_menu_item'>F<a href="#faqs">AQs</a></li>
             </ul>
         </>
 

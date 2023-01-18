@@ -17,13 +17,13 @@ export const Footer = () => {
                     </div>
                     <div class="events">
                         <p>
-                            <a href="/">Home</a>
+                            <a href="https://dccnita.tech">Home</a>
                         </p>
                         <p>
-                            <a href="/events">Events</a>
+                            <a href="https://dccnita.tech/events">Events</a>
                         </p>
                         <p>
-                            <a href="/teams">Teams</a>
+                            <a href="https://dccnita.tech/teams">Teams</a>
                         </p>
                     </div>
                 </div>
@@ -58,13 +58,13 @@ export const Footer = () => {
                     </div>
                     <div className='events-hidden'>
                         <span>
-                            <a href="/">Home</a>
+                            <a href="https://dccnita.tech">Home</a>
                         </span>
                         <span>
-                            <a href="/events">Events</a>
+                            <a href="https://dccnita.tech/events">Events</a>
                         </span>
                         <span>
-                            <a href="/teams">Teams</a>
+                            <a href="https://dccnita.tech/teams">Teams</a>
                         </span>
                     </div>
                 </div>

@@ -5,10 +5,10 @@ import { SponsorsData } from "./SponsorsData";
 
 const Sponsors = () => {
   return (
-    <>
+    <section id="sponsors">
       <SectionTitle title="Sponsors" />
       <Fade bottom>
-        <section id="sponsors" className="sponsors">
+        <div className="sponsors">
           <div className="sponsors_slider">
             <div className="sponsors_slide">
               <img src={SponsorsData[0].img} alt="" />
@@ -20,9 +20,9 @@ const Sponsors = () => {
               <img src={SponsorsData[0].img} alt="" />
             </div>
           </div>
-        </section>
+        </div>
       </Fade>
-    </>
+    </section>
   );
 }
 
