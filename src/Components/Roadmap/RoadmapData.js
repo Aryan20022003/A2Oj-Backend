@@ -1,38 +1,33 @@
 const data = [
     {
-        date: "Apr 01, 2022",
+        date: "Jan 19, 2023",
         header: "Registrations begins and release of Problem statement.",
         text: "Invite your friends, create team, register and start working on your ideas",
     },
     {
-        date: "Apr 14, 2022",
+        date: "Jan 22, 2023 11:59 PM",
         header: "Registration ends",
-        text: "Time to pull up your socks and get ready for the grind.",
-    },
-    {
-        date: "Apr 15, 2022",
-        header: "Opening ceremony (6:00-6:30 PM)",
-        text: "Get Set and Hack!",
-    },
-    {
-        date: "Apr 16, 2022",
-        header: "Deadline of submission of your presentation",
         text: "Submit your initial presentation and get the ball rolling.",
     },
     {
-        date: "Apr 17, 2022",
+        date: "Jan 23, 2023",
+        header: "Round 1 Results Declaration",
+        text: "Get Set and Hack!",
+    },
+    {
+        date: "Jan 28, 2023",
+        header: "Hackathon Starts",
+        text: "Breathless 12 hrs of Hackathon come to an end",
+    },
+    {
+        date: "Jan 28, 2023 11:59 PM",
         header: "Deadline of submission of your prototypes",
-        text: "Breathless 48 hrs of Hackathon come to an end",
+        text: "Submit your final prototype and get the ball rolling.",
     },
     {
-        date: "Apr 01, 2022",
-        header: "Judging round begins",
-        text: "Time to relax, while the judges go through the submissions",
-    },
-    {
-        date: "Apr 01, 2022",
-        header: "Closing ceremony and announcement of winners",
-        text: "Finally, the wait end! ",
+        date: "Jan 29, 2023",
+        header: "Final Result Declaration",
+        text: "Drumroll please... the champion emerges!",
     },
 
 ]

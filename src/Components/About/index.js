@@ -9,7 +9,7 @@ export default function About() {
         <SectionTitle title="About the Hackathon" />
         <div className="flex flex-col-reverse px-6 py-4 items-center md:justify-evenly md:flex-row">
           <div className="flex text-lg leading-7 items-start text-center font-secondary text-white w-full md:w-8/12 md:text-left">
-            *Event Name*, a student run hackathon organized by Developers & Code Club of NIT Agartala brings and adventurous journey of ** days, from April 15th to April 17th, 2022 through its speaker sessions + 72 hours long hackathon where the beginners as well as experienced developers collaborate in a team of ** members to go beyond the possible to solve real life statements and develop solutions and their prototypes. Take this as an opportunity to apply the software and hardware technologies you've learned and push your limits with creativity and proficiency.
+            The Intra State Hackathon, 'Hack-NITA' is an exciting opportunity for students to showcase their skills, creativity and problem-solving abilities. This hackathon aims to provide a platform for students to come together and collaborate on innovative projects that can make a real-world impact. Whether you're a seasoned coder or just starting out, this event welcomes all students from different majors, backgrounds and skill levels to participate. Join us as we push the boundaries of technology, and compete for prizes and recognition in the industry. The final round of Hack-NITA is a time-bound event, where participants have to think on their feet and come up with a working prototype. Get ready to hack, code, and create!
           </div>
           <img className='pb-4' src="/Images/about/hackathons-logo.png" alt="" />
         </div>

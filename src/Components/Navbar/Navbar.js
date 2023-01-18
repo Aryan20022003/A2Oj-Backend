@@ -26,13 +26,10 @@ const Navbar = () => {
                     <div className="nav_menu">
                         <ul className='nav_menu_list'>
                             <li className='nav_menu_item'><a href="#about">About</a></li>
-                            <li className='nav_menu_item'><a href="#prize">Prizes</a></li>
-                            <li className='nav_menu_item'><a href="#schedule">Schedule</a></li>
-                            <li className='nav_menu_item'><a href="#s">Sessions</a></li>
-                            <li className='nav_menu_item'><a href="#mentors">Mentors</a></li>
+                            <li className='nav_menu_item'><a href="#about">Problems</a></li>
+                            <li className='nav_menu_item'><a href="#timeline">Timeline</a></li>
                             <li className='nav_menu_item'><a href="#sponsors">Sponsors</a></li>
                             <li className='nav_menu_item'><a href="#faqs">FAQs</a></li>
-                            <li className='nav_menu_item'><a href="#contact">Contact Us</a></li>
                         </ul>
                         <i onClick={handleMenu} className={`nav_menu_icon fa-solid fa-bars`} />
                     </div>
@@ -40,14 +37,11 @@ const Navbar = () => {
             </nav>
 
             <ul className={menu ? 'nav_mobile' : 'nav_mobile mobile_active'}>
-                <li className='mobile_menu_item'><a href="#a">About</a></li>
-                <li className='mobile_menu_item'><a href="#prize">Prizes</a></li>
-                <li className='mobile_menu_item'><a href="#schedule">Schedule</a></li>
-                <li className='mobile_menu_item'><a href="#a">Sessions</a></li>
-                <li className='mobile_menu_item'><a href="#mentors">Mentors</a></li>
+                <li className='mobile_menu_item'><a href="#about">About</a></li>
+                <li className='mobile_menu_item'><a href="#prize">Problems</a></li>
+                <li className='mobile_menu_item'><a href="#timeline">Timeline</a></li>
                 <li className='mobile_menu_item'><a href="#sponsors">Sponsors</a></li>
                 <li className='mobile_menu_item'>F<a href="#faqs">AQs</a></li>
-                <li className='mobile_menu_item'><a href="#contact">Contact Us</a></li>
             </ul>
         </>
 

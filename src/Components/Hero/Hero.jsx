@@ -15,9 +15,9 @@ export const Hero = () => {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          Hackathon
+          Hack-NITA
         </h1>
-        <p className="hero_slogan">Let's Hack The Future</p>
+        <p className="hero_slogan">Hack the Future: HACK-NITA</p>
         <div className="hero_info">
           <span>Registration</span>
           <span>Feb 28, 2022</span>
