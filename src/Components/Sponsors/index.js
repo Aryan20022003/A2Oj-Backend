@@ -10,15 +10,15 @@ const Sponsors = () => {
       <Fade bottom>
         <div className="sponsors">
           <div className="sponsors_slider">
-            <div className="sponsors_slide">
+            {/* <div className="sponsors_slide">
               <img src={SponsorsData[0].img} alt="" />
-            </div>
+            </div> */}
             <div className="sponsors_slide">
-              <img src={SponsorsData[0].img} alt="" />
+              <img src={SponsorsData[1].img} alt="" />
             </div>
-            <div className="sponsors_slide">
+            {/* <div className="sponsors_slide">
               <img src={SponsorsData[0].img} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </Fade>

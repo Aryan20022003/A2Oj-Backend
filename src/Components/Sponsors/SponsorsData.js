@@ -1,4 +1,5 @@
 import img1 from "./../../assets/logo/crop-light.png";
+import devfolio from "./../../assets/Sponsors/devfolio.png"
 
 export const SponsorsData = [
     {
@@ -8,8 +9,8 @@ export const SponsorsData = [
     },
     {
         index: 0,
-        img: img1,
-        name: "Google",
+        img: devfolio,
+        name: "Devfolio",
     },
     {
         index: 0,
@@ -31,5 +32,5 @@ export const SponsorsData = [
         img: img1,
         name: "Google",
     },
-    
+
 ]

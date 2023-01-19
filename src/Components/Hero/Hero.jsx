@@ -20,7 +20,7 @@ export const Hero = () => {
         <p className="hero_slogan">Hack the Future: HACK-NITA</p>
         <div className="hero_info">
           <span>Registration</span>
-          <span>Feb 28, 2022</span>
+          <span>Jan 19, 2023</span>
           <span>Register Now</span>
         </div>
       </div>
