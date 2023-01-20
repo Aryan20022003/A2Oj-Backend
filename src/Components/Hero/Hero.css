@@ -35,6 +35,8 @@
 .hero_info {
     margin-top: 2rem;
     padding: 1rem;
+    justify-content: center;
+    display: flex;
 }
 
 .hero_info span {
@@ -67,9 +69,11 @@
         flex-direction: column-reverse;
         justify-content: space-evenly;
     }
-    .hero_img{
+
+    .hero_img {
         width: 80%;
     }
+
     .hero_right {
         width: 80%;
     }

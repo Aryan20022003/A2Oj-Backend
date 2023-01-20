@@ -1,16 +1,16 @@
 const data = [
     {
-        date: "Jan 19, 2023",
+        date: "Jan 20, 2023",
         header: "Registrations begins and release of Problem statement.",
         text: "Invite your friends, create team, register and start working on your ideas",
     },
     {
-        date: "Jan 22, 2023 11:59 PM",
+        date: "Jan 23, 2023 11:59 PM",
         header: "Registration ends",
         text: "Submit your initial presentation and get the ball rolling.",
     },
     {
-        date: "Jan 23, 2023",
+        date: "Jan 24, 2023",
         header: "Round 1 Results Declaration",
         text: "Get Set and Hack!",
     },

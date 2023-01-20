@@ -11,7 +11,7 @@ export default function About() {
           <div className="flex text-lg leading-7 items-start text-center font-secondary text-white w-full md:w-8/12 md:text-left">
             The Intra State Hackathon, 'Hack-NITA' is an exciting opportunity for students to showcase their skills, creativity and problem-solving abilities. This hackathon aims to provide a platform for students to come together and collaborate on innovative projects that can make a real-world impact. Whether you're a seasoned coder or just starting out, this event welcomes all students from different majors, backgrounds and skill levels to participate. Join us as we push the boundaries of technology, and compete for prizes and recognition in the industry. The final round of Hack-NITA is a time-bound event, where participants have to think on their feet and come up with a working prototype. Get ready to hack, code, and create!
           </div>
-          <img className='pb-4' src="/Images/about/hackathons-logo.png" alt="" />
+          <img style={{ width: "30vw" }} className='pb-4' src="/Images/about/hackathons-logo.png" alt="" />
         </div>
       </div>
     </Fade>

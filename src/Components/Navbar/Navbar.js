@@ -28,7 +28,7 @@ const Navbar = () => {
                             <li className='nav_menu_item'><a href="#about">About</a></li>
                             <li className='nav_menu_item'><a href="#problems">Problems</a></li>
                             <li className='nav_menu_item'><a href="#timeline">Timeline</a></li>
-                            <li className='nav_menu_item'><a href="#sponsors">Sponsors</a></li>
+                            {/* <li className='nav_menu_item'><a href="#sponsors">Sponsors</a></li> */}
                             <li className='nav_menu_item'><a href="#faqs">FAQs</a></li>
                         </ul>
                         <i onClick={handleMenu} className={`nav_menu_icon fa-solid fa-bars`} />
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#about">About</a></li>
                 <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#problems">Problems</a></li>
                 <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#timeline">Timeline</a></li>
-                <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#sponsors">Sponsors</a></li>
+                {/* <li onClick={() => setMenu(!menu)} className='mobile_menu_item'><a href="#sponsors">Sponsors</a></li> */}
                 <li onClick={() => setMenu(!menu)} className='mobile_menu_item'>F<a href="#faqs">AQs</a></li>
             </ul>
         </>
