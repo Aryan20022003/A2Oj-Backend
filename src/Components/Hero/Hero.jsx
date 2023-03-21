@@ -15,11 +15,11 @@ export const Hero = () => {
           data-aos-mirror="true"
           data-aos-once="false"
         >
-          Hack-NITA
+          NITA-CP
         </h1>
-        <p className="hero_slogan">Hack the Future: HACK-NITA</p>
+        <p className="hero_slogan">Dream Code Conquer</p>
         <div className="hero_info">
-          <span>Registeration Opens Soon</span>
+          <span>Contest Alert !</span>
         </div>
       </div>
       <div
