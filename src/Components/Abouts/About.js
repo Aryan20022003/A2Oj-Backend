@@ -27,8 +27,8 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
 
-export default function Faq() {
-  return <div>
+export default function About() {
+  return <section id="about">
 	<SectionTitle title="About" />
-  </div>;
+  </section>;
 }

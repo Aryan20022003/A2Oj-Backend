@@ -173,7 +173,7 @@ function IndexPage() {
             </form>
           </div>
         </main>
-        <div className="text-center font-medium flex w-full justify-center">
+        {/* <div className="text-center font-medium flex w-full justify-center">
           <a
             href="https://github.com/SinghAtithi/NITA-CP-Website?organization=SinghAtithi&organization=SinghAtithi"
             target="_blank"
@@ -183,7 +183,7 @@ function IndexPage() {
             <AiFillGithub className="mr-2 h-5 w-5" />
             NITA-CP
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

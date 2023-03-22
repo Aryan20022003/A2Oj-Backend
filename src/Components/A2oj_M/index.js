@@ -1,14 +1,14 @@
 import "../../App.css";
 import Fade from "react-reveal/Fade";
-import A2oj from "./A2oj";
-import Header from "./A2OJLog/Header";
+import Header from "./Header";
 
 
-export default function About() {
+export default function A2oj_M() {
   return (
+    <section id="a2oj">
     <Fade duration={800} bottom>
-      {/* <A2oj/> */}
       <Header/>
     </Fade>
+    </section>
   );
 }

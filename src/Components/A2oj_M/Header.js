@@ -7,13 +7,13 @@ import {
 import {
     SiCodeforces,
   } from "react-icons/si";
-import SectionTitle from '../../SectionTitle';
-import A2oj from '../A2oj';
+import SectionTitle from '../SectionTitle';
+import A2oj from './A2oj';
 function Header() {
   return (
     <div>
       <div
-        id="about"
+        id="a2oj"
         style={{
           background: "rgba(13, 13, 46, 0.4)",
           padding: "1.5rem 0 2rem 0",

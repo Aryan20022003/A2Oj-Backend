@@ -1,10 +1,10 @@
 import { Fade } from "react-reveal";
 import SectionTitle from "../SectionTitle"
-import "./sponsors.css";
+import "./codeEditor.css";
 
-const Sponsors = () => {
+const CodeEditor = () => {
   return (
-    <section id="sponsors">
+    <section id="code-editor">
       <SectionTitle title="Code Editor" />
       <Fade bottom>
         
@@ -13,5 +13,5 @@ const Sponsors = () => {
   );
 }
 
-export default Sponsors;
+export default CodeEditor;
 
