@@ -1,35 +1,70 @@
 const data = [
-    {
-        date: "Jan 20, 2023",
-        header: "Registrations begins and release of Problem statement.",
-        text: "Invite your friends, create team, register and start working on your ideas",
-    },
-    {
-        date: "Jan 23, 2023 11:59 PM",
-        header: "Registration ends",
-        text: "Submit your initial presentation and get the ball rolling.",
-    },
-    {
-        date: "Jan 24, 2023",
-        header: "Round 1 Results Declaration",
-        text: "Get Set and Hack!",
-    },
-    {
-        date: "Jan 28, 2023",
-        header: "Hackathon Starts",
-        text: "Breathless 12 hrs of Hackathon come to an end",
-    },
-    {
-        date: "Jan 28, 2023 11:59 PM",
-        header: "Deadline of submission of your prototypes",
-        text: "Submit your final prototype and get the ball rolling.",
-    },
-    {
-        date: "Jan 29, 2023",
-        header: "Final Result Declaration",
-        text: "Drumroll please... the champion emerges!",
-    },
-
-]
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Implementation and STL.",
+    text: [
+      "1. Getting Started",
+      "2. Complete Search",
+      "3. Complete Search",
+      "4. C++ STL",
+    ],
+  },
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Registration ends",
+    text: [
+      "1. Getting Started",
+      "2. Complete Search",
+      "3. Complete Search",
+      "4. C++ STL",
+    ],
+  },
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Round 1 Results Declaration",
+    text: [
+      "1. Getting Started",
+      "2. Complete Search",
+      "3. Complete Search",
+      "4. C++ STL",
+    ],
+  },
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Hackathon Starts",
+    text: [
+      "1. Getting Started",
+      "2. Complete Search",
+      "3. Complete Search",
+      "4. C++ STL",
+    ],
+  },
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Deadline of submission of your prototypes",
+    text: [
+      "1. Getting Started",
+      "2. Complete Search",
+      "3. Complete Search",
+      "4. C++ STL",
+    ],
+  },
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Final Result Declaration",
+    text: [
+      "1. Getting Started",
+      "2. Complete Search",
+      "3. Complete Search",
+      "4. C++ STL",
+    ],
+  },
+];
 
 export default data;
