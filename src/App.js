@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import { Footer } from "./Components/Footer/Footer";
 import About from "./Components/Abouts/About";
+import ScrollToTopButton from "./Components/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <CodeEditor />
         <About/>
         <Footer />
+        <ScrollToTopButton/>
       </div>
     </div>
   );

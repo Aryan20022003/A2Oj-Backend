@@ -1,11 +1,46 @@
 .bhabhiji{
-    transition-duration: 0.7s;
-    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-property: transform box-shadow;
+    box-shadow: 0px 0px 2px 2px whitesmoke;
     transition-timing-function: ease-in-out;
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    /* box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow); */
 }
 
 .bhabhiji:hover {
-    transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 5px 6px rgb(117, 178, 222);
+    /* transform: scale(1,1.05); */
+    transform: translateY(-10px);
+}
+
+.photo{
     
+    box-shadow: 0px 0px 5px 6px rgb(198, 180, 196);
+}
+
+.ids{
+    
+    transition-duration: 0.1s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+}
+
+.ids:hover{
+    color: #f5f5f5!important    
+}
+
+.lin{
+    color: #0e76a8!important;
+}
+
+.cf{
+    color: #1a07ea!important;
+}
+
+.git{
+    color: #7635d8!important;
+}
+
+.inst{
+    
+    color: #e809ce!important;
 }
