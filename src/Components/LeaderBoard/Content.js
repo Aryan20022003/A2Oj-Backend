@@ -9,7 +9,7 @@ function Content(props) {
   const [iscur, setIscur] = useState(1);
   const [ind, setInd] = useState(-1);
   const [user, setUser] = useState({
-    state:0,
+    state: 0,
     handle: "",
     maxRating: 0,
     curRating: 0,
@@ -17,6 +17,8 @@ function Content(props) {
     avatar: "",
     maxRank: "",
   });
+
+ 
 
   const updateInd = (newInd) => {
     setInd(newInd);
@@ -45,6 +47,14 @@ function Content(props) {
         setItems(sortedItems);
       });
   }, [ismax, iscur]);
+
+
+  const [isExpanded, setIsExpanded] = useState(false);
+  const displayCount = isExpanded ? 50 : 10;
+  const displayedObjects = items.slice(0, displayCount);
+  const showClick = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <>
@@ -104,9 +114,9 @@ function Content(props) {
         {/* Header Close */}
 
         <hr className="mb-5 border-none h-px bg-white"></hr>
-        {items.map((item, index) => (
+        {displayedObjects.map((item, index) => (
           <div
-          className="sngl"
+            className="sngl"
             key={item.id}
             style={{
               display: "flex",
@@ -131,10 +141,10 @@ function Content(props) {
                 //     curRating: item.rating,
                 //     rank: item.rank,
                 //     maxRank: item.maxRank,
-                //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1 
+                //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
                 //   });
                 // }}
-                >
+              >
                 <img src={item.avatar} alt={item.handle} className="Avatar" />
               </a>
             </div>
@@ -214,8 +224,12 @@ function Content(props) {
             </div>
           </div>
         ))}
+        <div className="show-more-container">
+          <button className="show-more-button rounded opacity-50 hover:opacity-100" onClick={showClick}>
+            {isExpanded ? "Hide" : "Show More"}
+          </button>
+        </div>
       </div>
-      
     </>
   );
 }
