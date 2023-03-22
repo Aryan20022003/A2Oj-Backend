@@ -36,7 +36,6 @@ function App() {
         <LeaderBoard />
         <Roadmap />
         <CodeEditor />
-        {/* <FAQs /> */}
         <About/>
         <Footer />
       </div>
