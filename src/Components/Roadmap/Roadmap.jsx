@@ -6,8 +6,8 @@ import { Fade } from "react-reveal";
 
 const Roadmap = () => {
   return (
-    <section id="timeline">
-      <SectionTitle title="Timeline" />
+    <section id="roadmap">
+      <SectionTitle title="Roadmap" />
       <p style={{ fontFamily: "'Montserrat', sans-serif" }} className="text-white text-center mx-auto my-6 px-4 text-xl max-w-screen-xl">
         Let's get ready for the fun-filled Hackathon.
         <span className="text-red-500">

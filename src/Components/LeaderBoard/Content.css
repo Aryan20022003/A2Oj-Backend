@@ -1,0 +1,86 @@
+.bg-mstr {
+  background-color: #ff8c00;
+}
+
+.bg-cm {
+  background-color: #aa00aa;
+}
+
+.bg-expert {
+  background-color: #0000ff;
+}
+
+.bg-specialist {
+  background-color: #03a89e;
+}
+
+.bg-pupil {
+  background-color: #008000;
+}
+
+.bg-newbie {
+  background-color: #808080;
+}
+
+.rt {
+  font-size: 56px;
+}
+
+.sngl{
+    padding-bottom: 1%;
+    
+}
+
+@media (max-width: 830px) {
+  .rt {
+    font-size: 14px;
+  }
+}
+
+.Avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width: 830px) {
+  .Avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+
+.badge-lg {
+  height: 1.5rem /* 24px */;
+  width: 8rem;
+  /* border-radius: 5%; */
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+  padding-left: 0.688rem /* 11.008px */;
+  padding-right: 0.688rem /* 11.008px */;
+  display: flex;
+  justify-content: center;
+  /* overflow: hidden */
+}
+
+@media (max-width: 830px) {
+  .badge-lg {
+    /* overflow: hidden; */
+    height: 1rem /* 24px */;
+    width: 5rem;
+    font-size: 0.7rem /* 16px */;
+    line-height: 1rem /* 24px */;
+    padding-left: 0.388rem /* 11.008px */;
+    padding-right: 0.388rem /* 11.008px */;
+  }
+}
+
+.box {
+  background-color: #0000ff;
+  border: #00ff66;
+  border-width: 2px;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}

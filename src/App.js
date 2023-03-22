@@ -1,8 +1,8 @@
 import "./App.css";
 import "particles.js/particles";
-import Sponsors from "./Components/Sponsors";
-import About from "./Components/About";
-import SupportedBy from "./Components/SupportedBy";
+import CodeEditor from "./Components/CodeEditor";
+import A2oj_M from "./Components/A2oj_M";
+import LeaderBoard from "./Components/LeaderBoard";
 import "particles.js/particles";
 import Navbar from "./Components/Navbar//Navbar";
 import { Hero } from "./Components/Hero//Hero";
@@ -16,7 +16,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Aos from "aos";
 import { Footer } from "./Components/Footer/Footer";
-import Faq from "./Components/FAQs/Faq";
+import About from "./Components/Abouts/About";
 
 function App() {
 
@@ -32,12 +32,12 @@ function App() {
         <ProgressBar />
         <Navbar />
         <Hero />
-        <About />
-        <SupportedBy />
+        <A2oj_M />
+        <LeaderBoard />
         <Roadmap />
-        <Sponsors />
+        <CodeEditor />
         {/* <FAQs /> */}
-        <Faq/>
+        <About/>
         <Footer />
       </div>
     </div>
