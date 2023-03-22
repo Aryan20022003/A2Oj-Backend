@@ -6,8 +6,8 @@ export default function Select({ data, selected, setSelected }) {
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative mt-1">
-        <Listbox.Button className="relative w-full bg-white dark:bg-gray-600 border dark:border-gray-500 focus:outline-none focus-visible:ring-1 focus-visible:ring-purple-500 focus-visible:border-purple-500  rounded-md px-3 py-2 text-left shadow-sm flex justify-between items-center border-gray-300 sm:text-sm">
-          <span className="text-gray-700 dark:text-gray-400">
+        <Listbox.Button className="relative w-full  dark:bg-gray-600 border dark:border-gray-500 focus:outline-none focus-visible:ring-1 focus-visible:ring-purple-500 focus-visible:border-purple-500  rounded-md px-3 py-2 text-left shadow-sm flex justify-between items-center border-gray-300 sm:text-sm">
+          <span className=" dark:text-gray-400">
             {selected.name}
           </span>
           <span>
@@ -23,15 +23,15 @@ export default function Select({ data, selected, setSelected }) {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Listbox.Options className="absolute z-10 w-full py-1 mt-1 mb-1 overflow-auto text-base bg-white dark:bg-gray-600 rounded-md shadow-lg max-h-52 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm custom-scroll">
+          <Listbox.Options className="absolute z-10 w-full py-1 mt-1 mb-1 overflow-auto text-base dark:bg-gray-600 rounded-md shadow-lg max-h-52 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm custom-scroll">
             {data.map((data, dataIdx) => (
               <Listbox.Option
                 key={dataIdx}
                 className={({ active }) =>
                   `${
                     active
-                      ? "text-yellow-900 bg-yellow-100 dark:bg-yellow-200"
-                      : "text-gray-900 dark:text-gray-300"
+                      ? "text-yellow-900  dark:bg-yellow-200"
+                      : "dark:text-gray-300"
                   }
                     cursor-default select-none relative py-2 pl-10 pr-4`
                 }

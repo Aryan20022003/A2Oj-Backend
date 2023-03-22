@@ -26,29 +26,38 @@
 
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import thanos from "./thanos.jpg";
+// import thanos from "./thanos.jpg";
 import "./About.css"
+import { BsLinkedin } from "react-icons/bs";
+import { SiCodeforces } from "react-icons/si";
+import { AiFillInstagram } from "react-icons/ai";
+import {BsInstagram, BsGithub  } from "react-icons/bs";
+const aryan = require("../Abouts/aryan.jpg");
+const chetan = require("../Abouts/chetan.jpg");
 
 export default function About() {
   const contributorList = [
     {
       name: "Aryan",
-      // image: {thanos},
-      image:
-        "https://www.adobe.com/express/feature/image/convert/jpg-to-png/media_1b0ad89a4a5ad233f5708e21b5998d6638cb07929.png?width=750&format=png&optimize=medium",
+      image: aryan,
       altText: "Aryan's photo",
       role: "Competitive Programmer",
-      batch: "NITA CSE-25",
+      batch: "NITA CSE'25",
+      instagram: "https://www.instagram.com/aryan2002_/",
+      github: "https://github.com/Aryan20022003",
+      linkedIn: "https://www.linkedin.com/in/aryan-280409221/",
+      codeforces: "https://codeforces.com/profile/Aryan20022003",
     },
     {
       name: "Chetan Saini",
-      // image: {thanos},
-      image:
-        "https://www.adobe.com/express/feature/image/convert/jpg-to-png/media_1b0ad89a4a5ad233f5708e21b5998d6638cb07929.png?width=750&format=png&optimize=medium",
-      // image: 'https://media-exp1.licdn.com/dms/image/C4E03AQGyjlKPAJlcxQ/profile-displayphoto-shrink_400_400/0/1628573551678?e=1639008000&v=beta&t=LrujJa0fXbccrpguAV8yOAc-l_umKOR7Rq-7I5HPyYo',
+      image: chetan,
       altText: "Chetan's photo",
       role: "Competitive Programmer",
-      batch: "NITA CSE-25",
+      batch: "NITA CSE'25",
+      instagram: "https://www.instagram.com/chetan_saini_irreplaceable/",
+      github: "https://github.com/ChetanSaini12",
+      linkedIn: "https://www.linkedin.com/in/chetan-saini-391793223/",
+      codeforces: "https://codeforces.com/profile/chetan_saini",
     },
   ];
 
@@ -58,24 +67,31 @@ export default function About() {
         className=" h-62 w-full  rounded-lg flex flex-col justify-center items-center"
         key={i}
       >
-        <div className="border bhabhiji  p-8 w-2/3 mb-4 rounded ">
+        <div className="border bhabhiji  p-8 w-7/12 mb-4 rounded ">
           <div className="mb-8 flex justify-center m-auto">
             <img
               src={item.image}
               width={100}
               height={100}
-              className="object-center object-cover rounded-full h-48 w-48 "
+              className="object-center object-cover photo rounded-full h-48 w-48 "
               alt={item.altText}
             />
           </div>
           <div className="text-center">
             <p className="sm:text-xl text-white font-bold mb-2">{item.name}</p>
-            <p className="text-sm text-slate-300">
-              <span className="mb-1.5 sm:mb-0 block sm:inline">
+            <p className="text-sm mb-2 text-slate-300">
+              {/* <span className="mb-1.5 sm:mb-0 block sm:inline">
                 {item.role}
               </span>
-              <span className="hidden sm:inline"> | </span>
+              <span className="hidden sm:inline"> | </span> */}
               <span className="block sm:inline">{item.batch}</span>
+              {/* <span className="hidden sm:inline"> | </span> */}
+            </p>
+            <p className=" flex gap-5 justify-center text-lg text-slate-300">
+              <a className="ids inst" href={item.instagram} target="_blank"><span><BsInstagram/></span></a>
+              <a className="ids git" href={item.github} target="_blank"><span><BsGithub/></span></a>
+              <a className="ids cf" href={item.codeforces} target="_blank"><span><SiCodeforces/></span></a>
+              <a className="ids lin" href={item.linkedIn} target="_blank"><span><BsLinkedin/></span></a>
             </p>
           </div>
         </div>

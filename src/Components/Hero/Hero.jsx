@@ -18,8 +18,8 @@ export const Hero = () => {
           NITA-CP
         </h1>
         <p className="hero_slogan">Dream Code Conquer</p>
-        <div className="hero_info">
-          <span>Contest Alert !</span>
+        <div className="hero_info rounded">
+          <span className="rounded">Contest Alert !</span>
         </div>
       </div>
       <div

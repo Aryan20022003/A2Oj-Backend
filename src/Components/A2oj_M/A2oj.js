@@ -95,7 +95,7 @@ function IndexPage() {
       <div >
         {/* <Header /> */}
         <main className="py-8">
-          <div className="bg-white dark:bg-gray-700 shadow h-auto px-6 py-8 container mx-auto sm:w-8/12 lg:w-6/12 rounded-none sm:rounded-md">
+          <div className=" border shadow h-auto px-6 py-8 container mx-auto sm:w-8/12 lg:w-6/12 rounded-none sm:rounded-md">
             {error !== null ? (
               <div className="px-4 py-3 bg-red-200 mb-4 rounded-md">
                 <div className="flex items-center">
