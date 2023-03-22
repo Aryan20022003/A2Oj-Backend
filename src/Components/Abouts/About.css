@@ -1,0 +1,11 @@
+.bhabhiji{
+    transition-duration: 0.7s;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.bhabhiji:hover {
+    transform: scale(1.1,1.1);
+    
+}
