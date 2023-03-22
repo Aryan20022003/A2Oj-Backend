@@ -4,6 +4,7 @@ import "../../App.css";
 import Data from "./RoadmapData";
 import { Fade } from "react-reveal";
 import Coding from "../Hero/coding.svg"; //temporary image source will be replace in final build.
+//must be replaced in final build.
 
 
 const Roadmap = () => {
