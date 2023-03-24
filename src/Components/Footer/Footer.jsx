@@ -7,7 +7,7 @@ import youtube from './youtube.svg'
 
 import './footer.css'
 
-export const Footer = () => {
+export const Footer = () => { 
     return (
         <div className='footer-wrapper'>
             <div class="full">
@@ -17,13 +17,19 @@ export const Footer = () => {
                     </div>
                     <div class="events">
                         <p>
-                            <a href="https://dccnita.tech">Home</a>
+                            <a href="#a2oj">A2OJ</a>
                         </p>
                         <p>
-                            <a href="https://dccnita.tech/events">Events</a>
+                            <a href="#leaderboard">Leaderboard</a>
                         </p>
                         <p>
-                            <a href="https://dccnita.tech/teams">Teams</a>
+                            <a href="#roadmap">Roadmap</a>
+                        </p>
+                        <p>
+                            <a href="#code-editor">Code Editor</a>
+                        </p>
+                        <p>
+                            <a href="#about">About</a>
                         </p>
                     </div>
                 </div>
@@ -58,13 +64,19 @@ export const Footer = () => {
                     </div>
                     <div className='events-hidden'>
                         <span>
-                            <a href="https://dccnita.tech">Home</a>
+                            <a href="#A2OJ">A2OJ</a>
                         </span>
                         <span>
-                            <a href="https://dccnita.tech/events">Events</a>
+                            <a href="#leaderboard">Leaderboard</a>
                         </span>
                         <span>
-                            <a href="https://dccnita.tech/teams">Teams</a>
+                            <a href="#roadmap">Roadmap</a>
+                        </span>
+                        <span>
+                            <a href="#code-editor">Code Editor</a>
+                        </span>
+                        <span>
+                            <a href="#about">About</a>
                         </span>
                     </div>
                 </div>
