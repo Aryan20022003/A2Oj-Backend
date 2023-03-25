@@ -27,11 +27,11 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
 // import thanos from "./thanos.jpg";
-import "./About.css"
+import "./About.css";
 import { BsLinkedin } from "react-icons/bs";
 import { SiCodeforces } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
-import {BsInstagram, BsGithub  } from "react-icons/bs";
+import { BsInstagram, BsGithub } from "react-icons/bs";
 const aryan = require("../Abouts/aryan.jpg");
 const chetan = require("../Abouts/chetan.jpg");
 
@@ -67,13 +67,13 @@ export default function About() {
         className=" h-62 w-full  rounded-lg flex flex-col justify-center items-center"
         key={i}
       >
-        <div className="border bhabhiji  p-8 w-7/12 mb-4 rounded ">
+        <div className="border bhabhiji  w-5/6 py-8 px-4 md:p-8  md:w-7/12 mb-4 rounded ">
           <div className="mb-8 flex justify-center m-auto">
             <img
               src={item.image}
               width={100}
               height={100}
-              className="object-center object-cover photo rounded-full h-48 w-48 "
+              className="object-center object-cover photo rounded-full h-44 w-44 md:h-48 md:w-48 "
               alt={item.altText}
             />
           </div>
@@ -88,15 +88,30 @@ export default function About() {
               {/* <span className="hidden sm:inline"> | </span> */}
             </p>
             <p className=" flex gap-5 justify-center text-lg text-slate-300">
-              <a className="ids inst" href={item.instagram} target="_blank"><span><BsInstagram/></span></a>
-              <a className="ids git" href={item.github} target="_blank"><span><BsGithub/></span></a>
-              <a className="ids cf" href={item.codeforces} target="_blank"><span><SiCodeforces/></span></a>
-              <a className="ids lin" href={item.linkedIn} target="_blank"><span><BsLinkedin/></span></a>
+              <a className="ids inst" href={item.instagram} target="_blank">
+                <span>
+                  <BsInstagram />
+                </span>
+              </a>
+              <a className="ids git" href={item.github} target="_blank">
+                <span>
+                  <BsGithub />
+                </span>
+              </a>
+              <a className="ids cf" href={item.codeforces} target="_blank">
+                <span>
+                  <SiCodeforces />
+                </span>
+              </a>
+              <a className="ids lin" href={item.linkedIn} target="_blank">
+                <span>
+                  <BsLinkedin />
+                </span>
+              </a>
             </p>
           </div>
         </div>
       </div>
-      
     );
   });
 
@@ -116,7 +131,9 @@ export default function About() {
           {/* <h1 className="py-12 font-bold text-3xl text-center md:text-4xl lg:text-5xl font-heading text-indigo-900">
           Check our contributors
         </h1> */}
-          <div className="grid grid-cols-1 pt-12  gap-4 hover:gap-8 sm:gap-8 sm:grid-cols-2">{contributors}</div>
+          <div className="grid grid-cols-1 pt-12  gap-4 hover:gap-8 sm:gap-8 sm:grid-cols-2">
+            {contributors}
+          </div>
         </section>
       </div>
     </section>
