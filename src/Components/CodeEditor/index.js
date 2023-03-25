@@ -33,7 +33,7 @@ const CodeEditor = () => {
                 Input
               </h2>
               <textarea
-                className="bg-zinc-900 overflow-auto w-full h-36 lg:h-40 text-stone-200  text-sm
+                className="bg-zinc-900 overflow-auto w-full h-36 lg:h-44 text-stone-200  text-sm
               focus:outline-0"
               ></textarea>
             </div>
@@ -41,7 +41,7 @@ const CodeEditor = () => {
               <h2 className="text-2xl pb-3 font-medium text-slate-300">
                 Output
               </h2>
-              <textarea className="bg-zinc-900 overflow-auto w-full h-32 text-stone-200  text-sm focus:outline-0"></textarea>
+              <textarea className="bg-zinc-900 overflow-auto w-full h-32 lg:h-40 text-stone-200  text-sm focus:outline-0"></textarea>
             </div>
             <button
               type="button"
