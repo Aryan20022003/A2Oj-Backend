@@ -7,7 +7,7 @@ import youtube from './youtube.svg'
 
 import './footer.css'
 
-export const Footer = () => { 
+export const Footer = () => {
     return (
         <div className='footer-wrapper'>
             <div class="full">
@@ -63,21 +63,26 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className='events-hidden'>
-                        <span>
-                            <a href="#A2OJ">A2OJ</a>
-                        </span>
-                        <span>
-                            <a href="#leaderboard">Leaderboard</a>
-                        </span>
-                        <span>
-                            <a href="#roadmap">Roadmap</a>
-                        </span>
-                        <span>
-                            <a href="#code-editor">Code Editor</a>
-                        </span>
-                        <span>
-                            <a href="#about">About</a>
-                        </span>
+                        <div className="flex flex-row">
+                            <span>
+                                <a href="#A2OJ">A2OJ</a>
+                            </span>
+                            <span >
+                                <a href="#about">About</a>
+                            </span>
+                            <span>
+                                <a href="#roadmap">Roadmap</a>
+                            </span>
+                        </div >
+                        <div className="flex flex-row justify-center gap-5">
+
+                            <span>
+                                <a href="#code-editor">Code Editor</a>
+                            </span>
+                            <span>
+                                <a href="#leaderboard">Leader board</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
