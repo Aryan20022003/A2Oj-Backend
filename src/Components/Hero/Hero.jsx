@@ -1,8 +1,19 @@
 import React from "react";
 import "./Hero.css";
 import Coding from "./coding.svg";
+import { useState } from "react";
+
+
 
 export const Hero = () => {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleContestAlertClick = () => {
+    setShowModal(!showModal);
+  };
+
+
   return (
     <section className="hero_wrapper">
       <div className="hero_left">
@@ -14,12 +25,12 @@ export const Hero = () => {
           data-aos-easing="ease-out"
           data-aos-mirror="true"
           data-aos-once="false"
-        >
+        > 
           NITA-CP
         </h1>
         <p className="hero_slogan">Dream Code Conquer</p>
         <div className="hero_info rounded">
-          <span className="rounded">Contest Alert !</span>
+          <span className="rounded" onClick={handleContestAlertClick}>Contest Alert !</span>
         </div>
       </div>
       <div
@@ -33,6 +44,9 @@ export const Hero = () => {
       >
         <img className="hero_img" src={Coding} alt="" />
       </div>
+      <div className={ `hero_modal ${showModal ? '' : 'hidden'}`} >
+        <p>This is the modal content</p>
+      </div> 
     </section>
   );
 };
