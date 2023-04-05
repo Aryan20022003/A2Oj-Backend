@@ -50,7 +50,7 @@ function Content(props) {
 
 
   const [isExpanded, setIsExpanded] = useState(false);
-  const displayCount = isExpanded ? 50 : 10;
+  const displayCount = isExpanded ? 400 : 10;
   const displayedObjects = items.slice(0, displayCount);
   const showClick = () => {
     setIsExpanded(!isExpanded);

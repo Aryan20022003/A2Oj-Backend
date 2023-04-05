@@ -50,3 +50,22 @@ const Roadmap = () => {
 };
 
 export default Roadmap;
+
+/*
+1. C++ Basic CWH 1 - 20 -> I/O , Conditional Statements, Loops, Pointers, Array, String, Function
+2. STL -> Vectors, Pair, Iterators, Map, Set, Stack , Queue, Priority-Queue, Dequeue, LowerBound-UpperBound, Sorting, Comparator Function 
+-> Time Complexity, Space
+3. Greedy 
+4. Binary Search
+3. Number Thoery
+4. Recursion
+5. Bit Manipulation
+6. Two Pointer
+7. DP
+8. Graph
+9. Tree
+10. Mis- Range Queries, Sqrt Decomposition, Probability, Game THoery   
+
+
+
+*/
