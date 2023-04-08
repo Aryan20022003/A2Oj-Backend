@@ -1,7 +1,7 @@
 import "./App.css";
 import "particles.js/particles";
 import CodeEditor from "./Components/CodeEditor";
-import A2oj_M from "./Components/A2oj_M";
+import A2oj_M from "./Components/A2oj_M/A2oj_M";
 import LeaderBoard from "./Components/LeaderBoard";
 import "particles.js/particles";
 import Navbar from "./Components/Navbar//Navbar";
