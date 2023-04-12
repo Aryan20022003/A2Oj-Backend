@@ -130,3 +130,20 @@
         transform: scale(1.3);
     }
 }
+
+
+.mobile_menu_item:visited, .nav_menu_item:active {
+    color: #f022b6;
+}
+
+.activeLink {
+    color: #22f05c;
+}
+/* 
+.nav_menu_item a {
+    color: blue;
+  }
+  
+.nav_menu_item a.activeLink {
+color: green;
+} */

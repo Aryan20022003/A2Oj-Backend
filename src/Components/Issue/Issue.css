@@ -1,0 +1,21 @@
+.in-progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+  }
+  
+  .in-progress-message {
+    font-size: 3rem;
+    text-align: center;
+    color: #555;
+  }
+
+  @media screen and (max-width: 768px) {
+    .in-progress-message {
+      font-size: 2rem;
+    }
+  }
+    
+  
+  
