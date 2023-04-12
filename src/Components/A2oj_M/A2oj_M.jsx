@@ -5,6 +5,8 @@ import InputField from "./components/InputField";
 import SelectField from "./components/SelectField";
 import useLocalStorage from "./hooks/useLocalStorage";
 import LaddersPage from "./ladders/[laddersId]";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const divisions = [
   { name: "Division 2 A", code: "div_2a" },
@@ -51,12 +53,9 @@ function IndexPage() {
   const [laddersId, setLaddersId] = useLocalStorage("laddersId", "");
   const [error, setError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showladder, setShowladder] = useLocalStorage("showladder", false);
-
+    const navigate = useNavigate();
 
   const onSubmit = (e) => {
-    if (!showladder) {
-      setShowladder(true);
       e.preventDefault();
       setIsSubmitting(true);
       let ladder;
@@ -68,6 +67,8 @@ function IndexPage() {
         setLaddersName(selectedRating.name);
       }
 
+
+
       fetch(`https://codeforces.com/api/user.info?handles=${handle}`)
         .then((res) => res.json())
         .then((res) => {
@@ -75,6 +76,7 @@ function IndexPage() {
             setUser(res);
             //   router.push(`ladders/${ladder}`);
             setLaddersId(ladder);
+            navigate(`/ladders`);
           }
 
           if (res.status === "FAILED") {
@@ -86,16 +88,22 @@ function IndexPage() {
         })
         .finally(() => {
           setIsSubmitting(false);
-          window.location.reload();
+          // window.location.reload();
         });
-    } else {
-      setShowladder(false);
-    }
+    
   };
 
   return (
-    <>
-      <Header />
+    <div id = "a2oj"
+          className="top-3 relative"
+          data-aos="zoom-in-down"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+    >
+      <Header/>
       <main className="py-8">
         <div className="border shadow h-auto px-6 py-8 container mx-auto sm:w-8/12 lg:w-6/12 rounded-none sm:rounded-md">
           {error !== null ? (
@@ -168,15 +176,14 @@ function IndexPage() {
                     Loading
                   </>
                 ) : (
-                  showladder ? ("Hide Ladder") : ("View ladder")
+                  ("View ladder")
                 )}
               </button>
             </div>
           </form>
         </div>
       </main>
-      {showladder &&  <LaddersPage />}
-    </>
+    </div>
   );
 }
 

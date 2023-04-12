@@ -58,9 +58,9 @@ export default Roadmap;
 3. Greedy 
 4. Binary Search
 3. Number Thoery
+6. Two Pointer
 4. Recursion
 5. Bit Manipulation
-6. Two Pointer
 7. DP
 8. Graph
 9. Tree

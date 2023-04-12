@@ -4,6 +4,7 @@ import "./codeEditor.css";
 import React from "react";
 import { useRef } from "react";
 import Editor from "@monaco-editor/react";
+import Issue from "../Issue/Issue";
 
 const CodeEditor = () => {
   const editorRef = useRef(null);
@@ -17,7 +18,8 @@ const CodeEditor = () => {
   return (
     <section id="code-editor">
       <SectionTitle title="Code Editor" />
-      <Fade bottom>
+      <Issue title="We are working on this page. Explore others!!" />
+      {/* <Fade bottom>
         <div className="codeEditor max-w-full  mx-4 rounded-md p-2 bg-slate-400 bg-opacity-10 backdrop-blur-md shadow-indigo-600 overflow-auto md:mx-11 ">
           <Editor
             height="100%"
@@ -52,7 +54,7 @@ const CodeEditor = () => {
             </button>
           </div>
         </div>
-      </Fade>
+      </Fade> */}
     </section>
   );
 };

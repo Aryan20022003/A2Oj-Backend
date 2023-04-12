@@ -99,7 +99,7 @@ const LaddersPage = () => {
   return (
     // <Container>
     <>
-      <section>
+      <section id='ladder'>
         <div className="g-gray-700 p-6 mx-auto max-w-2xl mb-4 rounded-none sm:rounded-md shadow-sm">
           <div className="flex justify-between">
           <h2 className="font-semibold text-xl text-gray-100">{laddersName} ({solved})</h2>
