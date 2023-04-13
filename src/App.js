@@ -10,7 +10,6 @@ import Roadmap from "./Components/Roadmap/Roadmap";
 // import { FAQs } from "./Components/FAQs/Faq";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactForm from "./Components/Contact";
-import ProgressBar from "./Components/ProgressBar";
 import Prizes from "./Components/Prizes/Prizes";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -23,6 +22,12 @@ import AllCombine from "./AllCombine";
 import LaddersPage from "./Components/A2oj_M/ladders/[laddersId]";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   window.particlesJS.load("particles", "/particlesjs-config.json");
   Aos.init();
   return (

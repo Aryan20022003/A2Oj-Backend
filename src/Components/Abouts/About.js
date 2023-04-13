@@ -26,6 +26,7 @@
 
 import React from "react";
 import SectionTitle from "../SectionTitle";
+import { useEffect } from "react";
 // import thanos from "./thanos.jpg";
 import "./About.css";
 import { BsLinkedin } from "react-icons/bs";
@@ -36,6 +37,12 @@ const aryan = require("../Abouts/aryan.jpg");
 const chetan = require("../Abouts/chetan.jpg");
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   const contributorList = [
     {
       name: "Aryan",
@@ -66,11 +73,11 @@ export default function About() {
       <div
         className=" h-62 w-full top-28  rounded-lg flex flex-col justify-center items-center"
         data-aos="zoom-in-down"
-          data-aos-delay="100"
-          data-aos-duration="500"
-          data-aos-easing="ease-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+        data-aos-delay="100"
+        data-aos-duration="500"
+        data-aos-easing="ease-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
         key={i}
       >
         <div className="border bhabhiji  w-5/6 py-8 px-4 md:p-8  md:w-7/12 mb-4 rounded ">

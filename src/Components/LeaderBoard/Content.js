@@ -21,8 +21,6 @@ function Content(props) {
     maxRank: "",
   });
 
- 
-
   const updateInd = (newInd) => {
     setInd(newInd);
   };
@@ -37,33 +35,31 @@ function Content(props) {
         console.log("NotHeyError");
         if (result.status === "OK") {
           console.log("NotError");
-        const sortedItems = result.result.sort((a, b) => {
-          if (iscur === 1) {
-            return b.rating - a.rating;
-          } else if (iscur === 2) {
-            return -b.rating + a.rating;
-          } else if (ismax === 2) {
-            return b.maxRating - a.maxRating;
-          } else if (ismax === 1) {
-            return -b.maxRating + a.maxRating;
-          } else {
-            return 0;
-          }
-        });
+          const sortedItems = result.result.sort((a, b) => {
+            if (iscur === 1) {
+              return b.rating - a.rating;
+            } else if (iscur === 2) {
+              return -b.rating + a.rating;
+            } else if (ismax === 2) {
+              return b.maxRating - a.maxRating;
+            } else if (ismax === 1) {
+              return -b.maxRating + a.maxRating;
+            } else {
+              return 0;
+            }
+          });
 
-        setItems(sortedItems);
+          setItems(sortedItems);
         }
         if (result.status === "FAILED") {
           console.log("Error");
           setError("Error");
-        } 
+        }
       })
       .catch((err) => {
         setError(err.response);
       });
-  }
-  , [ismax, iscur]);
-
+  }, [ismax, iscur]);
 
   const [isExpanded, setIsExpanded] = useState(false);
   // const displayCount = isExpanded ? 400 : 10;
@@ -77,180 +73,184 @@ function Content(props) {
 
   return (
     <>
-    
-      {error!==null ? <Issue title = "Codeforces is temporarily unavailable. Please, return in several minutes."/> : null}
-      {(error==null) && <div className="w-full ">
-        {/* Header */}
-        <div
-          className="font-serif  "
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "15px",
-          }}
-        >
-          <div className="w-1/12 flex justify-center">Rank</div>
-          <div className="w-3/12 justify-center flex">Avatar</div>
-          <div className="w-3/12 flex justify-center">Handle</div>
-          <button
-            className="w-3/12 underline flex justify-center"
-            onClick={() => {
-              if (iscur !== 1) {
-                // data.result.sort((a, b) => b.rating - a.rating);
-                setIscur(1);
-              } else {
-                // data.result.sort((a, b) => - b.rating + a.rating);
-                setIscur(2);
-              }
-              setIsmax(0);
-            }}
-          >
-            {iscur === 0
-              ? "Cur. Rating"
-              : iscur === 2
-              ? "Cur. Rating \u2193"
-              : "Cur. Rating \u2191"}{" "}
-          </button>
-          <button
-            className="w-3/12 underline flex justify-center"
-            onClick={() => {
-              if (ismax !== 2) {
-                setIsmax(2);
-              } else {
-                setIsmax(1);
-              }
-              setIscur(0);
-            }}
-          >
-            {" "}
-            {ismax === 0
-              ? "Max. Rating"
-              : ismax === 1
-              ? "Max. Rating \u2193"
-              : "Max. Rating \u2191"}{" "}
-          </button>
-          <div className="w-3/12 flex justify-center">Level</div>
-        </div>
-
-        {/* Header Close */}
-
-        <hr className="mb-5 border-none h-px bg-white"></hr>
-        {displayedObjects.map((item, index) => (
+      {error !== null ? (
+        <Issue title="Codeforces is temporarily unavailable. Please, return in several minutes." />
+      ) : null}
+      {error == null && (
+        <div className="w-full ">
+          {/* Header */}
           <div
-            className="sngl"
-            key={item.id}
+            className="font-serif  "
             style={{
               display: "flex",
               alignItems: "center",
-              marginBottom: "10px",
+              marginBottom: "15px",
             }}
           >
-            <div className="w-1/12 justify-center flex">{index + 1}.</div>
-            <div className="w-3/12 justify-center flex">
-              <a
-                href={`https://codeforces.com/profile/${item.handle}`}
-                target="_blank"
-                rel="noreferrer"
-                // onClick={(e) => {
-                //   e.preventDefault();
-                //   setInd(-1);
-                //   setInd(index);
-                //   setUser({
-                //     handle: item.handle,
-                //     avatar: item.avatar,
-                //     maxRating: item.maxRating,
-                //     curRating: item.rating,
-                //     rank: item.rank,
-                //     maxRank: item.maxRank,
-                //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
-                //   });
-                // }}
-              >
-                <img src={item.avatar} alt={item.handle} className="Avatar" />
-              </a>
-            </div>
-            <div className="w-3/12 flex justify-center overflow-hidden">
-              <a
-                href={`https://codeforces.com/profile/${item.handle}`}
-                target="_blank"
-                rel="noreferrer"
-                // onClick={(e) => {
-                //   e.preventDefault();
-                //   setInd(-1);
-                //   setInd(index);
-                //   setUser({
-                //     handle: item.handle,
-                //     avatar: item.avatar,
-                //     maxRating: item.maxRating,
-                //     curRating: item.rating,
-                //     rank: item.rank,
-                //     maxRank: item.maxRank,
-                //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
-                //   });
-                // }}
-              >
-                <code>
-                  <b>{item.handle}</b>
-                </code>
-              </a>
-            </div>
-            <div className="w-3/12 flex justify-center ">
-              <kbd>{item.rating}</kbd>
-            </div>
-            <div className="w-3/12 flex justify-center ">
-              <kbd>{item.maxRating}</kbd>
-            </div>
-            <div className="w-3/12 flex justify-center">
-              <div
-                className={`badge  rounded badge-lg ${
-                  ismax
-                    ? item.maxRating >= 2100
-                      ? "bg-mstr rt"
-                      : item.maxRating >= 1900
-                      ? "bg-cm rt"
-                      : item.maxRating >= 1600
-                      ? "bg-expert rt"
-                      : item.maxRating >= 1400
-                      ? "bg-specialist rt"
-                      : item.maxRating >= 1200
-                      ? "bg-pupil rt"
-                      : "bg-newbie rt"
-                    : item.rating >= 2100
-                    ? "bg-mstr"
-                    : item.rating >= 1900
-                    ? "bg-cm"
-                    : item.rating >= 1600
-                    ? "bg-expert"
-                    : item.rating >= 1400
-                    ? "bg-specialist"
-                    : item.rating >= 1200
-                    ? "bg-pupil"
-                    : "bg-newbie"
-                }`}
-              >
-                {ismax ? (
-                  item.maxRank == "candidate master" ? (
-                    <span className="d-inline-block d-md-none">
-                      Cand. Master
-                    </span>
+            <div className="w-1/12 flex justify-center">Rank</div>
+            <div className="w-3/12 justify-center flex">Avatar</div>
+            <div className="w-3/12 flex justify-center">Handle</div>
+            <button
+              className="w-3/12 underline flex justify-center"
+              onClick={() => {
+                if (iscur !== 1) {
+                  // data.result.sort((a, b) => b.rating - a.rating);
+                  setIscur(1);
+                } else {
+                  // data.result.sort((a, b) => - b.rating + a.rating);
+                  setIscur(2);
+                }
+                setIsmax(0);
+              }}
+            >
+              {iscur === 0
+                ? "Cur. Rating"
+                : iscur === 2
+                ? "Cur. Rating \u2193"
+                : "Cur. Rating \u2191"}{" "}
+            </button>
+            <button
+              className="w-3/12 underline flex justify-center"
+              onClick={() => {
+                if (ismax !== 2) {
+                  setIsmax(2);
+                } else {
+                  setIsmax(1);
+                }
+                setIscur(0);
+              }}
+            >
+              {" "}
+              {ismax === 0
+                ? "Max. Rating"
+                : ismax === 1
+                ? "Max. Rating \u2193"
+                : "Max. Rating \u2191"}{" "}
+            </button>
+            <div className="w-3/12 flex justify-center">Level</div>
+          </div>
+
+          {/* Header Close */}
+
+          <hr className="mb-5 border-none h-px bg-white"></hr>
+          {displayedObjects.map((item, index) => (
+            <div
+              className="sngl"
+              key={item.id}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <div className="w-1/12 justify-center flex">{index + 1}.</div>
+              <div className="w-3/12 justify-center flex">
+                <a
+                  href={`https://codeforces.com/profile/${item.handle}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  // onClick={(e) => {
+                  //   e.preventDefault();
+                  //   setInd(-1);
+                  //   setInd(index);
+                  //   setUser({
+                  //     handle: item.handle,
+                  //     avatar: item.avatar,
+                  //     maxRating: item.maxRating,
+                  //     curRating: item.rating,
+                  //     rank: item.rank,
+                  //     maxRank: item.maxRank,
+                  //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
+                  //   });
+                  // }}
+                >
+                  <img src={item.avatar} alt={item.handle} className="Avatar" />
+                </a>
+              </div>
+              <div className="w-3/12 flex justify-center overflow-hidden">
+                <a
+                  href={`https://codeforces.com/profile/${item.handle}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  // onClick={(e) => {
+                  //   e.preventDefault();
+                  //   setInd(-1);
+                  //   setInd(index);
+                  //   setUser({
+                  //     handle: item.handle,
+                  //     avatar: item.avatar,
+                  //     maxRating: item.maxRating,
+                  //     curRating: item.rating,
+                  //     rank: item.rank,
+                  //     maxRank: item.maxRank,
+                  //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
+                  //   });
+                  // }}
+                >
+                  <code>
+                    <b>{item.handle}</b>
+                  </code>
+                </a>
+              </div>
+              <div className="w-3/12 flex justify-center ">
+                <kbd>{item.rating}</kbd>
+              </div>
+              <div className="w-3/12 flex justify-center ">
+                <kbd>{item.maxRating}</kbd>
+              </div>
+              <div className="w-3/12 flex justify-center">
+                <div
+                  className={`badge  rounded badge-lg ${
+                    ismax
+                      ? item.maxRating >= 2100
+                        ? "bg-mstr rt"
+                        : item.maxRating >= 1900
+                        ? "bg-cm rt"
+                        : item.maxRating >= 1600
+                        ? "bg-expert rt"
+                        : item.maxRating >= 1400
+                        ? "bg-specialist rt"
+                        : item.maxRating >= 1200
+                        ? "bg-pupil rt"
+                        : "bg-newbie rt"
+                      : item.rating >= 2100
+                      ? "bg-mstr"
+                      : item.rating >= 1900
+                      ? "bg-cm"
+                      : item.rating >= 1600
+                      ? "bg-expert"
+                      : item.rating >= 1400
+                      ? "bg-specialist"
+                      : item.rating >= 1200
+                      ? "bg-pupil"
+                      : "bg-newbie"
+                  }`}
+                >
+                  {ismax ? (
+                    item.maxRank == "candidate master" ? (
+                      <span className="d-inline-block d-md-none">
+                        Cand. Master
+                      </span>
+                    ) : (
+                      item.maxRank.charAt(0).toUpperCase() +
+                      item.maxRank.slice(1)
+                    )
+                  ) : item.rank == "candidate master" ? (
+                    <span>Cand. Master</span>
                   ) : (
-                    item.maxRank.charAt(0).toUpperCase() + item.maxRank.slice(1)
-                  )
-                ) : item.rank == "candidate master" ? (
-                  <span>Cand. Master</span>
-                ) : (
-                  item.rank.charAt(0).toUpperCase() + item.rank.slice(1)
-                )}
+                    item.rank.charAt(0).toUpperCase() + item.rank.slice(1)
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-        {/* <div className="show-more-container">
+          ))}
+          {/* <div className="show-more-container">
           <button className="show-more-button rounded opacity-50 hover:opacity-100" onClick={showClick}>
             {isExpanded ? "Hide" : "Show More"}
           </button>
         </div> */}
-      </div>}
+        </div>
+      )}
     </>
   );
 }

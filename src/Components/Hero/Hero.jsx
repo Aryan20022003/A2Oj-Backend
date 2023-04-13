@@ -7,13 +7,19 @@ import { useState } from "react";
 
 export const Hero = () => {
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   const [showModal, setShowModal] = useState(false);
 
   const handleContestAlertClick = () => {
     setShowModal(!showModal);
   };
 
-
+  // Aos.init();
   return (
     <section className="hero_wrapper">
       {/* <div className="absolute">
@@ -29,12 +35,12 @@ export const Hero = () => {
       <div className="hero_left">
         <h1
           className="hero_main_title"
-          data-aos="zoom-in-down"
-          data-aos-delay="100"
-          data-aos-duration="500"
-          data-aos-easing="ease-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          // data-aos="zoom-in-down"
+          // data-aos-delay="100"
+          // data-aos-duration="500"
+          // data-aos-easing="ease-out"
+          // data-aos-mirror="true"
+          // data-aos-once="false"
         > 
           NITA-CP
         </h1>
@@ -45,12 +51,12 @@ export const Hero = () => {
       </div>
       <div
         className="hero_right"
-        data-aos="fade"
-        data-aos-delay="000"
-        data-aos-duration="500"
-        data-aos-easing="ease-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        // data-aos="fade"
+        // data-aos-delay="000"
+        // data-aos-duration="500"
+        // data-aos-easing="ease-out"
+        // data-aos-mirror="true"
+        // data-aos-once="false"
       >
         <img className="hero_img" src={Coding} alt="" />
       </div>

@@ -24,17 +24,17 @@ function AllCombine() {
   Aos.init();
   return (
     <div className="AllComb">
-        <ProgressBar />
-        <Navbar />
-        <Hero />
-        <A2oj_M />
-        <LeaderBoard />
-        <Roadmap />
-        <CodeEditor />
-        <About />
-        <Footer />
-        <ScrollToTopButton />
-      </div>
+      {/* <ProgressBar /> */}
+      <Navbar />
+      <Hero />
+      <A2oj_M />
+      <LeaderBoard />
+      <Roadmap />
+      <CodeEditor />
+      <About />
+      <Footer />
+      <ScrollToTopButton />
+    </div>
   );
 }
 
