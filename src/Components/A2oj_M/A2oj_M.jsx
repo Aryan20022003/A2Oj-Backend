@@ -7,6 +7,7 @@ import useLocalStorage from "./hooks/useLocalStorage";
 import LaddersPage from "./ladders/[laddersId]";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import { useEffect } from "react";
 
 const divisions = [
   { name: "Division 2 A", code: "div_2a" },
@@ -35,6 +36,12 @@ const ratings = [
 const laddersType = [{ name: "Division" }, { name: "Rating" }];
 
 function IndexPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   const [handle, setHandle] = useLocalStorage("handle", "");
   const [laddersName, setLaddersName] = useLocalStorage("laddersName", "");
   const [user, setUser] = useLocalStorage("user", "");

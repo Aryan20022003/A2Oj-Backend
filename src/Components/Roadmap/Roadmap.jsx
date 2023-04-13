@@ -1,4 +1,5 @@
 import SectionTitle from "../SectionTitle";
+import { useEffect } from "react";
 import "./roadmap.css";
 import "../../App.css";
 import Data from "./RoadmapData";
@@ -8,6 +9,12 @@ import Coding from "../Hero/coding.svg"; //temporary image source will be replac
 
 
 const Roadmap = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   return (
     <section id="roadmap">
       <SectionTitle title="Roadmap" />
