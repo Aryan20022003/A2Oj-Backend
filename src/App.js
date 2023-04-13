@@ -35,7 +35,6 @@ function App() {
             className="w-screen h-screen"
           />
         </div>
-
         {/* <ProgressBar /> */}
         {/* <Navbar /> */}
         {/* <Hero />
@@ -43,13 +42,14 @@ function App() {
         <LeaderBoard />
         <Roadmap />
         <CodeEditor />
-        <About/>
-        <Footer />
-        <ScrollToTopButton/> */}
-
+        <About />
+        <<<<<<< HEAD
+        <ScrollToTopButton />
+        =======
+      <ScrollToTopButton/> */}
         <BrowserRouter>
-            <Navbar/>   
-          <Routes >
+          <Navbar />
+          <Routes>
             <Route index element={<Hero />}></Route>
             <Route path="/a2oj" element={<A2oj_M />}></Route>
             <Route path="/leaderboard" element={<LeaderBoard />}></Route>
@@ -57,8 +57,9 @@ function App() {
             <Route path="/code-editor" element={<CodeEditor />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/ladders" element={<LaddersPage />}></Route>
-            <Route path="*" element={<About />} />  
+            <Route path="*" element={<About />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </div>

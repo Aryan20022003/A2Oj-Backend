@@ -1,149 +1,149 @@
 .footer-wrapper {
-    /* background-color: #0E0F18; */
-    color: aliceblue;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('./Rectangle.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 3rem;
+  /* background-color: #0E0F18; */
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("./Rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  margin-bottom: -4rem;
 }
 
 .full {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
 }
 
 .firstContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 75px;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 25px;
 }
 
-
-
 .events {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .events p {
-    padding: 5px;
+  padding: 5px;
 }
 
 .events p a {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .secondContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .location {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .location h3 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .location p {
-    color: rgb(195, 202, 209);
+  color: rgb(195, 202, 209);
 }
 
 .social h3 {
-    text-align: end;
-    padding: 10px;
+  text-align: end;
+  padding: 10px;
 }
 
 .imgContainer {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .social img {
-    width: 60px;
-    padding: 0 15px;
+  width: 60px;
+  padding: 0 15px;
 }
 
 .events-hidden {
-    visibility: hidden;
-    position: absolute;
+  visibility: hidden;
+  position: absolute;
+  /* max-width: 100%; */
 }
 
 @media screen and (max-width: 800px) {
-    .firstContainer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .firstContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .secondContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .secondContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .location h3 {
-        padding-bottom: 20px;
-        text-align: center;
-    }
+  .location h3 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
 
-    .location p {
-        text-align: center;
-    }
+  .location p {
+    text-align: center;
+  }
 
-    .social {
-        margin: 20px;
-    }
+  .social {
+    margin: 20px;
+  }
 
-    .social h3 {
-        text-align: center;
-        padding: 5px;
-    }
+  .social h3 {
+    text-align: center;
+    padding: 5px;
+  }
 
-    .social img {
-        width: 40px;
-        padding: 0 6px;
-        margin: 0 10px;
-    }
+  .social img {
+    width: 40px;
+    padding: 0 6px;
+    margin: 0 10px;
+  }
 
-    .events {
-        display: flex;
-        position: absolute;
-        bottom: -55px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        visibility: hidden;
-    }
+  .events {
+    display: none;
+    position: absolute;
+    bottom: -55px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+  }
 
-    .events-hidden {
-        visibility: visible;
-        position: inherit;
-        display: flex;
-        flex-direction: row;
-    }
+  .events-hidden {
+    visibility: visible;
+    position: inherit;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row; */
+  }
 
-    .events-hidden span {
-        margin: 1rem 2rem;
-    }
+  .events-hidden span {
+    margin: 1rem 2rem;
+  }
 
-    .events-hidden span a {
-        color: #B7B9BD;
-        text-decoration: none;
-        transition: 0.5s;
+  .events-hidden span a {
+    color: #b7b9bd;
+    text-decoration: none;
+    transition: 0.5s;
+  }
 
-    }
-
-    .events-hidden span a:hover {
-        color: #b7b9bd86;
-        transition: 0.5s;
-    }
+  .events-hidden span a:hover {
+    color: #b7b9bd86;
+    transition: 0.5s;
+  }
 }
