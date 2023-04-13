@@ -12,6 +12,11 @@ export default function Prizes() {
     <section id="prize">
       <SectionTitle title={"Prizes"} />
       Prizes worth over 15k are up for grabs!
+
+      
+      
+      
+
     </section>
   );
 }
