@@ -12,9 +12,6 @@
     max-width: 1350px;
     padding: 0.5rem 2.5rem;
 }
-.gaurav:active{
-    color: red;
-}
 .logo img {
     width: 120px;
     animation-name: logofade;
@@ -133,10 +130,10 @@
     }
 }
 
-
+/* 
 .mobile_menu_item:visited, .nav_menu_item:active {
     color: #f022b6;
-}
+} */
 
 .activeLink {
     color: #22f05c;

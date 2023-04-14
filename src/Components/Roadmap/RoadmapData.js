@@ -4,7 +4,7 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Basics of Programming",
     text: [
-      "1. C++ Basic CWH 1 - 20",
+      "1. C++ Basic",
       "2. I/O , Conditional Statements",
       "3. Loops, Pointers",
       "4. Array, String",
@@ -26,11 +26,12 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "STL",
     text: [
-      "1. Vectors and Pairs",
-      "2. Maps and Set",
-      "3. Stack , Queue ,Dequeue and Priority-Queue",
-      "4. STL algorithms",
-      "5. Sorting and Comparator Function ",
+      "1. Vector and Pair",
+      "2. Iterator",
+      "3. Map and Set",
+      "4. Stack , Queue ,Dequeue and Priority-Queue",
+      "5. STL algorithms",
+      "6. Sorting and Comparator Function ",
     ],
   },
   {
@@ -117,9 +118,10 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Bit Manipulation",
     text: [
-      "1. Bitwise Operators",
-      "2. Bit Masking",
-      "3. Binary Exponentiation",
+      "1. Number System",
+      "2. Bitwise Operators",
+      "3. Bit Masking",
+      "4. Binary Exponentiation",
     ],
   },
   {
@@ -182,12 +184,12 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Miscellaneous Topics",
     text: [
-      "1. Segment Tree & Fenwick Tree",
-      "2. Game Thoery",
-      "3. Probability & Expectation",
-      "4. Matrix Exponention",
-      "5. Euler Tour",
-      "6. Trie"
+      "1. Trie",
+      "2. Segment Tree & Fenwick Tree",
+      "3. Game Thoery",
+      "4. Probability & Expectation",
+      "5. Matrix Exponention",
+      "6. Euler Tour",
     ],
   },
 ];

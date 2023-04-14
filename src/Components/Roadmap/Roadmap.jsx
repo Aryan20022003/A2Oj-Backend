@@ -5,14 +5,20 @@ import "../../App.css";
 import Data from "./RoadmapData";
 import { Fade } from "react-reveal";
 import Coding from "../Hero/coding.svg"; //temporary image source will be replace in final build.
+import { useParams } from "react-router-dom";
 //must be replaced in final build.
 
 
 const Roadmap = () => {
+
+  const comp = useParams();
+  console.log(comp);
+
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "instant",
     });
   });
   return (
