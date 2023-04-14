@@ -7,18 +7,12 @@ import "particles.js/particles";
 import Navbar from "./Components/Navbar/Navbar";
 import { Hero } from "./Components/Hero//Hero";
 import Roadmap from "./Components/Roadmap/Roadmap";
-// import { FAQs } from "./Components/FAQs/Faq";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ContactForm from "./Components/Contact";
-import Prizes from "./Components/Prizes/Prizes";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
 import { Footer } from "./Components/Footer/Footer";
 import About from "./Components/Abouts/About";
-import ScrollToTopButton from "./Components/ScrollToTopButton/ScrollToTopButton";
-import Leaderboard from "./Components/LeaderBoard";
-import AllCombine from "./AllCombine";
 import LaddersPage from "./Components/A2oj_M/ladders/[laddersId]";
 
 function App() {
@@ -40,18 +34,6 @@ function App() {
             className="w-screen h-screen"
           />
         </div>
-        {/* <ProgressBar /> */}
-        {/* <Navbar /> */}
-        {/* <Hero />
-        <A2oj_M />
-        <LeaderBoard />
-        <Roadmap />
-        <CodeEditor />
-        <About />
-        <<<<<<< HEAD
-        <ScrollToTopButton />
-        =======
-      <ScrollToTopButton/> */}
         <BrowserRouter>
           <Navbar />
           <Routes>

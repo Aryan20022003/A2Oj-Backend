@@ -2,7 +2,7 @@ import { Fade } from "react-reveal";
 import SectionTitle from "../SectionTitle";
 import "./codeEditor.css";
 import React from "react";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Editor from "@monaco-editor/react";
 import Issue from "../Issue/Issue";
 
@@ -14,7 +14,12 @@ const CodeEditor = () => {
   function showValue(e) {
     alert(editorRef.current.getValue());
   }
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  });
   return (
     <section id="code-editor">
       <SectionTitle title="Code Editor" />

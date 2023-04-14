@@ -46,7 +46,6 @@ const Navbar = () => {
               <li className="nav_menu_item">
                 <NavLink
                   to="/leaderboard"
-                  className="gaurav"
                   //   activeClassName="activeLink"
                 >
                   Leaderboard
