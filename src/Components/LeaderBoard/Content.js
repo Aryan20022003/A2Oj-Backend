@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Content.css";
 import { useNavigate } from "react-router-dom";
 import Issue from "../Issue/Issue";
+import Loding from "../Loding/Loding";
 
 // data.result.sort((a, b) => b.rating - a.rating);
 
@@ -70,13 +71,13 @@ function Content(props) {
     navigate("/leaderboard");
     setIsExpanded(!isExpanded);
   };
-
   return (
     <>
+      {error === null && items.length === 0 ? <Loding /> : null}
       {error !== null ? (
         <Issue title="Codeforces is temporarily unavailable. Please, return in several minutes." />
       ) : null}
-      {error == null && (
+      {error === null && items.length !== 0 ? (
         <div className="w-full ">
           {/* Header */}
           <div
@@ -250,7 +251,7 @@ function Content(props) {
           </button>
         </div> */}
         </div>
-      )}
+      ) : null}
     </>
   );
 }
