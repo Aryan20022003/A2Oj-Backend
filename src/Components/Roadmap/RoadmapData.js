@@ -4,11 +4,26 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Basics of Programming",
     text: [
-      "1. C++ Basic CWH 1 - 20",
-      "2. I/O , Conditional Statements",
-      "3. Loops, Pointers",
-      "4. Array, String",
-      "5. Functions",
+      {
+        content: "1. C++ Basic CWH 1",
+        link: "https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL",
+      },
+      {
+        content: "2. I/O , Conditional Statements",
+        link: "https://www.geeksforgeeks.org/basic-input-output-c/",
+      },
+      {
+        content: "3. Loops, Pointers",
+        link: " https://www.geeksforgeeks.org/cpp-loops/",
+      },
+      {
+        content: "4. Array, String",
+        link: " https://www.geeksforgeeks.org/arrays-and-strings-in-c/",
+      },
+      {
+        content: "5. Functions",
+        link: "https://www.geeksforgeeks.org/functions-in-cpp/",
+      },
     ],
   },
   {
@@ -16,9 +31,18 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Time and space complexity",
     text: [
-      "1. Time Complexity",
-      "2. Space Complexity",
-      "3. Asymptotic Notation",
+      {
+        content: "1. Time Complexity",
+        link: "https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/",
+      },
+      {
+        content: "2. Space Complexity",
+        link: " https://www.geeksforgeeks.org/g-fact-86/",
+      },
+      {
+        content: "3. Asymptotic Notation",
+        link: "https://www.geeksforgeeks.org/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms/",
+      },
     ],
   },
   {
@@ -26,11 +50,30 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "STL",
     text: [
-      "1. Vectors and Pairs",
-      "2. Maps and Set",
-      "3. Stack , Queue ,Dequeue and Priority-Queue",
-      "4. STL algorithms",
-      "5. Sorting and Comparator Function ",
+      {
+        content: "1. Vectors and Pairs",
+        link: "https://www.youtube.com/playlist?list=PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn",
+      },
+      {
+        content: "2.Iterator",
+        link: "https://www.geeksforgeeks.org/iterators-c-stl/",
+      },
+      {
+        content: "3. Maps and Set",
+        link: " https://www.geeksforgeeks.org/set-vs-map-c-stl/",
+      },
+      {
+        content: "4. Stack , Queue ,Dequeue and Priority-Queue",
+        link: "https://www.geeksforgeeks.org/c-programs-gq/stack-queue-cc-programs-gq/",
+      },
+      {
+        content: "5. STL algorithms",
+        link: " https://www.geeksforgeeks.org/c-magicians-stl-algorithms/",
+      },
+      {
+        content: "6. Sorting and Comparator Function ",
+        link: "https://www.geeksforgeeks.org/sort-c-stl/",
+      },
     ],
   },
   {
@@ -38,13 +81,34 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Array's Algorithms",
     text: [
-      "1. Kadane's Algorithm",
-      "2. Sliding Window",
-      "3. Dutch National Flag Algorithm",
-      "4. Searching and Sorting",
-      "5. Prefix and Suffix sum",
-      "6. Two Pointer",
-      "7. 2D Array"
+      {
+        content: "1. Kadane's Algorithm",
+        link: "https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/",
+      },
+      {
+        content: "2. Sliding Window",
+        link: "https://www.geeksforgeeks.org/window-sliding-technique/",
+      },
+      {
+        content: "3. Dutch National Flag Algorithm",
+        link: "https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/",
+      },
+      {
+        content: "4. Searching and Sorting",
+        link: "https://www.geeksforgeeks.org/sorting-algorithms/",
+      },
+      {
+        content: "5. Prefix and Suffix sum",
+        link: "https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/",
+      },
+      {
+        content: "6. Two Pointer",
+        link: "https://www.geeksforgeeks.org/two-pointers-technique/",
+      },
+      {
+        content: "7. 2D Array",
+        link: "https://www.programiz.com/cpp-programming/multidimensional-arrays",
+      },
     ],
   },
   {
@@ -52,9 +116,18 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "String's Algorithm",
     text: [
-      "1. KMP Algorithm",
-      "2. Rabin Karp Algorithm",
-      "3. Z-Algorithm",
+      {
+        content: "1. KMP Algorithm",
+        link: "https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/",
+      },
+      {
+        content: "2. Rabin Karp Algorithm",
+        link: "https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/",
+      },
+      {
+        content: "3. Z-Algorithm",
+        link: "https://www.geeksforgeeks.org/z-algorithm-linear-time-pattern-searching-algorithm/",
+      },
     ],
   },
   {
@@ -62,10 +135,22 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Greedy Algorithm",
     text: [
-      "1. Activity Selection Problems",
-      "2. Egyptian Problems",
-      "3. Job Sequencing",
-      "4. Minimum Swaps for Bracket Balancing",
+      {
+        content: "1. Activity Selection Problems",
+        link: "https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/",
+      },
+      {
+        content: "2. Egyptian Fraction",
+        link: "https://www.geeksforgeeks.org/greedy-algorithm-egyptian-fraction/",
+      },
+      {
+        content: "3. Job Sequencing",
+        link: "https://www.geeksforgeeks.org/job-sequencing-problem/",
+      },
+      {
+        content: "4. Minimum Swaps for Bracket Balancing",
+        link: "https://www.geeksforgeeks.org/minimum-swaps-bracket-balancing/",
+      },
     ],
   },
   {
@@ -73,30 +158,81 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Binary Search",
     text: [
-      "1. Binary Search I ",
-      "2. Binary Search II",
-      "3. Binary Search III",
-      "4. Ternary Search",
+      {
+        content: "1. Binary Search I ",
+        link: "https://www.youtube.com/live/SpS9dMj0B_Y?feature=share",
+      },
+      {
+        content: "2. Binary Search II",
+        link: "https://www.youtube.com/live/B4t3NB0478k?feature=share",
+      },
+      {
+        content: "3. Binary Search III",
+        link: "https://www.youtube.com/live/Kb3KOTQfjew?feature=share",
+      },
+      {
+        content: "4. Ternary Search",
+        link: "https://cp-algorithms.com/num_methods/ternary_search.html",
+      },
     ],
-  },  
+  },
   {
     date: "",
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Number Theory",
     text: [
-      "1. Euclid's GCD algorithm and Extended Euclid algorithm",
-      "2. Basic Modular Arithmetic",
-      "3. Modular Exponentiation",
-      "4. Modular Inverse",
-      "5. Prime Factorization of a number",
-     " 6. Sieve of Eratosthenes",
-      "7. Segmented Sieve",
-      "8. Euler Totient Function",
-      "9. Fermat's Little Theorem",
-      "10. NCR mod p calculation",
-      "11. Lucas Theorem",
-      "12. Chinese Remainder Theorem",
-      "13. Mobius Function",
+      {
+        content: "1. Euclid's GCD algorithm and Extended Euclid algorithm",
+        link: "https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/",
+      },
+      {
+        content: "2. Basic Modular Arithmetic",
+        link: "https://www.geeksforgeeks.org/modular-arithmetic/",
+      },
+      {
+        content: "3. Modular Exponentiation",
+        link: "https://www.geeksforgeeks.org/modular-exponentiation-power-in-modular-arithmetic/",
+      },
+      {
+        content: "4. Modular Inverse",
+        link: "https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/",
+      },
+      {
+        content: "5. Prime Factorization of a number",
+        link: "https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/",
+      },
+      {
+        content: "6. Sieve of Eratosthenes",
+        link: "https://www.geeksforgeeks.org/sieve-of-eratosthenes/",
+      },
+      {
+        content: "7. Segmented Sieve",
+        link: "https://www.geeksforgeeks.org/segmented-sieve/",
+      },
+      {
+        content: "8. Euler Totient Function",
+        link: "https://www.geeksforgeeks.org/eulers-totient-function/",
+      },
+      {
+        content: "9. Fermat's Little Theorem",
+        link: "https://www.geeksforgeeks.org/fermats-little-theorem/",
+      },
+      {
+        content: "10. NCR mod p calculation",
+        link: "https://www.geeksforgeeks.org/introduction-and-dynamic-programming-solution-to-compute-ncrp/",
+      },
+      {
+        content: "11. Lucas Theorem",
+        link: "https://www.geeksforgeeks.org/compute-ncrp-using-lucas-theorem/",
+      },
+      {
+        content: "12. Chinese Remainder Theorem",
+        link: "https://cp-algorithms.com/algebra/chinese-remainder-theorem.html",
+      },
+      {
+        content: "13. Mobius Function",
+        link: "https://cp-algorithms.com/num_methods/ternary_search.html",
+      },
     ],
   },
   {
@@ -104,12 +240,30 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Recursion and Backtracking",
     text: [
-      "1. Recursion and Backtracking Basics",
-      "2. Subset Sum",
-      "3.  Combination Sum",
-      "4.	N queens Problem",
-      "5. Sudoku Solver",
-      "6. Rat in a Maze",
+      {
+        content: "1. Recursion and Backtracking Basics",
+        link: "https://www.scaler.com/topics/data-structures/recursion-and-backtracking/",
+      },
+      {
+        content: "2. Subset Sum",
+        link: "https://takeuforward.org/data-structure/subset-sum-sum-of-all-subsets/",
+      },
+      {
+        content: "3.  Combination Sum",
+        link: "https://takeuforward.org/data-structure/combination-sum-ii-find-all-unique-combinations/",
+      },
+      {
+        content: "4.	N queens Problem",
+        link: "https://takeuforward.org/data-structure/n-queen-problem-return-all-distinct-solutions-to-the-n-queens-puzzle/",
+      },
+      {
+        content: "5. Sudoku Solver",
+        link: "https://takeuforward.org/data-structure/sudoku-solver/",
+      },
+      {
+        content: "6. Rat in a Maze",
+        link: "https://takeuforward.org/data-structure/rat-in-a-maze/",
+      },
     ],
   },
   {
@@ -117,9 +271,22 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Bit Manipulation",
     text: [
-      "1. Bitwise Operators",
-      "2. Bit Masking",
-      "3. Binary Exponentiation",
+      {
+        content: "1.Number System",
+        link: "https://www.geeksforgeeks.org/number-system-in-maths/",
+      },
+      {
+        content: "2. Bitwise Operators",
+        link: "https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/",
+      },
+      {
+        content: "3. Bit Masking",
+        link: "https://www.scaler.com/topics/data-structures/bit-masking/",
+      },
+      {
+        content: "4. Binary Exponentiation",
+        link: "https://cp-algorithms.com/algebra/binary-exp.html",
+      },
     ],
   },
   {
@@ -127,34 +294,106 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Dynamic Programming",
     text: [
-      "1. Introduction",
-      "2. Digit DP",
-      "3. DP on Trees",
-      "4. DP with Bitmask",
-      "5. SOS DP",
-      "6. Beginner to Advanced",
-      "7. Non Trivial DP Tricks and Techniques",
-      "8. CF Blog",
+      {
+        content: "1. Introduction",
+        link: "https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/",
+      },
+      {
+        content: "2. Digit DP",
+        link: "https://www.hackerearth.com/practice/algorithms/dynamic-programming/2-dimensional/tutorial/",
+      },
+      {
+        content: "3. DP on Trees",
+        link: "https://codeforces.com/blog/entry/20935",
+      },
+      {
+        content: "4. DP with Bitmask",
+        link: "https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/tutorial/",
+      },
+      { content: "5. SOS DP", link: "https://codeforces.com/blog/entry/45223" },
+      {
+        content: "6. Beginner to Advanced",
+        link: "https://codeforces.com/blog/entry/325",
+      },
+      {
+        content: "7. Non Trivial DP Tricks and Techniques",
+        link: "https://codeforces.com/blog/entry/47764",
+      },
+      {
+        content: "8. CF Blog",
+        link: "https://codeforces.com/blog/entry/67679",
+      },
     ],
   },
   {
     date: "",
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Graph",
-    text: 
-    [
-      "1. Graph Representation",
-      "2. DFS",
-      "3. BFS",
-      "4. Dijkstras's Algorithm",
-      "5. Bellman Ford Algorithm",
-      "6. Bridges",
-      "7. Articulation Points",
-      "8. Topological Sort",
-      "9. Strongly Connected Components(SCC)",
-      "10. Tarjan's Algorithm for SCC",
-      "11. Kruskal's Algorithm",
-      "12. Prims's Algorithm",
+    text: [
+      {
+        content: "1. Graph Representation",
+        link: "https://www.geeksforgeeks.org/graph-and-its-representations/",
+      },
+      {
+        content: "2. DFS",
+        link: "https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/",
+      },
+      {
+        content: "3. BFS",
+        link: "https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/",
+      },
+      {
+        content: "4. Bipartite Graph",
+        link: "https://www.geeksforgeeks.org/bipartite-graph/",
+      },
+      {
+        content: "5. Topological Sort",
+        link: "https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/",
+      },
+      {
+        content: "6. Kruskal's Algorithm",
+        link: "https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/",
+      },
+      {
+        content: "7. Topological Sort",
+        link: "https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/",
+      },
+      {
+        content: "8. Kruskal's Algorithm",
+        link: "https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/",
+      },
+      {
+        content: "9. Prims's Algorithm",
+        link: "https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/",
+      },
+      {
+        content: "10. Dijkstra 's Algorithm",
+        link: "https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/",
+      },
+      {
+        content: "11. Bellman Ford's Algorithm",
+        link: "https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/",
+      },
+      {
+        content: "12. Floyd Warshall's Algorithm",
+        link: "https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/",
+      },
+      {
+        content: "13. Bridge",
+        link: "https://www.geeksforgeeks.org/bridge-in-a-graph/",
+      },
+      {
+        content: "14. Articulation Points",
+        link: "https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/",
+      },
+      {
+        content: "15. Strongly Connected Components (SCC)",
+        link: "https://www.geeksforgeeks.org/strongly-connected-components/",
+      },
+      {
+        content: "16. Tarjan's Algorithm for SCC",
+        link: "https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/",
+      },
     ],
   },
   {
@@ -162,19 +401,56 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Tree",
     text: [
-      "1. Traversal Techniques",
-      "2. Binary Tree, BST, Balanced Binary Tree",
-      "3. Binary Lifting",
-      "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree",
-      "5. Dynamic Programming on tree",
-      "6. 2K Decomposition of tree (and Lowest Common Ancestor)",
-      "7. Kruskal Reconstruction Tree (KRT) (IOI Werewolf trick)",
-      "8. Set Merging (with linear height merging)",
-      "9. O(N2) Distribution DP",
-      "10. 'Re-rooting' tree DP (where you DP twice, once going down and once propagating from top)",
-      "11. Centroid Decomposition",
-      "12. Heavy-Light Decomposition",
-      "13. UFDS on tree (See: CEOI 2017 Streets)",
+      {
+        content: "1. Traversal Techniques",
+        link: "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
+      },
+      {
+        content: "2. Binary Tree, BST, Balanced Binary Tree",
+        link: "https://www.scaler.com/topics/data-structures/binary-tree-in-data-structure/",
+      },
+      {
+        content: "3. Binary Lifting",
+        link: "https://cp-algorithms.com/graph/lca_binary_lifting.html",
+      },
+      { content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree", link: "" },
+      {
+        content: "5. Dynamic Programming on tree",
+        link: "https://usaco.guide/gold/dp-trees?lang=cpp",
+      },
+      {
+        content: "6. 2K Decomposition of tree (and Lowest Common Ancestor)",
+        link: "https://www.hackerrank.com/topics/lowest-common-ancestor",
+      },
+      {
+        content: "7. Kruskal Reconstruction Tree (KRT) (IOI Werewolf trick)",
+        link: "https://mzhang2021.github.io/cp-blog/kruskal/",
+      },
+      {
+        content: "8. Set Merging (with linear height merging)",
+        link: "https://codeforces.com/blog/entry/44351",
+      },
+      {
+        content: "9. O(N^2) Distribution DP",
+        link: "https://codeforces.com/blog/entry/44351",
+      },
+      {
+        content:
+          "10. 'Re-rooting' tree DP (where you DP twice, once going down and once propagating from top)",
+        link: "https://www.youtube.com/watch?v=7_huTWwl5jM",
+      },
+      {
+        content: "11. Centroid Decomposition",
+        link: "https://usaco.guide/plat/centroid?lang=cpp",
+      },
+      {
+        content: "12. Heavy-Light Decomposition",
+        link: "https://cp-algorithms.com/graph/hld.html",
+      },
+      {
+        content: "13. UFDS on tree (See: CEOI 2017 Streets)",
+        link: "https://visualgo.net/en/ufds",
+      },
     ],
   },
   {
@@ -182,15 +458,32 @@ const data = [
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
     header: "Miscellaneous Topics",
     text: [
-      "1. Segment Tree & Fenwick Tree",
-      "2. Game Thoery",
-      "3. Probability & Expectation",
-      "4. Matrix Exponention",
-      "5. Euler Tour",
-      "6. Trie"
+      {
+        content: "1. Segment Tree & Fenwick Tree",
+        link: "https://cp-algorithms.com/data_structures/segment_tree.html",
+      },
+      {
+        content: "2. Game Thoery",
+        link: "https://usaco.guide/adv/game-theory?lang=cpp",
+      },
+      {
+        content: "3. Probability & Expectation",
+        link: "https://usaco.guide/adv/game-theory?lang=cpp",
+      },
+      {
+        content: "4. Matrix Exponention",
+        link: "https://www.youtube.com/watch?v=U_h3IjreRek",
+      },
+      {
+        content: "5. Euler Tour",
+        link: "https://usaco.guide/gold/tree-euler?lang=cpp",
+      },
+      {
+        content: "6. Trie",
+        link: "https://www.geeksforgeeks.org/trie-insert-and-search/",
+      },
     ],
   },
 ];
 
 export default data;
-
