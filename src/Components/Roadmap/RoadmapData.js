@@ -5,7 +5,7 @@ const data = [
     header: "Basics of Programming",
     text: [
       {
-        content: "1. C++ Basic CWH 1",
+        content: "1. C++ Basic",
         link: "https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL",
       },
       {
@@ -51,7 +51,7 @@ const data = [
     header: "STL",
     text: [
       {
-        content: "1. Vectors and Pairs",
+        content: "1. Vector and Pair",
         link: "https://www.youtube.com/playlist?list=PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn",
       },
       {
@@ -59,7 +59,7 @@ const data = [
         link: "https://www.geeksforgeeks.org/iterators-c-stl/",
       },
       {
-        content: "3. Maps and Set",
+        content: "3. Map and Set",
         link: " https://www.geeksforgeeks.org/set-vs-map-c-stl/",
       },
       {
@@ -79,14 +79,14 @@ const data = [
   {
     date: "",
     img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
-    header: "Array's Algorithms",
+    header: "Array's Algorithm",
     text: [
       {
         content: "1. Kadane's Algorithm",
         link: "https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/",
       },
       {
-        content: "2. Sliding Window",
+        content: "2. Window Sliding",
         link: "https://www.geeksforgeeks.org/window-sliding-technique/",
       },
       {
@@ -272,7 +272,7 @@ const data = [
     header: "Bit Manipulation",
     text: [
       {
-        content: "1.Number System",
+        content: "1. Number System",
         link: "https://www.geeksforgeeks.org/number-system-in-maths/",
       },
       {
@@ -299,8 +299,16 @@ const data = [
         link: "https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/",
       },
       {
-        content: "2. Digit DP",
+        content: "2. One Dimensional DP",
+        link: "https://www.hackerearth.com/practice/notes/dynamic-programming-for-beginners-part-2-1-d/",
+      },
+      {
+        content: "3. Two Dimensional DP",
         link: "https://www.hackerearth.com/practice/algorithms/dynamic-programming/2-dimensional/tutorial/",
+      },
+      {
+        content: "2. Digit DP",
+        link: "https://codeforces.com/blog/entry/53960",
       },
       {
         content: "3. DP on Trees",
@@ -355,43 +363,35 @@ const data = [
         link: "https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/",
       },
       {
-        content: "7. Topological Sort",
-        link: "https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/",
-      },
-      {
-        content: "8. Kruskal's Algorithm",
-        link: "https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/",
-      },
-      {
-        content: "9. Prims's Algorithm",
+        content: "7. Prims's Algorithm",
         link: "https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/",
       },
       {
-        content: "10. Dijkstra 's Algorithm",
+        content: "8. Dijkstra 's Algorithm",
         link: "https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/",
       },
       {
-        content: "11. Bellman Ford's Algorithm",
+        content: "9. Bellman Ford's Algorithm",
         link: "https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/",
       },
       {
-        content: "12. Floyd Warshall's Algorithm",
+        content: "10. Floyd Warshall's Algorithm",
         link: "https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/",
       },
       {
-        content: "13. Bridge",
+        content: "11. Bridge",
         link: "https://www.geeksforgeeks.org/bridge-in-a-graph/",
       },
       {
-        content: "14. Articulation Points",
+        content: "12. Articulation Points",
         link: "https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/",
       },
       {
-        content: "15. Strongly Connected Components (SCC)",
+        content: "13. Strongly Connected Components (SCC)",
         link: "https://www.geeksforgeeks.org/strongly-connected-components/",
       },
       {
-        content: "16. Tarjan's Algorithm for SCC",
+        content: "14. Tarjan's Algorithm for SCC",
         link: "https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/",
       },
     ],
@@ -459,28 +459,28 @@ const data = [
     header: "Miscellaneous Topics",
     text: [
       {
-        content: "1. Segment Tree & Fenwick Tree",
+        content: "1. Trie",
+        link: "https://www.geeksforgeeks.org/trie-insert-and-search/",
+      },
+      {
+        content: "2. Segment Tree & Fenwick Tree",
         link: "https://cp-algorithms.com/data_structures/segment_tree.html",
       },
       {
-        content: "2. Game Thoery",
+        content: "3. Game Thoery",
         link: "https://usaco.guide/adv/game-theory?lang=cpp",
       },
       {
-        content: "3. Probability & Expectation",
+        content: "4. Probability & Expectation",
         link: "https://usaco.guide/adv/game-theory?lang=cpp",
       },
       {
-        content: "4. Matrix Exponention",
+        content: "5. Matrix Exponention",
         link: "https://www.youtube.com/watch?v=U_h3IjreRek",
       },
       {
-        content: "5. Euler Tour",
+        content: "6. Euler Tour",
         link: "https://usaco.guide/gold/tree-euler?lang=cpp",
-      },
-      {
-        content: "6. Trie",
-        link: "https://www.geeksforgeeks.org/trie-insert-and-search/",
       },
     ],
   },
