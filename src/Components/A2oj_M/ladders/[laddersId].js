@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router';
-import Container from '../components/Container';
 import LoadingSkeleton from '../components/LoadingSkeleton';
 import ladders from '../data/ladders.json';
 import useLocalStorage from '../hooks/useLocalStorage';
@@ -54,7 +52,6 @@ function Table({ problemSet }) {
 }
 
 const LaddersPage = () => {
-  const router = useRouter();
   const [handle] = useLocalStorage('handle');
   const [laddersName] = useLocalStorage('laddersName');
   const [user] = useLocalStorage('user');
