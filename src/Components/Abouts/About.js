@@ -33,8 +33,8 @@ import { BsLinkedin } from "react-icons/bs";
 import { SiCodeforces } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsInstagram, BsGithub } from "react-icons/bs";
-const aryan = require("../Abouts/aryan.jpg");
-const chetan = require("../Abouts/chetan.jpg");
+const aryan = require("../Abouts/aryan.webp");
+const chetan = require("../Abouts/chetan.webp");
 
 export default function About() {
   useEffect(() => {
