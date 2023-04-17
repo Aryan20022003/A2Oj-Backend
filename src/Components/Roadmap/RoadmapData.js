@@ -7,16 +7,15 @@ import {
   SiCodeforces,
 } from "react-icons/si";
 
-import img1 from "./Image/img1.jpg";
-import img2 from "./Image/img2.jpg";
-import img3 from "./Image/img3.jpg";
-import img4 from "./Image/img4.jpg";
-import img5 from "./Image/img5.jpg";
-import img6 from "./Image/img6.jpg";
-import img7 from "./Image/img7.png";
-import img8 from "./Image/img8.png";
-import img9 from "./Image/img9.png";
-import img10 from "./Image/img10.png";
+import img1 from "./Image/img1.webp";
+import img2 from "./Image/img2.webp";
+import img3 from "./Image/img3.webp";
+import img4 from "./Image/img4.webp";
+import img5 from "./Image/img5.webp";
+import img6 from "./Image/img6.webp";
+import img7 from "./Image/img7.webp";
+import img9 from "./Image/img9.webp";
+import img10 from "./Image/img10.webp";
 
 import { BiBulb, BiBot } from "react-icons/bi";
 import { AiOutlineCodeSandbox } from "react-icons/ai";
