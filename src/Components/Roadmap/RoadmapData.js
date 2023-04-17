@@ -1,3 +1,4 @@
+// Resources data.
 const data = [
   {
     date: "",
