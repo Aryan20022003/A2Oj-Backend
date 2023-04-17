@@ -17,7 +17,7 @@ export const Footer = () => {
                         <img src={logo} alt="logo" width="150" />
                     </div>
                     <div class="events">
-                        <p> 
+                        <p>
                             <NavLink to="/a2oj">A2OJ</NavLink>
                         </p>
                         <p>
@@ -46,21 +46,21 @@ export const Footer = () => {
                     <div class="social">
                         <h3>SOCIAL</h3>
                         <div class="imgContainer">
-                            <NavLink href="https://www.instagram.com/dccnita/" target="_blank">
+                            <a href="https://www.instagram.com/dccnita/" target="_blank" rel="noopener noreferrer">
                                 <img src={instagram} alt="" />
-                            </NavLink>
-                            <NavLink href="https://twitter.com/dccnita" target="_blank">
+                            </a>
+                            <a href="https://twitter.com/dccnita" target="_blank" rel="noopener noreferrer">
                                 <img src={twitter} alt="" />
-                            </NavLink>
-                            <NavLink href="https://www.linkedin.com/company/dccnita/" target="_blank">
+                            </a>
+                            <a href="https://www.linkedin.com/company/dccnita/" target="_blank" rel="noopener noreferrer" >
                                 <img src={linkedin} alt="" />
-                            </NavLink>
-                            <NavLink href="https://discord.gg/58qJhGtTaa" target="_blank">
+                            </a>
+                            <a href="https://discord.gg/58qJhGtTaa" target="_blank" rel="noopener noreferrer">
                                 <img src={discord} alt="" />
-                            </NavLink>
-                            <NavLink href="https://www.youtube.com/@DCCNITA" target="_blank">
+                            </a>
+                            <a href="https://www.youtube.com/@DCCNITA" target="_blank" rel="noopener noreferrer">
                                 <img src={youtube} alt="" />
-                            </NavLink>
+                            </a>
                         </div>
                     </div>
                     <div className='events-hidden'>
