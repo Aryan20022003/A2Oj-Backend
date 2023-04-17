@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Hero.css";
 import Coding from "./coding.svg";
 import { useState } from "react";
-
+import {HiCode } from "react-icons/hi";
 
 
 export const Hero = () => {
@@ -44,8 +44,8 @@ export const Hero = () => {
         > 
           NITA-CP
         </h1>
-        <p className="hero_slogan">Dream Code Conquer</p>
-        {/* <div className="hero_info rounded">
+        <p className="hero_slogan"> <HiCode className="inline"/> Dream Code Conquer <HiCode className="inline"/></p>
+          {/* <div className="hero_info rounded">
           <span className="rounded" onClick={handleContestAlertClick}>Contest Alert !</span>
         </div> */}
       </div>

@@ -7,6 +7,7 @@ import { Fade } from "react-reveal";
 import Coding from "../Hero/coding.svg"; //temporary image source will be replace in final build.
 import { useParams } from "react-router-dom";
 import { FiLink } from 'react-icons/fi';
+import pro8 from "./pro8.png";
 
 //must be replaced in final build.
 
@@ -45,7 +46,9 @@ const Roadmap = () => {
                     <Fade delay={1000} top><div className="roadmap_item_dot" /></Fade>
                     <Fade duration={1500} right>
                       <div className="roadmap_item_content drop-shadow-sm p-5">
-                        <img src={Coding} alt="" />
+                        <p> {item.imge} </p>
+                        <img src="http://localhost:3000/pro8.png" alt="" />
+                        {/* <img src="/Image/pro11.jpg" alt="" /> */}
                         <h3 className="roadmap_header">{item.header} {item.icon ? <FiLink className="inline" /> : null}</h3>
                         <ul>
                           {item.text.map((textData, textIndex) => (<li key={textIndex}>

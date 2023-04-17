@@ -11,7 +11,7 @@ import { AiOutlineCodeSandbox } from "react-icons/ai";
 const data = [
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Basics of Programming",
     text: [
       {
@@ -38,7 +38,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Time and space complexity",
     text: [
       {
@@ -57,7 +57,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "STL",
     text: [
       {
@@ -88,7 +88,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Array's Algorithm",
     text: [
       {
@@ -123,7 +123,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "String's Algorithm",
     text: [
       {
@@ -142,7 +142,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Greedy Algorithm",
     text: [
       {
@@ -165,7 +165,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Binary Search",
     text: [
       {
@@ -188,7 +188,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Number Theory",
     text: [
       {
@@ -241,13 +241,13 @@ const data = [
       },
       {
         content: "13. Mobius Function",
-        link: "https://cp-algorithms.com/num_methods/ternary_search.html",
+        link: "https://www.geeksforgeeks.org/program-mobius-function/",
       },
     ],
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Recursion and Backtracking",
     text: [
       {
@@ -278,7 +278,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Bit Manipulation",
     text: [
       {
@@ -301,7 +301,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Dynamic Programming",
     text: [
       {
@@ -345,7 +345,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Graph",
     text: [
       {
@@ -408,7 +408,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Tree",
     text: [
       {
@@ -423,7 +423,7 @@ const data = [
         content: "3. Binary Lifting",
         link: "https://cp-algorithms.com/graph/lca_binary_lifting.html",
       },
-      { content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree", link: "" },
+      { content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree", link: "https://codeforces.com/blog/entry/68138" },
       {
         content: "5. Dynamic Programming on tree",
         link: "https://usaco.guide/gold/dp-trees?lang=cpp",
@@ -465,7 +465,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    imge: "Image/pro11.jpg",
     header: "Miscellaneous Topics",
     text: [
       {
@@ -482,11 +482,11 @@ const data = [
       },
       {
         content: "4. Probability & Expectation",
-        link: "https://usaco.guide/adv/game-theory?lang=cpp",
+        link: "https://www.youtube.com/watch?v=U_h3IjreRek",
       },
       {
         content: "5. Matrix Exponention",
-        link: "https://www.youtube.com/watch?v=U_h3IjreRek",
+        link: "https://usaco.guide/plat/matrix-expo?lang=cpp",
       },
       {
         content: "6. Euler Tour",
@@ -496,8 +496,8 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
-    header: "Useful Link",
+    imge: "Image/pro11.jpg",
+    header: "Useful Links",
     icon: "FiLink",
     text: [
       {
