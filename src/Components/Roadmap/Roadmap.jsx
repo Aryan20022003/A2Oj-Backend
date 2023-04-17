@@ -47,7 +47,7 @@ const Roadmap = () => {
                         <h3 className="roadmap_header">{item.header}</h3>
                         <ul>
                           {item.text.map((textData, textIndex) => (<li key={textIndex}>
-                            <a href={textData.link} target="blank">{textData.content}</a>
+                            <a href={textData.link} target="_blank" rel="noopener noreferrer">{textData.content}</a>
                           </li>))}
                         </ul>
                         {/* console.log(item.text); */}
