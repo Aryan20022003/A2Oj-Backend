@@ -50,7 +50,7 @@ function Content(props) {
           setItems(sortedItems);
         }
         if (result.status === "FAILED") {
-          console.log("Error");
+          // console.log("Error");
           setError("Error");
         }
       })

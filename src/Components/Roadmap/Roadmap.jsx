@@ -15,7 +15,7 @@ import pro8 from "./pro8.png";
 const Roadmap = () => {
 
   const comp = useParams();
-  console.log(comp);
+  // console.log(comp);
 
 
   useEffect(() => {
@@ -46,9 +46,9 @@ const Roadmap = () => {
                     <Fade delay={1000} top><div className="roadmap_item_dot" /></Fade>
                     <Fade duration={1500} right>
                       <div className="roadmap_item_content drop-shadow-sm p-5">
-                        <p> {item.imge} </p>
-                        <img src="http://localhost:3000/pro8.png" alt="" />
-                        {/* <img src="/Image/pro11.jpg" alt="" /> */}
+
+
+                        <img src={item.img} alt="" style={{ height: "278px" , width:"417px"}} />
                         <h3 className="roadmap_header">{item.header} {item.icon ? <FiLink className="inline" /> : null}</h3>
                         <ul>
                           {item.text.map((textData, textIndex) => (<li key={textIndex}>

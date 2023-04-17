@@ -6,12 +6,28 @@ import {
   SiTopcoder,
   SiCodeforces,
 } from "react-icons/si";
+
+import img1 from "./Image/img1.jpg";
+import img2 from "./Image/img2.jpg";
+import img3 from "./Image/img3.jpg";
+import img4 from "./Image/img4.jpg";
+import img5 from "./Image/img5.jpg";
+import img6 from "./Image/img6.jpg";
+import img7 from "./Image/img7.png";
+import img8 from "./Image/img8.png";
+import img9 from "./Image/img9.png";
+import img10 from "./Image/img10.png";
+
 import { BiBulb, BiBot } from "react-icons/bi";
 import { AiOutlineCodeSandbox } from "react-icons/ai";
 const data = [
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img1,
+
     header: "Basics of Programming",
     text: [
       {
@@ -38,7 +54,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img2,
+
     header: "Time and space complexity",
     text: [
       {
@@ -57,7 +77,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img3,
+
     header: "STL",
     text: [
       {
@@ -88,7 +112,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img4,
+
     header: "Array's Algorithm",
     text: [
       {
@@ -123,7 +151,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img5,
+
     header: "String's Algorithm",
     text: [
       {
@@ -142,7 +174,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img6,
+
     header: "Greedy Algorithm",
     text: [
       {
@@ -165,7 +201,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img7,
+
     header: "Binary Search",
     text: [
       {
@@ -188,7 +228,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img9,
+
     header: "Number Theory",
     text: [
       {
@@ -247,7 +291,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img10,
+
     header: "Recursion and Backtracking",
     text: [
       {
@@ -278,7 +326,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img1,
+
     header: "Bit Manipulation",
     text: [
       {
@@ -301,7 +353,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img2,
+
     header: "Dynamic Programming",
     text: [
       {
@@ -345,7 +401,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img3,
+
     header: "Graph",
     text: [
       {
@@ -408,7 +468,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img4,
+
     header: "Tree",
     text: [
       {
@@ -465,7 +529,11 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
+
+    img: img9,
+
     header: "Miscellaneous Topics",
     text: [
       {
@@ -496,8 +564,12 @@ const data = [
   },
   {
     date: "",
-    imge: "Image/pro11.jpg",
+
+    
     header: "Useful Links",
+
+    img: img10,
+
     icon: "FiLink",
     text: [
       {
@@ -512,7 +584,7 @@ const data = [
       },
       {
         content: "LeetCode",
-        link: "https://leetcode.com/?cong=true",
+        link: "https://leetcode.com/",
         icon: <SiLeetcode className="inline " />,
       },
       {
