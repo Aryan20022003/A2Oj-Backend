@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Content.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import Issue from "../Issue/Issue";
 import Loding from "../Loding/Loding";
 
@@ -25,7 +25,6 @@ function Content(props) {
   const updateInd = (newInd) => {
     setInd(newInd);
   };
-  console.log("NotHey");
 
   useEffect(() => {
     fetch(
@@ -33,9 +32,7 @@ function Content(props) {
     )
       .then((result) => result.json())
       .then((result) => {
-        console.log("NotHeyError");
         if (result.status === "OK") {
-          console.log("NotError");
           const sortedItems = result.result.sort((a, b) => {
             if (iscur === 1) {
               return b.rating - a.rating;
@@ -137,7 +134,7 @@ function Content(props) {
           {displayedObjects.map((item, index) => (
             <div
               className="sngl"
-              key={item.id}
+              key={item.handle}
               style={{
                 display: "flex",
                 alignItems: "center",
