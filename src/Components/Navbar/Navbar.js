@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import logo from "./../../../src/assets/logo/logo-light.png";
 import "./../../App.css";
 import "./navbar.css";
-import { Nav, NavLink } from "react-router-dom";
+import { Nav, NavLink, useParams } from "react-router-dom";
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
 
   const handleMenu = () => {
     setMenu(!menu);
   };
+  const tmp = useParams();
+  console.log("UseParams",tmp);
 
   return (
+
+    
     <>
       <nav
         className="navbar"
@@ -46,7 +50,6 @@ const Navbar = () => {
               <li className="nav_menu_item">
                 <NavLink
                   to="/leaderboard"
-                  className="gaurav"
                   //   activeClassName="activeLink"
                 >
                   Leaderboard

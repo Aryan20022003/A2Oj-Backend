@@ -6,6 +6,7 @@ import discord from './discord.svg'
 import youtube from './youtube.svg'
 
 import './footer.css'
+import { NavLink } from 'react-router-dom'
 
 export const Footer = () => {
     return (
@@ -16,20 +17,20 @@ export const Footer = () => {
                         <img src={logo} alt="logo" width="150" />
                     </div>
                     <div class="events">
-                        <p>
-                            <a href="#a2oj">A2OJ</a>
+                        <p> 
+                            <NavLink to="/a2oj">A2OJ</NavLink>
                         </p>
                         <p>
-                            <a href="#leaderboard">Leaderboard</a>
+                            <NavLink to="/leaderboard">Leaderboard</NavLink>
                         </p>
                         <p>
-                            <a href="#roadmap">Roadmap</a>
+                            <NavLink to="/roadmap">Roadmap</NavLink>
                         </p>
                         <p>
-                            <a href="#code-editor">Code Editor</a>
+                            <NavLink to="/code-editor">Code Editor</NavLink>
                         </p>
                         <p>
-                            <a href="#about">About</a>
+                            <NavLink to="/about">About</NavLink>
                         </p>
                     </div>
                 </div>
@@ -45,42 +46,42 @@ export const Footer = () => {
                     <div class="social">
                         <h3>SOCIAL</h3>
                         <div class="imgContainer">
-                            <a href="https://www.instagram.com/dccnita/" target="_blank">
+                            <NavLink href="https://www.instagram.com/dccnita/" target="_blank">
                                 <img src={instagram} alt="" />
-                            </a>
-                            <a href="https://twitter.com/dccnita" target="_blank">
+                            </NavLink>
+                            <NavLink href="https://twitter.com/dccnita" target="_blank">
                                 <img src={twitter} alt="" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/dccnita/" target="_blank">
+                            </NavLink>
+                            <NavLink href="https://www.linkedin.com/company/dccnita/" target="_blank">
                                 <img src={linkedin} alt="" />
-                            </a>
-                            <a href="https://discord.gg/58qJhGtTaa" target="_blank">
+                            </NavLink>
+                            <NavLink href="https://discord.gg/58qJhGtTaa" target="_blank">
                                 <img src={discord} alt="" />
-                            </a>
-                            <a href="https://www.youtube.com/@DCCNITA" target="_blank">
+                            </NavLink>
+                            <NavLink href="https://www.youtube.com/@DCCNITA" target="_blank">
                                 <img src={youtube} alt="" />
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <div className='events-hidden'>
                         <div className="flex flex-row">
                             <span>
-                                <a href="#A2OJ">A2OJ</a>
+                                <NavLink to="/A2OJ">A2OJ</NavLink>
                             </span>
                             <span >
-                                <a href="#about">About</a>
+                                <NavLink to="/about">About</NavLink>
                             </span>
                             <span>
-                                <a href="#roadmap">Roadmap</a>
+                                <NavLink to="/roadmap">Roadmap</NavLink>
                             </span>
                         </div >
                         <div className="flex flex-row justify-center gap-5">
 
                             <span>
-                                <a href="#code-editor">Code Editor</a>
+                                <NavLink to="/code-editor">Code Editor</NavLink>
                             </span>
                             <span>
-                                <a href="#leaderboard">Leader board</a>
+                                <NavLink to="/leaderboard">Leader board</NavLink>
                             </span>
                         </div>
                     </div>
