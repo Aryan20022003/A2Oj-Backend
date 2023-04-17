@@ -48,7 +48,7 @@ const Roadmap = () => {
                       <div className="roadmap_item_content drop-shadow-sm p-5">
 
 
-                        <img src={item.img} alt="" style={{ height: "278px" , width:"417px"}} />
+                        <img src={item.img} alt="" style={{ maxHeighth: "13.5rem", width: "27rem" }} />
                         <h3 className="roadmap_header">{item.header} {item.icon ? <FiLink className="inline" /> : null}</h3>
                         <ul>
                           {item.text.map((textData, textIndex) => (<li key={textIndex}>
