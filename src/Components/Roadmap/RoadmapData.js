@@ -1,4 +1,13 @@
 // Resources data.
+import {
+  SiGeeksforgeeks,
+  SiCodechef,
+  SiLeetcode,
+  SiTopcoder,
+  SiCodeforces,
+} from "react-icons/si";
+import { BiBulb, BiBot } from "react-icons/bi";
+import { AiOutlineCodeSandbox } from "react-icons/ai";
 const data = [
   {
     date: "",
@@ -482,6 +491,64 @@ const data = [
       {
         content: "6. Euler Tour",
         link: "https://usaco.guide/gold/tree-euler?lang=cpp",
+      },
+    ],
+  },
+  {
+    date: "",
+    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    header: "Useful Link",
+    icon: "FiLink",
+    text: [
+      {
+        content: "Codeforces ",
+        link: "https://codeforces.com/",
+        icon: <SiCodeforces className="inline" />,
+      },
+      {
+        content: "Codechef",
+        link: "https://www.codechef.com/",
+        icon: <SiCodechef className="inline " />,
+      },
+      {
+        content: "LeetCode",
+        link: "https://leetcode.com/?cong=true",
+        icon: <SiLeetcode className="inline " />,
+      },
+      {
+        content: "Atcoder ",
+        link: "https://atcoder.jp/",
+        icon: <AiOutlineCodeSandbox className="inline " />,
+      },
+      {
+        content: "GeeksForGeeks ",
+        link: "https://www.geeksforgeeks.org/",
+        icon: <SiGeeksforgeeks className="inline " />,
+      },
+      {
+        content: "OEIS",
+        link: "https://oeis.org/",
+        icon: <AiOutlineCodeSandbox className="inline " />,
+      },
+      {
+        content: "USACO Guide",
+        link: "https://usaco.guide/",
+        icon: <BiBot className="inline " />,
+      },
+      {
+        content: "CP-Algorithms",
+        link: "https://cp-algorithms.com/",
+        icon: <BiBulb className="inline " />,
+      },
+      {
+        content: "Topcoder",
+        link: "https://www.topcoder.com/",
+        icon: <SiTopcoder className="inline " />,
+      },
+      {
+        content: "CSES",
+        link: "https://cses.fi/problemset/list/",
+        icon: <AiOutlineCodeSandbox className="inline " />,
       },
     ],
   },

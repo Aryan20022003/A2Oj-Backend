@@ -6,6 +6,8 @@ import Data from "./RoadmapData";
 import { Fade } from "react-reveal";
 import Coding from "../Hero/coding.svg"; //temporary image source will be replace in final build.
 import { useParams } from "react-router-dom";
+import { FiLink } from 'react-icons/fi';
+
 //must be replaced in final build.
 
 
@@ -44,10 +46,12 @@ const Roadmap = () => {
                     <Fade duration={1500} right>
                       <div className="roadmap_item_content drop-shadow-sm p-5">
                         <img src={Coding} alt="" />
-                        <h3 className="roadmap_header">{item.header}</h3>
+                        <h3 className="roadmap_header">{item.header} {item.icon ? <FiLink className="inline" /> : null}</h3>
                         <ul>
                           {item.text.map((textData, textIndex) => (<li key={textIndex}>
-                            <a href={textData.link} target="_blank" rel="noopener noreferrer">{textData.content}</a>
+                            <a href={textData.link} target="_blank" rel="noopener noreferrer">
+                              {textData.icon} {textData.content}</a>
+
                           </li>))}
                         </ul>
                         {/* console.log(item.text); */}
