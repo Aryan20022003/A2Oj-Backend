@@ -34,6 +34,7 @@ function App() {
             className="w-screen h-screen"
           />
         </div>
+
         <BrowserRouter>
           <Navbar />
           <Routes>

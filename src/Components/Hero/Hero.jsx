@@ -45,9 +45,9 @@ export const Hero = () => {
           NITA-CP
         </h1>
         <p className="hero_slogan">Dream Code Conquer</p>
-        <div className="hero_info rounded">
+        {/* <div className="hero_info rounded">
           <span className="rounded" onClick={handleContestAlertClick}>Contest Alert !</span>
-        </div>
+        </div> */}
       </div>
       <div
         className="hero_right"
@@ -60,9 +60,9 @@ export const Hero = () => {
       >
         <img className="hero_img" src={Coding} alt="" />
       </div>
-      <div className={ `hero_modal ${showModal ? '' : 'hidden'}`} >
+      {/* <div className={ `hero_modal ${showModal ? '' : 'hidden'}`} >
         <p>This is the modal content</p>
-      </div> 
+      </div>  */}
     </section>
   );
 };

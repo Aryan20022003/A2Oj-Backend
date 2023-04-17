@@ -14,6 +14,7 @@ const CodeEditor = () => {
   function showValue(e) {
     alert(editorRef.current.getValue());
   }
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
