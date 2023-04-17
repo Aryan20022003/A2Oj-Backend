@@ -46,7 +46,9 @@ const Roadmap = () => {
                         <img src={Coding} alt="" />
                         <h3 className="roadmap_header">{item.header}</h3>
                         <ul>
-                          {item.text.map((textData, textIndex) => (<li key={textIndex}>{textData}</li>))}
+                          {item.text.map((textData, textIndex) => (<li key={textIndex}>
+                            <a href={textData.link} target="blank">{textData.content}</a>
+                          </li>))}
                         </ul>
                         {/* console.log(item.text); */}
                       </div>
