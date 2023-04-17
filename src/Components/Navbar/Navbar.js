@@ -10,7 +10,7 @@ const Navbar = () => {
     setMenu(!menu);
   };
   const tmp = useParams();
-  console.log("UseParams",tmp);
+  // console.log("UseParams",tmp);
 
   return (
 

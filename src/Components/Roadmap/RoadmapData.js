@@ -13,13 +13,21 @@ import img3 from "./Image/img3.jpg";
 import img4 from "./Image/img4.jpg";
 import img5 from "./Image/img5.jpg";
 import img6 from "./Image/img6.jpg";
+import img7 from "./Image/img7.png";
+import img8 from "./Image/img8.png";
+import img9 from "./Image/img9.png";
+import img10 from "./Image/img10.png";
 
 import { BiBulb, BiBot } from "react-icons/bi";
 import { AiOutlineCodeSandbox } from "react-icons/ai";
 const data = [
   {
     date: "",
+
+    
+
     img: img1,
+
     header: "Basics of Programming",
     text: [
       {
@@ -46,7 +54,11 @@ const data = [
   },
   {
     date: "",
+
+    
+
     img: img2,
+
     header: "Time and space complexity",
     text: [
       {
@@ -65,7 +77,11 @@ const data = [
   },
   {
     date: "",
+
+    
+
     img: img3,
+
     header: "STL",
     text: [
       {
@@ -96,7 +112,11 @@ const data = [
   },
   {
     date: "",
+
+    
+
     img: img4,
+
     header: "Array's Algorithm",
     text: [
       {
@@ -131,7 +151,11 @@ const data = [
   },
   {
     date: "",
+
+    
+
     img: img5,
+
     header: "String's Algorithm",
     text: [
       {
@@ -150,7 +174,11 @@ const data = [
   },
   {
     date: "",
+
+    
+
     img: img6,
+
     header: "Greedy Algorithm",
     text: [
       {
@@ -173,7 +201,11 @@ const data = [
   },
   {
     date: "",
-    img: img4,
+
+    
+
+    img: img7,
+
     header: "Binary Search",
     text: [
       {
@@ -196,7 +228,11 @@ const data = [
   },
   {
     date: "",
-    img: img6,
+
+    
+
+    img: img9,
+
     header: "Number Theory",
     text: [
       {
@@ -249,13 +285,17 @@ const data = [
       },
       {
         content: "13. Mobius Function",
-        link: "https://cp-algorithms.com/num_methods/ternary_search.html",
+        link: "https://www.geeksforgeeks.org/program-mobius-function/",
       },
     ],
   },
   {
     date: "",
-    img: img4,
+
+    
+
+    img: img10,
+
     header: "Recursion and Backtracking",
     text: [
       {
@@ -286,7 +326,11 @@ const data = [
   },
   {
     date: "",
-    img: img5,
+
+    
+
+    img: img1,
+
     header: "Bit Manipulation",
     text: [
       {
@@ -309,7 +353,11 @@ const data = [
   },
   {
     date: "",
-    img: img3,
+
+    
+
+    img: img2,
+
     header: "Dynamic Programming",
     text: [
       {
@@ -353,7 +401,11 @@ const data = [
   },
   {
     date: "",
-    img: img5,
+
+    
+
+    img: img3,
+
     header: "Graph",
     text: [
       {
@@ -416,7 +468,11 @@ const data = [
   },
   {
     date: "",
-    img: img6,
+
+    
+
+    img: img4,
+
     header: "Tree",
     text: [
       {
@@ -431,7 +487,7 @@ const data = [
         content: "3. Binary Lifting",
         link: "https://cp-algorithms.com/graph/lca_binary_lifting.html",
       },
-      { content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree", link: "" },
+      { content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree", link: "https://codeforces.com/blog/entry/68138" },
       {
         content: "5. Dynamic Programming on tree",
         link: "https://usaco.guide/gold/dp-trees?lang=cpp",
@@ -473,7 +529,11 @@ const data = [
   },
   {
     date: "",
-    img: img2,
+
+    
+
+    img: img9,
+
     header: "Miscellaneous Topics",
     text: [
       {
@@ -490,11 +550,11 @@ const data = [
       },
       {
         content: "4. Probability & Expectation",
-        link: "https://usaco.guide/adv/game-theory?lang=cpp",
+        link: "https://www.youtube.com/watch?v=U_h3IjreRek",
       },
       {
         content: "5. Matrix Exponention",
-        link: "https://www.youtube.com/watch?v=U_h3IjreRek",
+        link: "https://usaco.guide/plat/matrix-expo?lang=cpp",
       },
       {
         content: "6. Euler Tour",
@@ -504,8 +564,12 @@ const data = [
   },
   {
     date: "",
-    img: img3,
-    header: "Useful Link",
+
+    
+    header: "Useful Links",
+
+    img: img10,
+
     icon: "FiLink",
     text: [
       {
@@ -520,7 +584,7 @@ const data = [
       },
       {
         content: "LeetCode",
-        link: "https://leetcode.com/?cong=true",
+        link: "https://leetcode.com/",
         icon: <SiLeetcode className="inline " />,
       },
       {

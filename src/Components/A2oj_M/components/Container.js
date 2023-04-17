@@ -6,7 +6,7 @@ const Container = (props) => {
   const { children, ...customMeta } = props;
   // const location = useLocation();
   // console.log(location.pathname);
-  console.log(props.myProp);
+  // console.log(props.myProp);
   
   const meta = {
     title: "A2 Online Judge",
