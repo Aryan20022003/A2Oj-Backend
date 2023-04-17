@@ -6,12 +6,20 @@ import {
   SiTopcoder,
   SiCodeforces,
 } from "react-icons/si";
+
+import img1 from "./Image/img1.jpg";
+import img2 from "./Image/img2.jpg";
+import img3 from "./Image/img3.jpg";
+import img4 from "./Image/img4.jpg";
+import img5 from "./Image/img5.jpg";
+import img6 from "./Image/img6.jpg";
+
 import { BiBulb, BiBot } from "react-icons/bi";
 import { AiOutlineCodeSandbox } from "react-icons/ai";
 const data = [
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img1,
     header: "Basics of Programming",
     text: [
       {
@@ -38,7 +46,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img2,
     header: "Time and space complexity",
     text: [
       {
@@ -57,7 +65,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img3,
     header: "STL",
     text: [
       {
@@ -88,7 +96,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img4,
     header: "Array's Algorithm",
     text: [
       {
@@ -123,7 +131,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img5,
     header: "String's Algorithm",
     text: [
       {
@@ -142,7 +150,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img6,
     header: "Greedy Algorithm",
     text: [
       {
@@ -165,7 +173,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img4,
     header: "Binary Search",
     text: [
       {
@@ -188,7 +196,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img6,
     header: "Number Theory",
     text: [
       {
@@ -247,7 +255,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img4,
     header: "Recursion and Backtracking",
     text: [
       {
@@ -278,7 +286,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img5,
     header: "Bit Manipulation",
     text: [
       {
@@ -301,7 +309,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img3,
     header: "Dynamic Programming",
     text: [
       {
@@ -345,7 +353,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img5,
     header: "Graph",
     text: [
       {
@@ -408,7 +416,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img6,
     header: "Tree",
     text: [
       {
@@ -465,7 +473,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img2,
     header: "Miscellaneous Topics",
     text: [
       {
@@ -496,7 +504,7 @@ const data = [
   },
   {
     date: "",
-    img: "/src/Components/Roadmap/Image/CPSOC1.jpg",
+    img: img3,
     header: "Useful Link",
     icon: "FiLink",
     text: [
