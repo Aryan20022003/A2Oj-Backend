@@ -31,7 +31,6 @@ import { useEffect } from "react";
 import "./About.css";
 import { BsLinkedin } from "react-icons/bs";
 import { SiCodeforces } from "react-icons/si";
-import { AiFillInstagram } from "react-icons/ai";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 const aryan = require("../Abouts/aryan.webp");
 const chetan = require("../Abouts/chetan.webp");
@@ -101,22 +100,42 @@ export default function About() {
               {/* <span className="hidden sm:inline"> | </span> */}
             </p>
             <p className=" flex gap-5 justify-center text-lg text-slate-300">
-              <a className="ids inst" href={item.instagram} target="_blank">
+              <a
+                className="ids inst"
+                href={item.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <BsInstagram />
                 </span>
               </a>
-              <a className="ids git" href={item.github} target="_blank">
+              <a
+                className="ids git"
+                href={item.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <BsGithub />
                 </span>
               </a>
-              <a className="ids cf" href={item.codeforces} target="_blank">
+              <a
+                className="ids cf"
+                href={item.codeforces}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <SiCodeforces />
                 </span>
               </a>
-              <a className="ids lin" href={item.linkedIn} target="_blank">
+              <a
+                className="ids lin"
+                href={item.linkedIn}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <BsLinkedin />
                 </span>
