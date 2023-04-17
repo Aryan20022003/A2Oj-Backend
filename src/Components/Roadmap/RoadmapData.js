@@ -23,11 +23,7 @@ import { AiOutlineCodeSandbox } from "react-icons/ai";
 const data = [
   {
     date: "",
-
-    
-
     img: img1,
-
     header: "Basics of Programming",
     text: [
       {
@@ -55,8 +51,6 @@ const data = [
   {
     date: "",
 
-    
-
     img: img2,
 
     header: "Time and space complexity",
@@ -77,11 +71,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img3,
-
     header: "STL",
     text: [
       {
@@ -112,11 +102,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img4,
-
     header: "Array's Algorithm",
     text: [
       {
@@ -152,8 +138,6 @@ const data = [
   {
     date: "",
 
-    
-
     img: img5,
 
     header: "String's Algorithm",
@@ -174,11 +158,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img6,
-
     header: "Greedy Algorithm",
     text: [
       {
@@ -201,11 +181,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img7,
-
     header: "Binary Search",
     text: [
       {
@@ -228,11 +204,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img9,
-
     header: "Number Theory",
     text: [
       {
@@ -291,11 +263,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img10,
-
     header: "Recursion and Backtracking",
     text: [
       {
@@ -327,8 +295,6 @@ const data = [
   {
     date: "",
 
-    
-
     img: img1,
 
     header: "Bit Manipulation",
@@ -353,11 +319,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img2,
-
     header: "Dynamic Programming",
     text: [
       {
@@ -401,11 +363,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img3,
-
     header: "Graph",
     text: [
       {
@@ -468,11 +426,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img4,
-
     header: "Tree",
     text: [
       {
@@ -487,7 +441,10 @@ const data = [
         content: "3. Binary Lifting",
         link: "https://cp-algorithms.com/graph/lca_binary_lifting.html",
       },
-      { content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree", link: "https://codeforces.com/blog/entry/68138" },
+      {
+        content: "4. Bridges, BridgeTree, Cutpoits, SCC, DFS Tree",
+        link: "https://codeforces.com/blog/entry/68138",
+      },
       {
         content: "5. Dynamic Programming on tree",
         link: "https://usaco.guide/gold/dp-trees?lang=cpp",
@@ -529,11 +486,7 @@ const data = [
   },
   {
     date: "",
-
-    
-
     img: img9,
-
     header: "Miscellaneous Topics",
     text: [
       {
@@ -564,12 +517,8 @@ const data = [
   },
   {
     date: "",
-
-    
     header: "Useful Links",
-
     img: img10,
-
     icon: "FiLink",
     text: [
       {
