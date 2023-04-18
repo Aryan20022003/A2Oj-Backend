@@ -60,57 +60,57 @@ function IndexPage() {
   const [laddersId, setLaddersId] = useLocalStorage("laddersId", "");
   const [error, setError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const onSubmit = (e) => {
-      e.preventDefault();
-      setIsSubmitting(true);
-      let ladder;
-      if (selectedLadder.name === "Division") {
-        ladder = selectedDivision.code;
-        setLaddersName(selectedDivision.name);
-      } else {
-        ladder = selectedRating.code;
-        setLaddersName(selectedRating.name);
-      }
+    e.preventDefault();
+    setIsSubmitting(true);
+    let ladder;
+    if (selectedLadder.name === "Division") {
+      ladder = selectedDivision.code;
+      setLaddersName(selectedDivision.name);
+    } else {
+      ladder = selectedRating.code;
+      setLaddersName(selectedRating.name);
+    }
 
 
 
-      fetch(`https://codeforces.com/api/user.info?handles=${handle}`)
-        .then((res) => res.json())
-        .then((res) => {
-          if (res.status === "OK") {
-            setUser(res);
-            //   router.push(`ladders/${ladder}`);
-            setLaddersId(ladder);
-            navigate(`/ladders`);
-          }
+    fetch(`https://codeforces.com/api/user.info?handles=${handle}`)
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === "OK") {
+          setUser(res);
+          //   router.push(`ladders/${ladder}`);
+          setLaddersId(ladder);
+          navigate(`/ladders`);
+        }
 
-          if (res.status === "FAILED") {
-            setError(res.comment);
-          }
-        })
-        .catch((err) => {
-          setError(err.response);
-        })
-        .finally(() => {
-          setIsSubmitting(false);
-          // window.location.reload();
-        });
-    
+        if (res.status === "FAILED") {
+          setError(res.comment);
+        }
+      })
+      .catch((err) => {
+        setError(err.response);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+        // window.location.reload();
+      });
+
   };
 
   return (
-    <div id = "a2oj"
-          className="top-3 relative"
-          data-aos="zoom-in-down"
-          data-aos-delay="100"
-          data-aos-duration="500"
-          data-aos-easing="ease-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+    <div id="a2oj"
+      className="top-3 relative"
+      data-aos="zoom-in-down"
+      data-aos-delay="100"
+      data-aos-duration="500"
+      data-aos-easing="ease-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
     >
-      <Header/>
+      <Header />
       <main className="py-8">
         <div className="border shadow h-auto px-6 py-8 container mx-auto sm:w-8/12 lg:w-6/12 rounded-none sm:rounded-md">
           {error !== null ? (

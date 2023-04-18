@@ -127,13 +127,14 @@
   .events-hidden {
     visibility: visible;
     position: inherit;
+    /* overflow: hidden; */
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     flex-direction: row; */
   }
 
   .events-hidden span {
-    margin: 1rem 2rem;
+    margin: 1rem 1.5rem;
   }
 
   .events-hidden span a {

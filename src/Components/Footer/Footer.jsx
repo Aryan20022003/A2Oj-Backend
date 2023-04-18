@@ -67,7 +67,7 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className='events-hidden'>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row justify-between px-4">
                             <span>
                                 <NavLink to="/home">Home</NavLink>
                             </span>
