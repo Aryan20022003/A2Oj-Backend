@@ -12,8 +12,13 @@ export default function Leaderboard() {
     });
   });
   return (
-    <section id="leaderboard">
-      <SectionTitle title="NITA Leaderboard" />
+    <section id="leaderboard"
+            
+    
+    >
+      <SectionTitle title="NITA Leaderboard"
+      
+      />
       <div className="text-white">
         {/* <Fade duration={500} bottom> */}
         <CfRating />

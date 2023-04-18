@@ -42,7 +42,7 @@ const data = [
         link: " https://www.geeksforgeeks.org/arrays-and-strings-in-c/",
       },
       {
-        content: "5. Functions",
+        content: "5. Function",
         link: "https://www.geeksforgeeks.org/functions-in-cpp/",
       },
     ],
@@ -52,7 +52,7 @@ const data = [
 
     img: img2,
 
-    header: "Time and space complexity",
+    header: "Time and Space Complexity",
     text: [
       {
         content: "1. Time Complexity",
@@ -78,7 +78,7 @@ const data = [
         link: "https://www.youtube.com/playlist?list=PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn",
       },
       {
-        content: "2.Iterator",
+        content: "2. Iterator",
         link: "https://www.geeksforgeeks.org/iterators-c-stl/",
       },
       {
@@ -86,7 +86,7 @@ const data = [
         link: " https://www.geeksforgeeks.org/set-vs-map-c-stl/",
       },
       {
-        content: "4. Stack , Queue ,Dequeue and Priority-Queue",
+        content: "4. Stack, Queue, Dequeue and Priority-Queue",
         link: "https://www.geeksforgeeks.org/c-programs-gq/stack-queue-cc-programs-gq/",
       },
       {

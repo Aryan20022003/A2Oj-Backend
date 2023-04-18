@@ -33,7 +33,7 @@ const Navbar = () => {
             <ul className="nav_menu_list">
               <li className="nav_menu_item">
                 <NavLink
-                  to="/"
+                  to="/home"
                   //   activeClassName="activeLink"
                 >
                   Home
@@ -94,7 +94,7 @@ const Navbar = () => {
             // style={(isActive) => ({
             //   color: isActive ? "green" : "blue",
             // })}
-            to="/"
+            to="/home"
           >
             Home
           </NavLink>

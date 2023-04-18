@@ -14,6 +14,7 @@ import Aos from "aos";
 import { Footer } from "./Components/Footer/Footer";
 import About from "./Components/Abouts/About";
 import LaddersPage from "./Components/A2oj_M/ladders/[laddersId]";
+import Nopage from "./Components/Nopage/Nopage";
 
 function App() {
   useEffect(() => {
@@ -38,14 +39,15 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route index element={<Hero />}></Route>
+            <Route index path="/" element={<Hero />}></Route>
+            <Route index path="/home" element={<Hero />}></Route>
             <Route path="/a2oj" element={<A2oj_M />}></Route>
             <Route path="/leaderboard" element={<LeaderBoard />}></Route>
             <Route path="/roadmap" element={<Roadmap />}></Route>
             <Route path="/code-editor" element={<CodeEditor />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/ladders" element={<LaddersPage />}></Route>
-            <Route path="*" element={<About />} />
+            <Route path="*" element={<Nopage/>} />
           </Routes>
           <Footer />
         </BrowserRouter>
