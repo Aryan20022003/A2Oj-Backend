@@ -22,7 +22,14 @@ const CodeEditor = () => {
     });
   });
   return (
-    <section id="code-editor">
+    <section id="code-editor"
+        data-aos="zoom-in-down"
+        data-aos-delay="100"
+        data-aos-duration="500"
+        data-aos-easing="ease-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+    >
       <SectionTitle title="Code Editor" />
       <Issue title="We are working on this page. Explore others!!" />
       {/* <Fade bottom>

@@ -7,6 +7,7 @@ import Loding from "../Loding/Loding";
 // data.result.sort((a, b) => b.rating - a.rating);
 
 function Content(props) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [items, setItems] = useState([]);
   const [ismax, setIsmax] = useState(0);
   const [iscur, setIscur] = useState(1);
@@ -21,6 +22,15 @@ function Content(props) {
     avatar: "",
     maxRank: "",
   });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const updateInd = (newInd) => {
     setInd(newInd);
@@ -75,7 +85,14 @@ function Content(props) {
         <Issue title="Codeforces is temporarily unavailable. Please, return in several minutes." />
       ) : null}
       {error === null && items.length !== 0 ? (
-        <div className="w-full ">
+        <div className="w-full "
+        data-aos="zoom-in-down"
+        data-aos-delay="100"
+        data-aos-duration="500"
+        data-aos-easing="ease-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        >
           {/* Header */}
           <div
             className="font-serif  "
@@ -86,7 +103,7 @@ function Content(props) {
             }}
           >
             <div className="w-1/12 flex justify-center">Rank</div>
-            <div className="w-3/12 justify-center flex">Avatar</div>
+            { windowWidth > 550 && <div className="w-3/12 justify-center flex">Avatar</div>}
             <div className="w-3/12 flex justify-center">Handle</div>
             <button
               className="w-3/12 underline flex justify-center"
@@ -142,7 +159,7 @@ function Content(props) {
               }}
             >
               <div className="w-1/12 justify-center flex">{index + 1}.</div>
-              <div className="w-3/12 justify-center flex">
+              {windowWidth > 550 && <div className="w-3/12 justify-center flex">
                 <a
                   href={`https://codeforces.com/profile/${item.handle}`}
                   target="_blank"
@@ -164,7 +181,7 @@ function Content(props) {
                 >
                   <img src={item.avatar} alt={item.handle} className="Avatar" />
                 </a>
-              </div>
+              </div>}
               <div className="w-3/12 flex justify-center overflow-hidden">
                 <a
                   href={`https://codeforces.com/profile/${item.handle}`}

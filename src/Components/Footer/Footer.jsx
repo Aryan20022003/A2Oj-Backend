@@ -18,6 +18,9 @@ export const Footer = () => {
                     </div>
                     <div class="events">
                         <p>
+                            <NavLink to="/home">Home</NavLink>
+                        </p>
+                        <p>
                             <NavLink to="/a2oj">A2OJ</NavLink>
                         </p>
                         <p>
@@ -66,17 +69,20 @@ export const Footer = () => {
                     <div className='events-hidden'>
                         <div className="flex flex-row">
                             <span>
-                                <NavLink to="/A2OJ">A2OJ</NavLink>
+                                <NavLink to="/home">Home</NavLink>
+                            </span>
+                            <span>
+                                <NavLink to="/a2oj">A2OJ</NavLink>
                             </span>
                             <span >
                                 <NavLink to="/about">About</NavLink>
                             </span>
-                            <span>
-                                <NavLink to="/roadmap">Roadmap</NavLink>
-                            </span>
                         </div >
                         <div className="flex flex-row justify-center gap-5">
 
+                            <span>
+                                <NavLink to="/roadmap">Roadmap</NavLink>
+                            </span>
                             <span>
                                 <NavLink to="/code-editor">Code Editor</NavLink>
                             </span>

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;300&display=swap");
+:root {
+  --button: #b3b3b3;
+  --button-color: #0a0a0a;
+  --shadow: #000;
+  --bg: #737373;
+  --header: #7a7a7a;
+  --color: #ffffff;
+  --lit-header: #e6e6e6;
+  --speed: 2s;
+}
+
+.mnbody {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+}
+.drctlink {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--button);
+  color: var(--button-color);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+
+}
+.desc {
+  font-weight: 100;
+}
+.head404 {
+  display: flex;
+  justify-content: center;
+  font-size: 10rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 1rem;
+  color: var(--color);
+}
+.info {
+  text-align: center;
+  line-height: 1.5;
+  max-width: clamp(16rem, 90vmin, 25rem);
+}
+.info > .desc {
+  margin-bottom: 3rem;
+}
+
+.headnp {
+  font-size: 1.5rem;
+  
+}
