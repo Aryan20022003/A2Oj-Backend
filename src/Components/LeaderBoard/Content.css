@@ -26,9 +26,8 @@
   font-size: 56px;
 }
 
-.sngl{
-    padding-bottom: 1%;
-    
+.sngl {
+  padding-bottom: 1%;
 }
 
 @media (max-width: 830px) {
@@ -89,6 +88,32 @@
   width: 100%;
 }
 
+.rank {
+  width: 8.33%; /*1/12*/
+}
+
+.avatar{
+  width: 25%; /*3/12*/
+}
+
+.handleL {
+  width: 25%; /* 3/12 */
+
+}
+
+
+.current {
+  width: 25%; /*3/12*/
+}
+
+.maximum {
+  width: 25%; /*3/12*/
+}
+
+.level{
+  width: 25%; /*3/12*/
+}
+
 .show-more-button {
   display: block;
   width: 100%;
@@ -103,5 +128,28 @@
   .show-more-button {
     padding: 4px;
     font-size: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .rank {
+    width: 8.33%; /*1/6*/
+  }
+  .avatar{
+    width: 16.66%; /*1/6*/
+  }
+  .handleL{
+    width: 40.66%; /*1/6*/
+    
+
+  }
+  .current {
+    width: 15.33%; /*1/6*/
+  }
+  .maximum {
+    width: 15.33%; /*1/6*/
+  }
+  .level{
+    width: 25.66%; /*1/6*/
   }
 }
