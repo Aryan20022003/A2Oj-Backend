@@ -31,4 +31,8 @@ app.post('/', async (req, res) => {
             });
 });
 
+app.get("/ping", req, res => {
+      res.send("pong");
+});
+
 app.listen(3579, () => console.log('Server running on port 3579'));
