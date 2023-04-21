@@ -46,7 +46,7 @@ const CodeEditor = () => {
       data-aos-once="false"
     >
       <SectionTitle title="Code Editor" />
-      <Issue title="We are working on this page. Explore others!!" />
+      {/* <Issue title="We are working on this page. Explore others!!" /> */}
       <Fade bottom>
         <div className="codeEditor max-w-full  mx-4 rounded-md p-2 bg-slate-400 bg-opacity-10 backdrop-blur-md shadow-indigo-600 overflow-auto md:mx-11 ">
           <Editor
