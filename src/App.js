@@ -16,6 +16,7 @@ import About from "./Components/Abouts/About";
 import LaddersPage from "./Components/A2oj_M/ladders/[laddersId]";
 import Nopage from "./Components/Nopage/Nopage";
 
+
 function App() {
   useEffect(() => {
     window.scrollTo({
