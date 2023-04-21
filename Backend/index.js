@@ -31,7 +31,7 @@ app.post('/', async (req, res) => {
             });
 });
 
-app.get("/ping", req, res => {
+app.get("/isitworking", (req, res) => {
       res.send("pong");
 });
 
