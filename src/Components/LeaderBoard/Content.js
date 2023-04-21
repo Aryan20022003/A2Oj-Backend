@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Content.css";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Issue from "../Issue/Issue";
 import Loding from "../Loding/Loding";
 
@@ -28,8 +28,8 @@ function Content(props) {
       setWindowWidth(window.innerWidth);
     }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const updateInd = (newInd) => {
@@ -38,7 +38,7 @@ function Content(props) {
 
   useEffect(() => {
     fetch(
-      `https://codeforces.com/api/user.info?handles=Mayur9agt;SHARAD_0_1;pravesh_2505;arya_afzal;Rishant_07;nishant0129;kumarabhishek0776;127001evil;dipayan2002;arupdeb00;kvdmt2401;Adityaraj5200;prathamnagaria;Afk-Akash;qwertynoob;charan_kumar;saurabhm04;Ancore;anubhavsingh11;ankitraj00;vkpmail019;7288saurabhkumar;ankit0003;sriramsanthosh;ravi.ranjan;Keshav178;ankitgirase27;PRIME3015;Aman_singh0;____V;jon-snow23;Zamiul043;mukund0007;theflash17;sebastian01;kavi_khalique;pradeptakandar.nita;uttamkr12;lalitkishor;demon_98;Vishnu_Sandeep;csud_1;Vanam_2021;popeyeff;ritik_kaushal;ankit0369;ekta.jain2931;pavani_koyyana;AbhinavAbhishek;indravihar15722;Manshi417;Anshuman_21;vineet_kash_p;thish;__ish-gpt__99;rahul04517;shubhamkr78700;Niraj.100;jaadu_bhaiya;rookie09;tanishqkapoor;_rohit_n;mcpigeons_04;am_kumar9955;ankit12_lucifer;ishita1053;ranjan_prabhat;recrown;rajan087;bkaurav;shashi_42;harsh_agarwal30;six_05;ankit748846;prakriti06;its_kundan;geeta_Krishna_dev;singh1128;adityakanu;iris-xe_i7;AwnishShahi;Courage2003;anuroop2709;	JNbalraj17;21UEE091Sonali;rittikamaj21;vikram110703;parnashree_16;PriyankaSheoran;Palak_priya;rounak428;saha_rimi;Gupta2025;azmatroshan;vishu__0123;Ssaloni_009;Undead_King;HEMANT12;wintersoldier2004;Anuj_Shahi;mohit_369;dhruvg13;manish_rohila;aman0037;annhilator_08;Harsh_Chugh;Nilesh.ky;coder_ravan;chetan_saini;akshatverma;Govind_Singh;gourabsingha1;biprajitpaul5555;gollum123;yashpal_97;Ambika_kumar;GC_PRIYANSHU;suyasho786;ami_2025;Aryan20022003;loki_7;Tanzei;zombiedub;Tharun0102;tanyarajhans7;Simp_coder;coder_vk;aryaman3007;chandan_1357;prajna_;abhishek75230;Austin_5;VIDYASAGAR2000;Desh_Deepak_Kant;amit5012003;abhigeddam94;Angiradas;Mjxt77;SATYENDRA_JANGID;Debajyoti_2003;Adarsh1662;alok64;shubha2003;vedant_vaidya_77;saumyadipdeb07;Prime9431;SamIsTheFBI;riya2025;oohomohit;shikha_01;suraj_nita;ravishankar_tiwari;aryan_619;anuj_7072a;Aman_Sirmaur19;Praths;Parthib_Nita;Manish81912;praveennqumar;Ragefury123;satwikgupta18;gouravmajumder6;Akshatawasthi;Raj225;su01;erpranjal;muskangupta30;DevilDeepak;debanshuswag;ishitakar2003;aditya_raj1719;neel2022;aadiXD;Ritika5136;anjalisingh22122003;abhirajjha_001;Saptadipa;li_ght;Mayank_NitA;Kaithedevil;coder_adi07;`
+      `https://codeforces.com/api/user.info?handles=Mayur9agt;SHARAD_0_1;pravesh_2505;arya_afzal;Rishant_07;nishant0129;kumarabhishek0776;127001evil;dipayan2002;arupdeb00;kvdmt2401;Adityaraj5200;prathamnagaria;Afk-Akash;qwertynoob;charan_kumar;saurabhm04;Ancore;anubhavsingh11;ankitraj00;Kritanjali_Chakraborty11;puja_dutta2109;vishal_deep;ishansingh3091;samrat_53;nehalsriva1508;Sudip_karmakar25;Raj_Tiwari;Gaurav_raj_54646;ayush_udy;debargha_deb;vkpmail019;7288saurabhkumar;ankit0003;sriramsanthosh;ravi.ranjan;Keshav178;ankitgirase27;PRIME3015;Aman_singh0;____V;jon-snow23;Zamiul043;mukund0007;theflash17;sebastian01;kavi_khalique;pradeptakandar.nita;uttamkr12;lalitkishor;demon_98;Vishnu_Sandeep;csud_1;Vanam_2021;popeyeff;ritik_kaushal;ankit0369;ekta.jain2931;pavani_koyyana;AbhinavAbhishek;indravihar15722;Manshi417;Anshuman_21;vineet_kash_p;thish;__ish-gpt__99;rahul04517;shubhamkr78700;Niraj.100;jaadu_bhaiya;rookie09;tanishqkapoor;_rohit_n;mcpigeons_04;am_kumar9955;ankit12_lucifer;ishita1053;ranjan_prabhat;recrown;rajan087;bkaurav;shashi_42;harsh_agarwal30;six_05;ankit748846;prakriti06;its_kundan;geeta_Krishna_dev;singh1128;adityakanu;iris-xe_i7;AwnishShahi;Courage2003;anuroop2709;	JNbalraj17;21UEE091Sonali;rittikamaj21;vikram110703;parnashree_16;PriyankaSheoran;Palak_priya;rounak428;saha_rimi;Gupta2025;azmatroshan;vishu__0123;Ssaloni_009;Undead_King;HEMANT12;wintersoldier2004;Anuj_Shahi;mohit_369;dhruvg13;manish_rohila;aman0037;annhilator_08;Harsh_Chugh;Nilesh.ky;coder_ravan;chetan_saini;akshatverma;Govind_Singh;gourabsingha1;biprajitpaul5555;gollum123;yashpal_97;Ambika_kumar;GC_PRIYANSHU;suyasho786;ami_2025;Aryan20022003;loki_7;Tanzei;zombiedub;Tharun0102;tanyarajhans7;Simp_coder;coder_vk;aryaman3007;chandan_1357;prajna_;abhishek75230;Austin_5;VIDYASAGAR2000;Desh_Deepak_Kant;amit5012003;abhigeddam94;Angiradas;Mjxt77;SATYENDRA_JANGID;Debajyoti_2003;Adarsh1662;alok64;shubha2003;vedant_vaidya_77;saumyadipdeb07;Prime9431;SamIsTheFBI;riya2025;oohomohit;shikha_01;suraj_nita;ravishankar_tiwari;aryan_619;anuj_7072a;Aman_Sirmaur19;Praths;Parthib_Nita;Manish81912;praveennqumar;Ragefury123;satwikgupta18;gouravmajumder6;Akshatawasthi;Raj225;su01;erpranjal;muskangupta30;DevilDeepak;debanshuswag;ishitakar2003;aditya_raj1719;neel2022;aadiXD;Ritika5136;anjalisingh22122003;abhirajjha_001;Saptadipa;li_ght;Mayank_NitA;Kaithedevil;coder_adi07;`
     )
       .then((result) => result.json())
       .then((result) => {
@@ -70,8 +70,18 @@ function Content(props) {
   }, [ismax, iscur]);
 
   const [isExpanded, setIsExpanded] = useState(false);
-  // const displayCount = isExpanded ? 400 : 10;
   const displayCount = 400;
+  const [currRating, setCurrRating] = useState("Current Rating");
+  const [maxRating, setMaxRating] = useState("Maximum Rating");
+  useEffect(() => {
+    if (windowWidth > 550) {
+      setCurrRating("Current Rating");
+      setMaxRating("Maximum Rating");
+    } else {
+      setCurrRating("Curr.");
+      setMaxRating("Max.");
+    }
+  }, [windowWidth]);
   const displayedObjects = items.slice(0, displayCount);
   const navigate = useNavigate();
   const showClick = () => {
@@ -85,15 +95,15 @@ function Content(props) {
         <Issue title="Codeforces is temporarily unavailable. Please, return in several minutes." />
       ) : null}
       {error === null && items.length !== 0 ? (
-        <div className="w-full "
-        data-aos="zoom-in-down"
-        data-aos-delay="100"
-        data-aos-duration="500"
-        data-aos-easing="ease-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        <div
+          className="w-full "
+          data-aos="zoom-in-down"
+          data-aos-delay="100"
+          data-aos-duration="500"
+          data-aos-easing="ease-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
         >
-          {/* Header */}
           <div
             className="font-serif  "
             style={{
@@ -102,30 +112,28 @@ function Content(props) {
               marginBottom: "15px",
             }}
           >
-            <div className="w-1/12 flex justify-center">Rank</div>
-            { windowWidth > 550 && <div className="w-3/12 justify-center flex">Avatar</div>}
-            <div className="w-3/12 flex justify-center">Handle</div>
+            <div className="w-1/12 rank flex justify-center">Rank</div>
+            {windowWidth > 550 && (
+              <div className="w-3/12 justify-center flex">Avatar</div>
+            )}
+            <div className="w-3/12 handleL flex justify-center">Handle</div>
             <button
-              className="w-3/12 underline flex justify-center"
+              className="w-3/12 current underline flex justify-center"
               onClick={() => {
                 if (iscur !== 1) {
-                  // data.result.sort((a, b) => b.rating - a.rating);
                   setIscur(1);
                 } else {
-                  // data.result.sort((a, b) => - b.rating + a.rating);
                   setIscur(2);
                 }
                 setIsmax(0);
               }}
             >
-              {iscur === 0
-                ? "Cur. Rating"
-                : iscur === 2
-                ? "Cur. Rating \u2193"
-                : "Cur. Rating \u2191"}{" "}
+              {" "}
+              {currRating}
+              {iscur === 0 ? "" : iscur === 2 ? " \u2193" : " \u2191"}{" "}
             </button>
             <button
-              className="w-3/12 underline flex justify-center"
+              className="w-3/12 maximum underline flex justify-center"
               onClick={() => {
                 if (ismax !== 2) {
                   setIsmax(2);
@@ -135,14 +143,10 @@ function Content(props) {
                 setIscur(0);
               }}
             >
-              {" "}
-              {ismax === 0
-                ? "Max. Rating"
-                : ismax === 1
-                ? "Max. Rating \u2193"
-                : "Max. Rating \u2191"}{" "}
+              {maxRating}
+              {ismax === 0 ? "" : ismax === 1 ? " \u2193" : " \u2191"}{" "}
             </button>
-            <div className="w-3/12 flex justify-center">Level</div>
+            <div className="w-3/12 level flex justify-center">Level</div>
           </div>
 
           {/* Header Close */}
@@ -158,62 +162,48 @@ function Content(props) {
                 marginBottom: "10px",
               }}
             >
-              <div className="w-1/12 justify-center flex">{index + 1}.</div>
-              {windowWidth > 550 && <div className="w-3/12 justify-center flex">
+              <div className="w-1/12 rank justify-center flex">
+                {index + 1}.
+              </div>
+              {windowWidth > 550 && (
+                <div className="w-3/12 avatar justify-center flex">
+                  <a
+                    href={`https://codeforces.com/profile/${item.handle}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={item.avatar}
+                      alt={item.handle}
+                      className="Avatar"
+                    />
+                  </a>
+                </div>
+              )}
+              <div className="w-3/12 handleL flex justify-center overflow-hidden">
                 <a
                   href={`https://codeforces.com/profile/${item.handle}`}
                   target="_blank"
                   rel="noreferrer"
-                  // onClick={(e) => {
-                  //   e.preventDefault();
-                  //   setInd(-1);
-                  //   setInd(index);
-                  //   setUser({
-                  //     handle: item.handle,
-                  //     avatar: item.avatar,
-                  //     maxRating: item.maxRating,
-                  //     curRating: item.rating,
-                  //     rank: item.rank,
-                  //     maxRank: item.maxRank,
-                  //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
-                  //   });
-                  // }}
                 >
-                  <img src={item.avatar} alt={item.handle} className="Avatar" />
-                </a>
-              </div>}
-              <div className="w-3/12 flex justify-center overflow-hidden">
-                <a
-                  href={`https://codeforces.com/profile/${item.handle}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  // onClick={(e) => {
-                  //   e.preventDefault();
-                  //   setInd(-1);
-                  //   setInd(index);
-                  //   setUser({
-                  //     handle: item.handle,
-                  //     avatar: item.avatar,
-                  //     maxRating: item.maxRating,
-                  //     curRating: item.rating,
-                  //     rank: item.rank,
-                  //     maxRank: item.maxRank,
-                  //     state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
-                  //   });
-                  // }}
-                >
-                  <code>
-                    <b>{item.handle}</b>
+                  <code className="handle-text">
+                    <b>
+                      {windowWidth > 830
+                        ? item.handle
+                        : item.handle.length > 13
+                        ? `${item.handle.slice(0, 13)}`
+                        : item.handle}
+                    </b>
                   </code>
                 </a>
               </div>
-              <div className="w-3/12 flex justify-center ">
+              <div className="w-3/12 flex current justify-center ">
                 <kbd>{item.rating}</kbd>
               </div>
-              <div className="w-3/12 flex justify-center ">
+              <div className="w-3/12 flex maximum justify-center ">
                 <kbd>{item.maxRating}</kbd>
               </div>
-              <div className="w-3/12 flex justify-center">
+              <div className="w-3/12 level flex justify-center">
                 <div
                   className={`badge  rounded badge-lg ${
                     ismax
@@ -259,11 +249,6 @@ function Content(props) {
               </div>
             </div>
           ))}
-          {/* <div className="show-more-container">
-          <button className="show-more-button rounded opacity-50 hover:opacity-100" onClick={showClick}>
-            {isExpanded ? "Hide" : "Show More"}
-          </button>
-        </div> */}
         </div>
       ) : null}
     </>
