@@ -5,7 +5,7 @@ const axios = require("axios");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.post('/', async (req, res) => {
+app.post('/run', async (req, res) => {
       const { code, input } = req.body;
       console.log(code); console.log(input);
       var program = {
