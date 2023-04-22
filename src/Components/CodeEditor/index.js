@@ -8,7 +8,9 @@ import Issue from "../Issue/Issue";
 import axios from "axios";
 
 const CodeEditor = () => {
-  const [code, setCode] = useState('#include <iostream>\n\nusing namespace std;\n\nint main() {\n  cout << "Hello, world!";\n  return 0;\n}');
+  const [code, setCode] = useState(
+    '#include <iostream>\n\nusing namespace std;\n\nint main() {\n  cout << "Hello, world!";\n  return 0;\n}'
+  );
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const editorRef = useRef(null);
@@ -17,28 +19,28 @@ const CodeEditor = () => {
   }
   function submitCode(e) {
     console.log("Clicked");
-    axios.post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
-      code: code,
-      input: input,
-    }).then((res) => {
-      // console.log(res.data)
-      setOutput(res.data);
-    }
-    ).catch((err) => {
-      // console.log(err.response.data);
-      setOutput(err.response.data);
-    }
-    );
+    axios
+      .post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
+        code: code,
+        input: input,
+      })
+      .then((res) => {
+        // console.log(res.data)
+        setOutput(res.data);
+      })
+      .catch((err) => {
+        // console.log(err.response.data);
+        setOutput(err.response.data);
+      });
   }
 
   useEffect(() => {
-    console.log(input)
+    console.log(input);
   }, [input]);
 
-
-
   return (
-    <section id="code-editor"
+    <section
+      id="code-editor"
       data-aos="zoom-in-down"
       data-aos-delay="100"
       data-aos-duration="500"
@@ -61,26 +63,33 @@ const CodeEditor = () => {
           ></Editor>
           <div className="grid-rows-3 gap-2 pt-3">
             <div className="Input py-2 px-1">
-              <h2 className="text-2xl pb-3 font-medium text-slate-300" >
+              <h2 className="text-2xl pb-3 font-medium text-slate-300">
                 Input
               </h2>
               <textarea
                 className="bg-zinc-900 overflow-auto w-full h-36 lg:h-44 text-stone-200  text-sm
               focus:outline-0"
-                value={input} onChange={(e) => { setInput(e.target.value) }}
+                value={input}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                }}
               ></textarea>
             </div>
             <div className="Output py-2 px-1">
               <h2 className="text-2xl pb-3 font-medium text-slate-300">
                 Output
               </h2>
-              <textarea className="bg-zinc-900 overflow-auto w-full h-32 lg:h-40 text-stone-200  text-sm focus:outline-0" value={output} onChange={(e) => {
-                setOutput(e.target.value)
-              }}></textarea>
+              <textarea
+                className="bg-zinc-900 overflow-auto w-full h-32 lg:h-40 text-stone-200  text-sm focus:outline-0"
+                value={output}
+                onChange={(e) => {
+                  setOutput(e.target.value);
+                }}
+              ></textarea>
             </div>
             <button
               type="button"
-              class="px-14 py-2 mx-2 text-base md:text-xl mb-4 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="px-14 py-2 mx-2 text-base md:text-xl mb-4 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 active:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               onClick={submitCode}
             >
               Run
