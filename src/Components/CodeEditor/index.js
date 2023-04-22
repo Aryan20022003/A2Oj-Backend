@@ -16,6 +16,7 @@ const CodeEditor = () => {
     editorRef.current = editor;
   }
   function submitCode(e) {
+    console.log("Clicked");
     axios.post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
       code: code,
       input: input,
