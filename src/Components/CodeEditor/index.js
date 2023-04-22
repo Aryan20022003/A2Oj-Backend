@@ -9,7 +9,7 @@ import axios from "axios";
 
 const CodeEditor = () => {
   const [code, setCode] = useState(
-    '#include <iostream>\n\nusing namespace std;\n\nint main() {\n  cout << "Hello, world!";\n  return 0;\n}'
+    '#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  cout << "Hello, world! This is NITA CP_HUB";\n  return 0;\n}'
   );
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
