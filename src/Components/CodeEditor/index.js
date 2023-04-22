@@ -17,7 +17,7 @@ const CodeEditor = () => {
   }
   function submitCode(e) {
     console.log("Clicked");
-    axios.post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
+    axios.post("https://weak-cyan-chick-tux.cyclic.app/run", {
       code: code,
       input: input,
     }).then((res) => {
