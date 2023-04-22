@@ -8,6 +8,12 @@ import Issue from "../Issue/Issue";
 import axios from "axios";
 
 const CodeEditor = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  });
   const [code, setCode] = useState(
     '#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  cout << "Hello, world! This is NITA CP_HUB";\n  return 0;\n}'
   );
@@ -19,19 +25,18 @@ const CodeEditor = () => {
   }
   function submitCode(e) {
     console.log("Clicked");
-    axios
-      .post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
-        code: code,
-        input: input,
-      })
-      .then((res) => {
-        // console.log(res.data)
-        setOutput(res.data);
-      })
-      .catch((err) => {
-        // console.log(err.response.data);
-        setOutput(err.response.data);
-      });
+    axios.post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
+      code: code,
+      input: input,
+    }).then((res) => {
+      // console.log(res.data)
+      setOutput(res.data);
+    }
+    ).catch((err) => {
+      // console.log(err.response.data);
+      setOutput(err.response.data);
+    }
+    );
   }
 
   useEffect(() => {
