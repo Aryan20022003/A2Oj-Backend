@@ -15,6 +15,7 @@
     "emailjs-com": "^3.2.0",
     "lottie-react": "^2.4.0",
     "particles.js": "^2.0.0",
+    "pwa-asset-generator": "^6.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-hook-form": "^7.43.9",
@@ -25,7 +26,8 @@
     "react-scripts": "5.0.0",
     "react-typed": "^1.2.0",
     "swr": "^2.1.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "workbox-cdn": "^5.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

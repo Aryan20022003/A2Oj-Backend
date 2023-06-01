@@ -11,12 +11,12 @@ import { NavLink } from 'react-router-dom'
 export const Footer = () => {
     return (
         <div className='footer-wrapper'>
-            <div class="full">
+            <div className="full">
                 <div class="firstContainer">
-                    <div class="logo">
+                    <div className="logo">
                         <img src={logo} alt="logo" width="150" />
                     </div>
-                    <div class="events">
+                    <div className="events">
                         <p>
                             <NavLink to="/home">Home</NavLink>
                         </p>
@@ -37,8 +37,8 @@ export const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div class="secondContainer">
-                    <div class="location">
+                <div className="secondContainer">
+                    <div className="location">
                         <h3>DEVELOPERS & CODERS CLUB NITA</h3>
                         <p>
                             National Institute of Technology, Agartala,
@@ -46,9 +46,9 @@ export const Footer = () => {
                             Jirania, Tripura - 799046
                         </p>
                     </div>
-                    <div class="social">
+                    <div className="social">
                         <h3>SOCIAL</h3>
-                        <div class="imgContainer">
+                        <div className="imgContainer">
                             <a href="https://www.instagram.com/dccnita/" target="_blank" rel="noopener noreferrer">
                                 <img src={instagram} alt="" />
                             </a>

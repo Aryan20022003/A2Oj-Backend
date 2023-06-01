@@ -8,16 +8,11 @@ import Navbar from "./Components/Navbar//Navbar";
 import { Hero } from "./Components/Hero//Hero";
 import Roadmap from "./Components/Roadmap/Roadmap";
 // import { FAQs } from "./Components/FAQs/Faq";
-import ContactForm from "./Components/Contact";
-import ProgressBar from "./Components/ProgressBar";
-import Prizes from "./Components/Prizes/Prizes";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Aos from "aos";
 import { Footer } from "./Components/Footer/Footer";
 import About from "./Components/Abouts/About";
 import ScrollToTopButton from "./Components/ScrollToTopButton/ScrollToTopButton";
-import Leaderboard from "./Components/LeaderBoard";
 
 function AllCombine() {
   window.particlesJS.load("particles", "/particlesjs-config.json");

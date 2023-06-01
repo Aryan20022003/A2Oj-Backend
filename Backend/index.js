@@ -24,11 +24,11 @@ app.post('/run', async (req, res) => {
                   "https://api.jdoodle.com/v1/execute",
                   program
             ).then((result) => {
-                  console.log(result.data.output);
+                  // console.log(result.data.output);
                   res.send(result.data.output);
             }
             ).catch((err) => {
-                  console.log(err.output);
+                  // console.log(err.output);
                   res.send(err.output);
             });
 });
