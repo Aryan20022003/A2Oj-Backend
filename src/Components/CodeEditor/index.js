@@ -20,7 +20,7 @@ const CodeEditor = () => {
   function submitCode(e) {
     console.log("Clicked");
     axios
-      .post("https://dull-teal-bandicoot-toga.cyclic.app/run", {
+      .post("https://glamorous-sunglasses-toad.cyclic.app/run", {
         code: code,
         input: input,
       })
@@ -29,8 +29,8 @@ const CodeEditor = () => {
         setOutput(res.data);
       })
       .catch((err) => {
-        // console.log(err.response.data);
-        setOutput(err.response.data);
+        console.log(err.message);
+        setOutput(err.message);
       });
   }
 
