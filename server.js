@@ -4,7 +4,7 @@ const cors = require("cors");
 const codeController = require("./controller/codeController");
 const userController = require("./controller/userController");
 const mongoose = require("mongoose");
-require("dotenv").config();
+const dotenv = require("dotenv").config;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
