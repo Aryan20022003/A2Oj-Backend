@@ -5,11 +5,12 @@ const codeController = require("./controller/codeController");
 const userController = require("./controller/userController");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config;
+const hpp=require('hpp');
+const mongoSanitize=require('express-mongo-sanitize');
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.json("10kb"));
 app.use(cors());
-
 const DB = process.env.DB.replace("<PASSWORD>", process.env.PASSWORD);
 
 mongoose
@@ -25,13 +26,23 @@ mongoose
     console.error("Error connecting to MongoDB:", error.message);
   });
 
-app.post("/run", codeController);
+app.use(hpp());
+app.use(mongoSanitize());
 
+
+
+app.post("/run", codeController);
 app.get("/user", userController.getUser);
 app.post("/user/:userId", userController.createUser);
 
 app.get("/isitworking", (req, res) => {
   res.send("pong");
+});
+
+app.all('*', (req, resp, next) => {
+  const error = new Error('invalid route');
+  error.status = 404;
+  next(error);
 });
 
 app.use((error, req, res, next) => {
