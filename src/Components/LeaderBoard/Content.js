@@ -242,7 +242,7 @@ function Content(props) {
                   }`}
                 >
                   {ismax ? (
-                    item.maxRank == "candidate master" ? (
+                    item.maxRank === "candidate master" ? (
                       <span className="d-inline-block d-md-none">
                         Cand. Master
                       </span>
@@ -250,7 +250,7 @@ function Content(props) {
                       item.maxRank.charAt(0).toUpperCase() +
                       item.maxRank.slice(1)
                     )
-                  ) : item.rank == "candidate master" ? (
+                  ) : item.rank === "candidate master" ? (
                     <span>Cand. Master</span>
                   ) : (
                     item.rank.charAt(0).toUpperCase() + item.rank.slice(1)
