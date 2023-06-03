@@ -4,10 +4,15 @@ import "./codeEditor.css";
 import React, { useState } from "react";
 import { useRef, useEffect } from "react";
 import Editor from "@monaco-editor/react";
-import Issue from "../Issue/Issue";
 import axios from "axios";
 
 const CodeEditor = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  });
   const [code, setCode] = useState(
     '#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  cout << "Hello, world! This is NITA CP_HUB";\n  return 0;\n}'
   );
