@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-// const codeController = require("./controller/codeController");
+const codeController = require("./controller/codeController");
 const codeRunner = require("./controller/coderunner");
 const userController = require("./controller/userController");
 const mongoose = require("mongoose");
@@ -30,7 +30,8 @@ mongoose
 app.use(hpp());
 app.use(mongoSanitize());
 
-app.post("/run", codeRunner);
+// app.post("/run", codeRunner);
+app.post("/run", codeController);
 app.get("/user", userController.getUser);
 app.post("/user/:userId", userController.createUser);
 
