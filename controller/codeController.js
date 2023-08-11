@@ -4,23 +4,13 @@ const codeRunner = async (req, res) => {
   const { code, input } = req.body;
   console.log(code);
   console.log(input);
-  var program = {
-    script: code,
-    language: "cpp17",
-    versionIndex: "0",
-    stdin: input,
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-  };
-  try {
-    const result = await axios.post(
-      "https://api.jdoodle.com/v1/execute",
-      program
-    );
-    res.send(result.data.output);
-  } catch (error) {
-    console.log("code editor mar gaya")
-    res.send(error.output);
-  }
+  console.log("entered code runner");
+  axios
+    .post("https://a3f8-185-207-250-57.ngrok-free.app/run", {
+      code: code,
+      input: input,
+    })
+    .then((resp) => res.send(resp.data))
+    .catch((err) => res.send(err.message));
 };
 module.exports = codeRunner;
