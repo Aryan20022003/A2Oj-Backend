@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const codeController = require("./controller/codeController");
+// const codeController = require("./controller/codeController");
+const codeRunner = require("./controller/coderunner");
 const userController = require("./controller/userController");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config;
@@ -11,7 +12,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json("10kb"));
 app.use(cors());
-const DB = process.env.DB.replace("<PASSWORD>", process.env.PASSWORD);
+const DB = process.env.DB?.replace("<PASSWORD>", process.env.PASSWORD);
 
 mongoose
   .connect(DB, {
@@ -29,7 +30,7 @@ mongoose
 app.use(hpp());
 app.use(mongoSanitize());
 
-app.post("/run", codeController);
+app.post("/run", codeRunner);
 app.get("/user", userController.getUser);
 app.post("/user/:userId", userController.createUser);
 
